@@ -17,6 +17,7 @@ Clone the vim dotfile repo
 --------------------------
 
 ``` sh
+$ cd ~
 $ git clone https://github.com/Eluminae/dotfiles.git
 $ mv dotfiles/ .dotfiles/
 $ ln -s .dotfiles/vimrc .vimrc
@@ -51,6 +52,7 @@ Compile ycm_core
 ----------------
 
 ``` sh
+$ cd ~
 $ mkdir ycm_build
 $ cd ycm_build
 
