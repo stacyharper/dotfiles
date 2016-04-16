@@ -11,6 +11,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'mattn/emmet-vim'
+Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'https://github.com/docteurklein/php-getter-setter.vim.git'
+Plugin 'https://github.com/jiangmiao/auto-pairs.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -26,3 +30,60 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+map <C-n> :NERDTreeToggle<CR>
+
+" Other configurations
+
+colorscheme jellybeans         " awesome colorscheme
+syntax on           " enable syntax processing
+set background=dark
+
+set autoindent
+set smartindent
+set smarttab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=2
+set expandtab
+
+filetype plugin on
+filetype indent on
+
+set number              " show line numbers
+set showcmd             " show command in bottom bar
+
+set cursorline          " highlight current line
+filetype indent on      " load filetype-specific indent files
+
+set wildmenu            " visual autocomplete for command menu
+
+set lazyredraw          " redraw only when we need to.
+
+set showmatch           " highlight matching [{()}]
+
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
+
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+set foldenable          " enable folding
+set foldlevelstart=10   " open most folds by default
+
+set foldnestmax=10      " 10 nested fold max
+
+" space open/closes folds
+nnoremap <space> za
+
+" Display tabs and trailing spaces visually
+set list listchars=tab:\ \ ,trail:·
+
+" Auto indent pasted text
+nnoremap p p=`]<C-o>
+nnoremap P P=`]<C-o>
+
+set nowrap       "Don't wrap lines
+set linebreak    "Wrap lines at convenient points
+
+set ruler
