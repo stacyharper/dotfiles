@@ -5,9 +5,15 @@ Installation
 
 ``` sh
 $ cd ~
+
+$ rm -rf .vim/
+$ rm .vimrc
+$ rm -rf ycm_core/
+
 $ git clone https://github.com/Eluminae/dotfiles.git
 $ mv dotfiles/ .dotfiles/
 $ ln -s .dotfiles/vimrc .vimrc
+$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 $ vim +PluginInstall +qall
  
 $ sudo apt-get install build-essential cmake
