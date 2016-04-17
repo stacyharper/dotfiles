@@ -44,8 +44,15 @@ Install dependencies to compile ycm_core
 ----------------------------------------
 
 ``` sh
-$ sudo apt-get install build-essential cmake
-$ sudo apt-get install python-dev python3-dev
+$ apt-get install build-essential cmake
+$ apt-get install python-dev python3-dev
+```
+
+For debian users
+----------------
+
+``` sh
+$ apt-get install vim-nox
 ```
 
 Compile ycm_core
