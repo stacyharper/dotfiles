@@ -7,19 +7,14 @@ Purge previous files
 --------------------
 
 ``` sh
-$ cd ~
-$ rm -rf .vim/
-$ rm .vimrc
-$ rm -rf ycm_build/
+$ rm -rf ~/.vim/ ~/.vimrc ~/ycm_build/
 ```
 
 Clone the vim dotfile repo
 --------------------------
 
 ``` sh
-$ cd ~
-$ git clone https://github.com/Eluminae/dotfiles.git
-$ mv dotfiles/ .dotfiles/
+$ git clone https://github.com/Eluminae/dotfiles.git ~/.dotfiles
 $ ln -s .dotfiles/vimrc .vimrc
 $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
@@ -28,10 +23,8 @@ Install the scheme color JellyBeans
 -----------------------------------
 
 ``` sh
-$ cd ~
-$ mkdir .vim/colors
-$ cd .vim/colors
-$ wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim
+$ mkdir ~/.vim/colors
+$ wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim -O ~/.vim/colors/jellybeans.vim
 ```
 
 Download plugins
@@ -53,8 +46,7 @@ Compile ycm_core
 ----------------
 
 ``` sh
-$ cd ~
-$ mkdir ycm_build
+$ mkdir ~/ycm_build
 $ cd ycm_build
 
 $ cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
