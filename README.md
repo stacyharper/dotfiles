@@ -7,7 +7,7 @@ Purge previous files
 --------------------
 
 ``` sh
-$ rm -rf ~/.vim/ ~/.vimrc ~/ycm_build/
+$ rm -rf ~/.vim/ ~/.vimrc ~/ycm_build/ ~/.dotfiles
 ```
 
 Clone the vim dotfile repo
