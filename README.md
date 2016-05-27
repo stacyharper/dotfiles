@@ -24,7 +24,8 @@ Install the scheme color JellyBeans
 
 ``` sh
 $ mkdir ~/.vim/colors
-$ wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim -O ~/.vim/colors/jellybeans.vim
+$ wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim \
+  -O ~/.vim/colors/jellybeans.vim
 ```
 
 Download plugins
