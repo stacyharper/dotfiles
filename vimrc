@@ -87,3 +87,5 @@ set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 set ruler
+
+set mouse=a
