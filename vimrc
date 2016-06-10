@@ -88,7 +88,5 @@ set linebreak    "Wrap lines at convenient points
 
 set ruler
 
-set mouse=a
-
 let g:ycm_server_python_interpreter = '/usr/bin/python2'
 
