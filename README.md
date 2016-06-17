@@ -1,5 +1,14 @@
 # dotfiles
 
+Remember
+------------
+
+This command generate tags file for a symphony project.
+
+``` sh
+ctags -R --languages=php --exclude=.git --exclude=app/cache --exclude=composer.phar --exclude='*Test.php' .
+```
+
 Installation
 ------------
 
