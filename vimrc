@@ -13,8 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
-Plugin 'https://github.com/docteurklein/php-getter-setter.vim.git'
-Plugin 'https://github.com/jiangmiao/auto-pairs.git'
+"Plugin 'https://github.com/docteurklein/php-getter-setter.vim.git'
+"Plugin 'https://github.com/jiangmiao/auto-pairs.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -89,4 +89,5 @@ set linebreak    "Wrap lines at convenient points
 set ruler
 
 let g:ycm_server_python_interpreter = '/usr/bin/python2'
+let g:ycm_auto_trigger = 1
 
