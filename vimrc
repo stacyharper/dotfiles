@@ -83,7 +83,7 @@ set list listchars=tab:\ \ ,trail:·
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
-set nowrap       "Don't wrap lines
+"set nowrap       "Don't wrap lines
 set linebreak    "Wrap lines at convenient points
 
 set ruler
@@ -92,3 +92,4 @@ let g:ycm_server_python_interpreter = '/usr/bin/python2'
 let g:ycm_auto_trigger = 1
 inoremap jk <Esc>
 
+set completeopt-=preview
