@@ -90,4 +90,5 @@ set ruler
 
 let g:ycm_server_python_interpreter = '/usr/bin/python2'
 let g:ycm_auto_trigger = 1
+inoremap jk <Esc>
 
