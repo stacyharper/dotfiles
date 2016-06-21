@@ -12,7 +12,7 @@ $ ctags -R --languages=php --exclude=.git --exclude=app/cache --exclude=composer
 Require
 ``` sh
 $ apt-get install exuberant-ctags
-``` sh
+```
 
 Installation
 ------------
