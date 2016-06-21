@@ -67,7 +67,7 @@ $ mkdir ~/ycm_build && \
   cmake --build . --target ycm_core --config Release
 ```
 
-The One in One command !!!
+The All in One command !!!
 --------------------------
 
 ``` sh
