@@ -28,17 +28,17 @@ Clone the vim dotfile repo
 --------------------------
 
 ``` sh
-$ git clone https://github.com/Eluminae/dotfiles.git ~/.dotfiles
-$ ln -s .dotfiles/vimrc .vimrc
-$ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+$ git clone https://github.com/Eluminae/dotfiles.git ~/.dotfiles && \
+  ln -s .dotfiles/vimrc .vimrc && \
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
 Install the scheme color JellyBeans
 -----------------------------------
 
 ``` sh
-$ mkdir ~/.vim/colors
-$ wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim \
+$ mkdir ~/.vim/colors && \
+  wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim \
   -O ~/.vim/colors/jellybeans.vim
 ```
 
@@ -61,9 +61,8 @@ Compile ycm_core
 ----------------
 
 ``` sh
-$ mkdir ~/ycm_build
-$ cd ~/ycm_build
-
-$ cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
-$ cmake --build . --target ycm_core --config Release
+$ mkdir ~/ycm_build && \
+  cd ~/ycm_build && \
+  cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp && \
+  cmake --build . --target ycm_core --config Release
 ```
