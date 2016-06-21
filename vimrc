@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
+Plugin 'evidens/vim-twig'
 "Plugin 'https://github.com/docteurklein/php-getter-setter.vim.git'
 "Plugin 'https://github.com/jiangmiao/auto-pairs.git'
 
@@ -93,3 +94,4 @@ let g:ycm_auto_trigger = 1
 inoremap jk <Esc>
 
 set completeopt-=preview
+
