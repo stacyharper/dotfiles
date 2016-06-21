@@ -11,7 +11,7 @@ $ ctags -R --languages=php --exclude=.git --exclude=app/cache --exclude=composer
 
 Require
 ``` sh
-$ apt-get install exuberant-ctags
+$ apt-get install -y exuberant-ctags
 ```
 
 Installation
@@ -66,3 +66,25 @@ $ mkdir ~/ycm_build && \
   cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp && \
   cmake --build . --target ycm_core --config Release
 ```
+
+The One in One command !!!
+--------------------------
+
+``` sh
+$ rm -rf ~/.vim/ ~/.vimrc ~/ycm_build/ ~/.dotfiles && \
+  git clone https://github.com/Eluminae/dotfiles.git ~/.dotfiles && \
+  ln -s .dotfiles/vimrc .vimrc && \
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && \
+  mkdir ~/.vim/colors && \
+  wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim \
+      -O ~/.vim/colors/jellybeans.vim && \
+  vim +PluginInstall +qall && \
+  sudo apt-get install -y build-essential cmake \
+                         python-dev python3-dev \
+                         vim-nox && \
+  mkdir ~/ycm_build && \
+  cd ~/ycm_build && \
+  cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp && \
+  cmake --build . --target ycm_core --config Release
+```
+
