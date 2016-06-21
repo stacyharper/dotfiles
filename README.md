@@ -54,7 +54,7 @@ Install dependencies to compile ycm_core
 ``` sh
 $ apt-get install -y build-essential cmake \
                     python-dev python3-dev \
-                    install vim-nox
+                    vim-nox
 ```
 
 Compile ycm_core
