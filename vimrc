@@ -84,8 +84,8 @@ set list listchars=tab:\ \ ,trail:·
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
-"set nowrap       "Don't wrap lines
-set linebreak    "Wrap lines at convenient points
+set nowrap       "Don't wrap lines
+"set linebreak    "Wrap lines at convenient points
 
 set ruler
 
@@ -95,3 +95,4 @@ inoremap jk <Esc>
 
 set completeopt-=preview
 
+set pastetoggle=<F2>
