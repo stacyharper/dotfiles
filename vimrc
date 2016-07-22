@@ -95,4 +95,6 @@ inoremap jk <Esc>
 
 set completeopt-=preview
 
-set pastetoggle=<F2>
+set pastetoggle=<F2> " To permit pasted code to stay well indented
+nnoremap <f3> :noh<CR>
+
