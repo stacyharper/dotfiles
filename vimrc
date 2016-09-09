@@ -45,11 +45,14 @@ set smartindent
 set smarttab
 set shiftwidth=4
 set softtabstop=4
-set tabstop=2
+set tabstop=4
 set expandtab
 
 filetype plugin on
 filetype indent on
+
+" for js files, 2 spaces
+autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 
 set number              " show line numbers
 set showcmd             " show command in bottom bar
