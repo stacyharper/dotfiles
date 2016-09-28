@@ -101,3 +101,12 @@ set completeopt-=preview
 set pastetoggle=<F2> " To permit pasted code to stay well indented
 nnoremap <f3> :noh<CR>
 
+" switch split screen easier
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" more natural split
+set splitbelow
+set splitright
