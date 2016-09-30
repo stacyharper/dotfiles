@@ -105,8 +105,8 @@ nnoremap <f3> :noh<CR>
 set scroll=10
 
 " switch split screen easier
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
+nnoremap <C-J> <C-W><C-J> " overrided
+nnoremap <C-K> <C-W><C-K> " overrided
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
@@ -118,8 +118,12 @@ set splitright
 noremap <C-P> @:<CR>
 
 " Shortcut to move line up and down
-nnoremap J :m .+1<CR>==
-nnoremap K :m .-2<CR>==
-vnoremap J :m '>+1<CR>==gv
-vnoremap K :m '<-2<CR>==gv
+nnoremap <C-j> :m .+1<CR>==
+nnoremap <C-k> :m .-2<CR>==
+vnoremap <C-j> :m '>+1<CR>==gv
+vnoremap <C-k> :m '<-2<CR>==gv
 
+" Split line down
+nnoremap <C-h> J
+nnoremap <C-l> i<CR><Esc>k$
+nnoremap J <Nop>
