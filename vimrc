@@ -110,3 +110,6 @@ nnoremap <C-H> <C-W><C-H>
 " more natural split
 set splitbelow
 set splitright
+
+" Auto repeat last command
+noremap <C-P> @:<CR>
