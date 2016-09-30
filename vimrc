@@ -101,6 +101,9 @@ set completeopt-=preview
 set pastetoggle=<F2> " To permit pasted code to stay well indented
 nnoremap <f3> :noh<CR>
 
+" Fix scroll to 10 lines. Better for my eyes.
+set scroll=10
+
 " switch split screen easier
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -113,3 +116,10 @@ set splitright
 
 " Auto repeat last command
 noremap <C-P> @:<CR>
+
+" Shortcut to move line up and down
+nnoremap J :m .+1<CR>==
+nnoremap K :m .-2<CR>==
+vnoremap J :m '>+1<CR>==gv
+vnoremap K :m '<-2<CR>==gv
+
