@@ -105,7 +105,7 @@ nnoremap <f3> :noh<CR>
 set scroll=10
 
 " Let lines after/below cursor
-set scrolloff=999
+set scrolloff=10
 
 " switch split screen easier
 nnoremap <C-J> <C-W><C-J> " overrided
@@ -128,7 +128,7 @@ vnoremap <C-k> :m '<-2<CR>==gv
 
 " Split line down
 nnoremap <C-h> J
-nnoremap <C-l> i<CR><Esc>k$
+nnoremap <C-l> i<CR><Esc>
 nnoremap J <Nop>
 nnoremap K <Nop>
 
