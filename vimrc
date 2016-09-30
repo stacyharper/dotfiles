@@ -104,6 +104,9 @@ nnoremap <f3> :noh<CR>
 " Fix scroll to 10 lines. Better for my eyes.
 set scroll=10
 
+" Let lines after/below cursor
+set scrolloff=999
+
 " switch split screen easier
 nnoremap <C-J> <C-W><C-J> " overrided
 nnoremap <C-K> <C-W><C-K> " overrided
@@ -127,3 +130,12 @@ vnoremap <C-k> :m '<-2<CR>==gv
 nnoremap <C-h> J
 nnoremap <C-l> i<CR><Esc>k$
 nnoremap J <Nop>
+nnoremap K <Nop>
+
+" change page up/down binds
+nnoremap J <C-d>
+nnoremap K <C-u>
+nnoremap <C-d> <Nop>
+nnoremap <C-u> <Nop>
+nnoremap H <Nop>
+nnoremap L <Nop>
