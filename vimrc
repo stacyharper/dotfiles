@@ -72,11 +72,12 @@ set hlsearch            " highlight matches
 " turn off search highlight
 nnoremap <leader><space> :nohlsearch<CR>
 
+set foldmethod=syntax
+let php_folding=1
 set foldenable          " enable folding
 set foldlevelstart=10   " open most folds by default
-
 set foldnestmax=10      " 10 nested fold max
-
+"
 " space open/closes folds
 nnoremap <space> za
 
