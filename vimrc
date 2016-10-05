@@ -119,3 +119,5 @@ nnoremap <C-l> i<CR><Esc>
 nnoremap J 10j
 nnoremap K 10k
 
+" getter/setter command
+map gsi :InsertBothGetterSetter<CR>
