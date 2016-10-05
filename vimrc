@@ -12,6 +12,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'evidens/vim-twig'
+Plugin 'Dinduks/vim-java-get-set'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -62,6 +63,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 set foldmethod=syntax
 let php_folding=1
+let html_folding=1
 set foldenable          " Enable folding
 set foldlevelstart=10   " Open most folds by default
 set foldnestmax=10      " 10 nested fold max
@@ -116,3 +118,4 @@ nnoremap <C-l> i<CR><Esc>
 " Change page up/down binds
 nnoremap J 10j
 nnoremap K 10k
+
