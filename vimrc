@@ -42,6 +42,8 @@ filetype indent on
 
 " For js files, 2 spaces
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+" For xml files, 4 spaces
+autocmd Filetype xml setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 set number              " Show line numbers
 set showcmd             " Show command in bottom bar
