@@ -90,6 +90,7 @@ set ruler
 
 let g:ycm_server_python_interpreter = '/usr/bin/python2'
 let g:ycm_auto_trigger = 1
+let g:ycm_complete_in_comments = 1
 
 " Set normal mode with jk in insert mode
 inoremap jk <Esc>
