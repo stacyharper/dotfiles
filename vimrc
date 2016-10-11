@@ -11,7 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
-Plugin 'evidens/vim-twig'
+Plugin 'nelsyeung/twig.vim'
 Plugin 'Dinduks/vim-java-get-set'
 
 " All of your Plugins must be added before the following line
@@ -36,9 +36,6 @@ set shiftwidth=4
 set softtabstop=4
 set tabstop=4
 set expandtab
-
-filetype plugin on
-filetype indent on
 
 " For js files, 2 spaces
 autocmd Filetype javascript setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
