@@ -73,12 +73,34 @@ The All in One command !!!
 ``` sh
 $ rm -rf ~/.vim/ ~/.vimrc ~/ycm_build/ ~/.dotfiles && \
   git clone https://github.com/Eluminae/dotfiles.git ~/.dotfiles && \
-  ln -s .dotfiles/vimrc .vimrc && \
+  ln -s ~/.dotfiles/vimrc ~/.vimrc && \
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && \
   mkdir ~/.vim/colors && \
   wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim \
       -O ~/.vim/colors/jellybeans.vim && \
   vim +PluginInstall +qall && \
+  apt-get update && \
+  apt-get install -y build-essential cmake \
+                         python-dev python3-dev \
+                         vim-nox && \
+  mkdir ~/ycm_build && \
+  cd ~/ycm_build && \
+  cmake -G "Unix Makefiles" . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp && \
+  cmake --build . --target ycm_core --config Release
+```
+
+For non root user, here is the updated command:
+
+``` sh
+$ rm -rf ~/.vim/ ~/.vimrc ~/ycm_build/ ~/.dotfiles && \
+  git clone https://github.com/Eluminae/dotfiles.git ~/.dotfiles && \
+  ln -s ~/.dotfiles/vimrc ~/.vimrc && \
+  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim && \
+  mkdir ~/.vim/colors && \
+  wget https://raw.githubusercontent.com/nanotech/jellybeans.vim/master/colors/jellybeans.vim \
+      -O ~/.vim/colors/jellybeans.vim && \
+  vim +PluginInstall +qall && \
+  sudo apt-get update && \
   sudo apt-get install -y build-essential cmake \
                          python-dev python3-dev \
                          vim-nox && \
