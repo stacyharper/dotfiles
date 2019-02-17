@@ -1,5 +1,5 @@
 ---
-hooks:
+commands:
     pre-commit:
         -
             - "echo"

@@ -1,5 +1,5 @@
 #!/bin/sh
 
-python .git/hooks/framework/framework.py pre-rebase .git/hooks/hooks.yml
+python .git/hooks/python-command-dispatcher/dispatcher.py pre-rebase .git/hooks/hooks.yml
 
 exit $?
