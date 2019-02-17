@@ -1,6 +1,11 @@
 ---
-commands:
-    pre-commit:
-        -
+config:
+    commands:
+        display_welcome_message:
             - "echo"
             - "The hooks are ready !"
+    events:
+        pre-commit:
+            - "display_welcome_message"
+        post-commit:
+            - "display_welcome_message"
