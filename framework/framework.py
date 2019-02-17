@@ -10,17 +10,19 @@ class Printer:
     FAIL = '\033[91m'
     ENDC = '\033[0m'
 
-    def print_info(message):
+    @classmethod
+    def print_info(cls, message):
         print(
-            Printer.INFO
+            cls.INFO
             + message
-            + Printer.ENDC
+            + cls.ENDC
         )
-    def print_error(message):
+    @classmethod
+    def print_error(cls, message):
         print(
-            Printer.FAIL
+            cls.FAIL
             + message
-            + Printer.ENDC
+            + cls.ENDC
         )
     def build_command_message(command):
         message = '$'
