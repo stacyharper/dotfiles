@@ -1,11 +1,14 @@
 ---
 config:
     commands:
-        display_welcome_message:
-            - "echo"
-            - "The hooks are ready !"
+        update_ctags:
+            - "ctags"
+            - "--options=/home/eddie/.ctags"
+            - "--recurse"
     events:
-        pre-commit:
-            - "display_welcome_message"
+        post-checkout:
+            - "update_ctags"
         post-commit:
-            - "display_welcome_message"
+            - "update_ctags"
+        post-merge:
+            - "update_ctags"
