@@ -1,0 +1,6 @@
+---
+hooks:
+    pre-commit:
+        -
+            - "echo"
+            - "The hooks are ready !"

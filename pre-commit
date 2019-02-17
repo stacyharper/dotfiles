@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python .git/hooks/framework/framework.py pre-commit .git/hooks/hooks.yml
+
+exit $?

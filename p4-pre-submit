@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python .git/hooks/framework/framework.py p4-pre-submit .git/hooks/hooks.yml
+
+exit $?

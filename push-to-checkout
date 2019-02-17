@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python .git/hooks/framework/framework.py push-to-checkout .git/hooks/hooks.yml
+
+exit $?

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+python .git/hooks/framework/framework.py post-merge .git/hooks/hooks.yml
+
+exit $?
