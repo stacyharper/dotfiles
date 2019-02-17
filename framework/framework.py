@@ -22,6 +22,11 @@ class Printer:
             + message
             + Printer.ENDC
         )
+    def build_command_message(command):
+        message = '$'
+        for argument in command:
+            message += ' "' + argument + '"'
+        return message
 
 class Framework:
     def __init__(self, hook_file_path):
@@ -36,7 +41,7 @@ class Framework:
 
         hooks = self.hooks[hook_event]
         for hook in hooks:
-            Printer.print_info('$ "' + ' '.join(hook) + '"')
+            Printer.print_info(Printer.build_command_message(hook))
             check_call(hook)
 
 
@@ -44,6 +49,9 @@ if __name__ == '__main__':
     framework = Framework(argv[2])
     try:
         framework.run(argv[1])
+    except FileNotFoundError as e:
+        Printer.print_error(e.args[1])
+        exit(1)
     except CalledProcessError as e:
-        Printer.print_error('\nThe command "' + ' '.join(e.cmd) + '" miserably failed')
+        Printer.print_error('The command "' + ' '.join(e.cmd) + '" returned ' + str(e.returncode))
         exit(e.returncode)
