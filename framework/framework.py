@@ -53,5 +53,5 @@ if __name__ == '__main__':
         Printer.print_error(e.args[1])
         exit(1)
     except CalledProcessError as e:
-        Printer.print_error('The command "' + ' '.join(e.cmd) + '" returned ' + str(e.returncode))
+        Printer.print_error('Returned ' + str(e.returncode))
         exit(e.returncode)
