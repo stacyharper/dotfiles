@@ -3,7 +3,7 @@ config:
     commands:
         update_ctags:
             - "ctags"
-            - "--options=/home/eddie/.ctags"
+            - "--options=$HOME/.ctags"
             - "--recurse"
     events:
         post-checkout:
