@@ -25,7 +25,7 @@ class Printer:
     def build_command_message(command):
         message = '$'
         for argument in command:
-            message += ' "' + argument + '"'
+            message += ' \'' + argument + '\''
         return message
 
 class Framework:
