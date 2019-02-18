@@ -3,4 +3,5 @@ repository = ~/Dotfiles
 ignore = [
     '.git',
     '.gitignore',
+    '.gitmodules',
     '*.swp']
