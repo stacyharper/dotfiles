@@ -1,0 +1,18 @@
+Host server
+	Hostname misterbanal.net
+	Port 22
+	User reedwade
+	IdentityFile ~/.ssh/id_rsa
+Host storage
+	Hostname storage.misterbanal.net
+	Port 2225
+	User eddie
+	IdentityFile ~/Crypt/RSA/eddie_storage_id_rsa
+Host proda
+	Hostname proda.misterbanal.net
+	Port 22
+	User eddie
+Host media
+	Hostname media.misterbanal.net
+	Port 22
+	User eddie

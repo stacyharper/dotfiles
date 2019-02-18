@@ -1,0 +1,22 @@
+#!/bin/bash
+
+type gkeyring >> /dev/null
+if [ 0 -ne $? ]
+then
+	exit 1
+fi
+
+query="$@"
+
+token=$(gkeyring $query -o secret)
+if [ 5 -eq "$?" ]
+then
+	gkeyring --set $query >> /dev/null
+	if [ 0 -ne $? ]
+	then
+		exit 1
+	fi
+	token=$(gkeyring $query -o secret)
+fi
+
+echo "$token"

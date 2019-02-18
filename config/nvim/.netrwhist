@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/eddie/.vim/pack/other'
+let g:netrw_dirhist_2='/home/eddie/.vim/pack/other/start'
+let g:netrw_dirhist_3='/home/eddie/.vim/pack/other/start/abolish'
+let g:netrw_dirhist_4='/home/eddie/.vim'

@@ -1,0 +1,5 @@
+#!/bin/sh
+
+dotfiles_location=~/.dotfiles
+
+git --git-dir $dotfiles_location/.git --work-tree $dotfiles_location $@

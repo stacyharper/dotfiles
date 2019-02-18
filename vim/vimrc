@@ -1,0 +1,56 @@
+filetype plugin on
+filetype indent on
+syntax on
+
+colorscheme hybrid
+set background=dark
+set cindent
+set cpoptions+=d
+set cursorline
+set diffopt+=vertical
+set display+=lastline
+set encoding=utf8
+set foldmethod=manual
+set hidden
+set hlsearch
+set incsearch
+set laststatus=2
+set linebreak
+set list
+set listchars=tab:→\ ,trail:⋅,extends:❯,precedes:❮,nbsp:¤
+set magic
+set nocompatible
+set nostartofline
+set number
+set pastetoggle=<F12>
+set ruler
+set shell=$SHELL
+set shiftround
+set showcmd
+set splitbelow
+set splitright
+set t_Co=256
+set title
+set ttyfast
+set undodir=~/.vim/undo-dir
+set undofile
+set updatetime=100
+set wildignore+=*.png,*.jpeg,*.jpg,*.swp,*.o,*.obj,*.min.*,node_modules,dist
+set wildmenu
+set wildmode=list:longest
+set wrap
+let g:netrw_ftp_cmd="ftp -p"
+
+if !isdirectory($HOME."/.vim/undo-dir")
+    call mkdir($HOME."/.vim/undo-dir", "", 0700)
+endif
+
+let g:netrw_banner = 0
+let g:netrw_winsize = 25
+let g:netrw_list_hide= '.*\.swp$,.*\.swo$,.*\.retry$'
+
+if has('nvim')
+    set rtp^=/usr/share/vim/vimfiles/
+    set inccommand=nosplit
+else
+endif

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+protocol=https
+domain=gotify.misterbanal.net
+title="$1"
+[ -f "$2" -o "-" == "$2" ] && message=$(cat "$2") || message="$2"
+token="$(gkeyring-get-or-create --name 'Gotify' -p 'application=notify-gotify')"
+
+curl -s -X POST "$protocol://$domain/message" -H "X-Gotify-Key: $token" -F "title=$title" -F "message=$message" >> /dev/null
+
+exit $?

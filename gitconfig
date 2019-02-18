@@ -1,0 +1,28 @@
+[user]
+	email = contact@eddiebarraco.fr
+	name = Eddie Barraco
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitconfig.d/gitignore
+	editor = nvim
+[init]
+	templatedir = ~/.gitconfig.d/template
+[clone]
+	templatedir = ~/.gitconfig.d/template
+[include]
+	path = ~/.git-gpg-config
+[diff]
+	algorithm = patience
+	tool = vimdiff
+[commit]
+	gpgsign = true
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+[merge]
+	tool = vimdiff
+	conflictstyle = diff3
+[difftool "vimdiff"]
+	cmd = nvim -d $LOCAL $REMOTE
+[mergetool "vimdiff"]
+	cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'

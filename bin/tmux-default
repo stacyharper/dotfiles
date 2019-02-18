@@ -1,0 +1,9 @@
+#!/bin/bash
+
+tmux new-session -d -s dev
+
+tmux new-window -t dev:7 -n Dotfiles -c ~/.dotfiles
+tmux new-window -t dev:9 -n Matterhorn matterhorn
+tmux new-window -t dev:8 -n Music cmus
+
+tmux attach-session -t dev:1

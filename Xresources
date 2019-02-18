@@ -1,0 +1,46 @@
+XTerm*selectToClipboard:true
+
+XTerm*faceName: Hack
+xterm*faceSize: 11
+xterm*vt100*geometry: 80x60
+xterm*saveLines: 16384
+xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
+xterm*termName: xterm-256color
+xterm*eightBitInput: false
+
+! special
+*.foreground:   #919191
+*.background:   #1D1F21
+*.cursorColor:  #919191
+
+! black
+*.color0:       #303030
+*.color8:       #5e5e5e
+
+! red
+*.color1:       #a43261
+*.color9:       #ff9fc9
+
+! green
+*.color2:       #006ca5
+*.color10:      #3bd6ff
+
+! yellow
+*.color3:       #007086
+*.color11:      #00ddf4
+
+! blue
+*.color4:       #6751a6
+*.color12:      #d5b8ff
+
+! magenta
+*.color5:       #913e88
+*.color13:      #ffa7f6
+
+! cyan
+*.color6:       #0061b1
+*.color14:      #93c9ff
+
+! white
+*.color7:       #c6c6c6
+*.color15:      #ffffff

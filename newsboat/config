@@ -1,0 +1,5 @@
+notify-program "/usr/bin/notify-send"
+refresh-on-startup yes
+browser firefox
+auto-reload yes
+reload-time 5
