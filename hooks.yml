@@ -1,14 +1,9 @@
 ---
 config:
     commands:
-        update_ctags:
-            - "ctags"
-            - "--options=$HOME/.ctags"
-            - "--recurse"
+        welcome_message:
+            - "echo"
+            - "Git hooks are ready !"
     events:
         post-checkout:
-            - "update_ctags"
-        post-commit:
-            - "update_ctags"
-        post-merge:
-            - "update_ctags"
+            - "welcome_message"
