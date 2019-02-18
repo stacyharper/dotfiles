@@ -1,5 +1,5 @@
 #!/bin/sh
 
-.git/hooks/python-command-dispatcher/dispatcher.py pre-applypatch .git/hooks/hooks.yml
+$GIT_DIR/hooks/python-command-dispatcher/dispatcher.py pre-applypatch $GIT_DIR/hooks/hooks.yml
 
 exit $?

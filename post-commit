@@ -1,5 +1,5 @@
 #!/bin/sh
 
-.git/hooks/python-command-dispatcher/dispatcher.py post-commit .git/hooks/hooks.yml
+$GIT_DIR/hooks/python-command-dispatcher/dispatcher.py post-commit $GIT_DIR/hooks/hooks.yml
 
 exit $?
