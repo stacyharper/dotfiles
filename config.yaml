@@ -1,0 +1,51 @@
+config:
+  dotpath: Dotfiles
+dotfiles:
+  vim:
+    dst: ~/.vim
+    src: vim
+  neovim:
+    dst: ~/.config/nvim
+    src: config/nvim
+  sway:
+    dst: ~/.config/sway
+    src: config/sway
+  i3:
+    dst: ~/.config/i3
+    src: config/i3
+  bashrc:
+    dst: ~/.bashrc
+    src: bashrc
+  bash_aliases:
+    dst: ~/.bash_aliases
+    src: bash_aliases
+  termite:
+    dst: ~/.config/termite
+    src: config/termite
+  git_personal:
+    dst: ~/.gitconfig
+    src: gitconfig
+  git:
+    dst: ~/.gitconfig.d
+    src: gitconfig.d
+  tmux_conf:
+    dst: ~/.tmux.conf
+    src: tmux.conf
+  tmux:
+    dst: ~/.tmux.d
+    src: tmux.d
+profiles:
+  Terminator:
+    dotfiles:
+      - neovim
+      - sway
+      - i3
+      - bashrc
+      - bash_aliases
+      - termite
+      - git_personal
+      - git
+      - tmux_conf
+      - tmux
+
+# vim:ts=2:sw=2:sts=2:expandtab
