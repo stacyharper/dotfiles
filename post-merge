@@ -1,5 +1,5 @@
 #!/bin/sh
 
-python .git/hooks/python-command-dispatcher/dispatcher.py post-merge .git/hooks/hooks.yml
+.git/hooks/python-command-dispatcher/dispatcher.py post-merge .git/hooks/hooks.yml
 
 exit $?
