@@ -138,6 +138,38 @@ profiles:
     - f_yaml_linter
     variables:
       git_email: e.barraco@ubitransport.com
+  flying-jesusraptor:
+    dotfiles:
+    - d_bin
+    - d_desktop
+    - d_git
+    - d_i3
+    - d_i3_status
+    - d_mopidy
+    - d_neovim
+    - d_ranger
+    - d_ssh
+    - d_sway
+    - d_termite
+    - d_tmux
+    - d_vim
+    - f_abcde
+    - f_bash
+    - f_bash_aliases
+    - f_bash_profile
+    - f_ctags
+    - f_git
+    - f_git_ignore
+    - f_ledger
+    - f_mopidy_service
+    - f_profile
+    - f_silver_search_ag
+    - f_tmux
+    - f_xdg_dirs
+    - f_xinit
+    - f_xprofile
+    - f_xresources
+    - f_yaml_linter
   Terminator:
     dotfiles:
     - d_bin
