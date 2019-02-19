@@ -69,3 +69,7 @@
 	path = vim/pack/mine/start/vim-LanguageTool
 	url = https://github.com/Eluminae/vim-LanguageTool.git
 	branch = master
+[submodule "programs/dotdrop"]
+	path = programs/dotdrop
+	url = https://github.com/deadc0de6/dotdrop.git
+	branch = master

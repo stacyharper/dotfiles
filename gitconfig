@@ -1,5 +1,5 @@
 [user]
-	email = contact@eddiebarraco.fr
+	email = {{@@ git_email @@}}
 	name = Eddie Barraco
 [push]
 	default = simple
