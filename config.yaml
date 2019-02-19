@@ -203,6 +203,7 @@ profiles:
     - f_xresources
     - f_yaml_linter
   prodb:
+    dotfiles:
     - d_vim
     - d_neovim
     - f_bash
