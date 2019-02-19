@@ -1,51 +1,130 @@
 config:
+  backup: true
+  banner: true
+  create: true
   dotpath: Dotfiles
+  ignoreempty: false
+  keepdot: false
+  link_by_default: false
+  longkey: false
+  showdiff: false
+  workdir: ~/.config/dotdrop
 dotfiles:
-  vim:
-    dst: ~/.vim
-    src: vim
-  neovim:
-    dst: ~/.config/nvim
-    src: config/nvim
-  sway:
-    dst: ~/.config/sway
-    src: config/sway
-  i3:
-    dst: ~/.config/i3
-    src: config/i3
-  bashrc:
-    dst: ~/.bashrc
-    src: bashrc
-  bash_aliases:
+  f_abcde:
+    dst: ~/.abcde.conf
+    src: abcde.conf
+  f_bash_aliases:
     dst: ~/.bash_aliases
     src: bash_aliases
-  termite:
-    dst: ~/.config/termite
-    src: config/termite
-  git_personal:
-    dst: ~/.gitconfig
-    src: gitconfig
-  git:
+  f_bash_profile:
+    dst: ~/.bash_profile
+    src: bash_profile
+  f_bashrc:
+    dst: ~/.bashrc
+    src: bashrc
+  f_bin:
+    dst: ~/bin
+    src: bin
+  f_ctags:
+    dst: ~/.ctags
+    src: ctags
+  f_desktop:
+    dst: ~/.local/share/applications
+    src: local/share/applications
+  f_git:
     dst: ~/.gitconfig.d
     src: gitconfig.d
-  tmux_conf:
-    dst: ~/.tmux.conf
-    src: tmux.conf
-  tmux:
+  f_git_ignore:
+    dst: ~/.gitignore
+    src: gitignore
+  f_git_personal:
+    dst: ~/.gitconfig
+    src: gitconfig
+  f_i3:
+    dst: ~/.config/i3
+    src: config/i3
+  f_i3_status:
+    dst: ~/.config/i3status
+    src: config/i3status
+  f_ledger:
+    dst: ~/.ledgerrc
+    src: ledgerrc
+  f_neovim:
+    dst: ~/.config/nvim
+    link_children: true
+    src: config/nvim
+  f_profile:
+    dst: ~/.profile
+    src: profile
+  f_ranger:
+    dst: ~/.config/ranger
+    src: config/ranger
+  f_silver_search_ag:
+    dst: ~/.agignore
+    src: agignore
+  f_ssh:
+    dst: ~/.ssh
+    link_children: true
+    src: ssh
+  f_sway:
+    dst: ~/.config/sway
+    src: config/sway
+  f_termite:
+    dst: ~/.config/termite
+    src: config/termite
+  f_tmux:
     dst: ~/.tmux.d
     src: tmux.d
+  f_tmux_conf:
+    dst: ~/.tmux.conf
+    src: tmux.conf
+  f_vim:
+    dst: ~/.vim
+    link_children: true
+    src: vim
+  f_xdg_dirs:
+    dst: ~/.config/user-dirs.dirs
+    src: config/user-dirs.dirs
+  f_xinit:
+    dst: ~/.xinitrc
+    src: xinitrc
+  f_xprofile:
+    dst: ~/.xprofile
+    src: xprofile
+  f_xresources:
+    dst: ~/.Xresources
+    src: Xresources
+  f_yaml_linter:
+    dst: ~/.yamllintrc
+    src: yamllintrc
 profiles:
   Terminator:
     dotfiles:
-      - neovim
-      - sway
-      - i3
-      - bashrc
-      - bash_aliases
-      - termite
-      - git_personal
-      - git
-      - tmux_conf
-      - tmux
-
-# vim:ts=2:sw=2:sts=2:expandtab
+      - f_vim
+      - f_neovim
+      - f_sway
+      - f_i3
+      - f_i3_status
+      - f_ranger
+      - f_xdg_dirs
+      - f_bashrc
+      - f_bash_aliases
+      - f_bash_profile
+      - f_profile
+      - f_termite
+      - f_git_personal
+      - f_git
+      - f_git_ignore
+      - f_tmux_conf
+      - f_tmux
+      - f_abcde
+      - f_silver_search_ag
+      - f_ctags
+      - f_bin
+      - f_ledger
+      - f_desktop
+      - f_ssh
+      - f_xinit
+      - f_xprofile
+      - f_xresources
+      - f_yaml_linter
