@@ -202,6 +202,13 @@ profiles:
     - f_xprofile
     - f_xresources
     - f_yaml_linter
+  prodb:
+    - d_vim
+    - d_neovim
+    - f_bash
+    - f_bash_aliases
+    - f_bash_profile
+    - f_tmux
 variables:
   git_email: contact@eddiebarraco.fr
 dynvariables:
