@@ -12,6 +12,10 @@ Host proda
 	Hostname proda.misterbanal.net
 	Port 22
 	User eddie
+Host prodb
+	Hostname prodb.misterbanal.net
+	Port 22
+	User eddie
 Host media
 	Hostname media.misterbanal.net
 	Port 22
