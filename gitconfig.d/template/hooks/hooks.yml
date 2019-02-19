@@ -1,9 +1,0 @@
----
-config:
-    commands:
-        welcome_message:
-            - "echo"
-            - "Git hooks are ready !"
-    events:
-        post-checkout:
-            - "welcome_message"
