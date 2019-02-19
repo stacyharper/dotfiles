@@ -9,78 +9,79 @@ config:
   longkey: false
   showdiff: false
   workdir: ~/.config/dotdrop
-variables:
-  git_email: contact@eddiebarraco.fr
 dotfiles:
+  d_mopidy:
+    dst: ~/.config/mopidy
+    src: config/mopidy
   f_abcde:
     dst: ~/.abcde.conf
     src: abcde.conf
+  f_bash:
+    dst: ~/.bashrc
+    src: bashrc
   f_bash_aliases:
     dst: ~/.bash_aliases
     src: bash_aliases
   f_bash_profile:
     dst: ~/.bash_profile
     src: bash_profile
-  f_bash:
-    dst: ~/.bashrc
-    src: bashrc
-  f_bin:
+  d_bin:
     dst: ~/bin
     src: bin
   f_ctags:
     dst: ~/.ctags
     src: ctags
-  f_desktop:
+  d_desktop:
     dst: ~/.local/share/applications
     src: local/share/applications
-  f_gitdir:
-    dst: ~/.gitconfig.d
-    src: gitconfig.d
-  f_git_ignore:
-    dst: ~/.gitignore
-    src: gitignore
   f_git:
     dst: ~/.gitconfig
     src: gitconfig
-  f_i3:
+  f_git_ignore:
+    dst: ~/.gitignore
+    src: gitignore
+  d_git:
+    dst: ~/.gitconfig.d
+    src: gitconfig.d
+  d_i3:
     dst: ~/.config/i3
     src: config/i3
-  f_i3_status:
+  d_i3_status:
     dst: ~/.config/i3status
     src: config/i3status
   f_ledger:
     dst: ~/.ledgerrc
     src: ledgerrc
-  f_neovim:
+  d_neovim:
     dst: ~/.config/nvim
     link_children: true
     src: config/nvim
   f_profile:
     dst: ~/.profile
     src: profile
-  f_ranger:
+  d_ranger:
     dst: ~/.config/ranger
     src: config/ranger
   f_silver_search_ag:
     dst: ~/.agignore
     src: agignore
-  f_ssh:
+  d_ssh:
     dst: ~/.ssh
     link_children: true
     src: ssh
-  f_sway:
+  d_sway:
     dst: ~/.config/sway
     src: config/sway
-  f_termite:
+  d_termite:
     dst: ~/.config/termite
     src: config/termite
-  f_tmux:
+  d_tmux:
     dst: ~/.tmux.d
     src: tmux.d
-  f_tmux_conf:
+  f_tmux:
     dst: ~/.tmux.conf
     src: tmux.conf
-  f_vim:
+  d_vim:
     dst: ~/.vim
     link_children: true
     src: vim
@@ -100,65 +101,74 @@ dotfiles:
     dst: ~/.yamllintrc
     src: yamllintrc
 profiles:
-  Terminator:
-    dotfiles:
-      - f_vim
-      - f_neovim
-      - f_sway
-      - f_i3
-      - f_i3_status
-      - f_ranger
-      - f_xdg_dirs
-      - f_bash
-      - f_bash_aliases
-      - f_bash_profile
-      - f_profile
-      - f_termite
-      - f_git
-      - f_gitdir
-      - f_git_ignore
-      - f_tmux_conf
-      - f_tmux
-      - f_abcde
-      - f_silver_search_ag
-      - f_ctags
-      - f_bin
-      - f_ledger
-      - f_desktop
-      - f_ssh
-      - f_xinit
-      - f_xprofile
-      - f_xresources
-      - f_yaml_linter
   LAPTOP-EBARRACO:
+    dotfiles:
+    - d_bin
+    - d_desktop
+    - d_git
+    - d_i3
+    - d_i3_status
+    - d_mopidy
+    - d_neovim
+    - d_ranger
+    - d_ssh
+    - d_sway
+    - d_termite
+    - d_tmux
+    - d_vim
+    - f_abcde
+    - f_bash
+    - f_bash_aliases
+    - f_bash_profile
+    - f_ctags
+    - f_git
+    - f_git_ignore
+    - f_ledger
+    - f_profile
+    - f_silver_search_ag
+    - f_tmux
+    - f_xdg_dirs
+    - f_xinit
+    - f_xprofile
+    - f_xresources
+    - f_yaml_linter
     variables:
       git_email: e.barraco@ubitransport.com
+  Terminator:
     dotfiles:
-      - f_vim
-      - f_neovim
-      - f_sway
-      - f_i3
-      - f_i3_status
-      - f_ranger
-      - f_xdg_dirs
-      - f_bash
-      - f_bash_aliases
-      - f_bash_profile
-      - f_profile
-      - f_termite
-      - f_git
-      - f_gitdir
-      - f_git_ignore
-      - f_tmux_conf
-      - f_tmux
-      - f_abcde
-      - f_silver_search_ag
-      - f_ctags
-      - f_bin
-      - f_ledger
-      - f_desktop
-      - f_ssh
-      - f_xinit
-      - f_xprofile
-      - f_xresources
-      - f_yaml_linter
+    - d_bin
+    - d_desktop
+    - d_git
+    - d_i3
+    - d_i3_status
+    - d_mopidy
+    - d_neovim
+    - d_ranger
+    - d_ssh
+    - d_sway
+    - d_termite
+    - d_tmux
+    - d_vim
+    - f_abcde
+    - f_bash
+    - f_bash_aliases
+    - f_bash_profile
+    - f_ctags
+    - f_git
+    - f_git_ignore
+    - f_ledger
+    - f_profile
+    - f_silver_search_ag
+    - f_tmux
+    - f_xdg_dirs
+    - f_xinit
+    - f_xprofile
+    - f_xresources
+    - f_yaml_linter
+variables:
+  git_email: contact@eddiebarraco.fr
+dynvariables:
+  spotify_username: "pass db/Loisir/Spotify | grep '^login' | tr ': ' '\n' | tail -1"
+  spotify_password: "pass db/Loisir/Spotify | head -1"
+  spotify_client_id: "pass db/Loisir/Spotify | grep '^client_id' | tr ': ' '\n' | tail -1"
+  spotify_client_secret: "pass db/Loisir/Spotify | grep '^client_secret' | tr ': ' '\n' | tail -1"
