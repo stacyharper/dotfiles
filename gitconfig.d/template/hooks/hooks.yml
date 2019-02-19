@@ -4,6 +4,10 @@ config:
         welcome_message:
             - "echo"
             - "Git hooks are ready !"
+        update_ctags:
+            - "ctags"
+            - "--options=$HOME/.ctags"
+            - "--recurse"
     events:
         post-checkout:
             - "welcome_message"
