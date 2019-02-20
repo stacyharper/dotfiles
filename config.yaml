@@ -19,6 +19,9 @@ dotfiles:
   f_abcde:
     dst: ~/.abcde.conf
     src: abcde.conf
+  d_beet:
+    dst: ~/.config/beets
+    src: config/beets
   f_bash:
     dst: ~/.bashrc
     src: bashrc
@@ -172,6 +175,7 @@ profiles:
     - f_yaml_linter
   Terminator:
     dotfiles:
+    - d_beet
     - d_bin
     - d_desktop
     - d_git
