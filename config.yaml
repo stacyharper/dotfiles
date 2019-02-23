@@ -40,6 +40,9 @@ dotfiles:
   d_desktop:
     dst: ~/.local/share/applications
     src: local/share/applications
+  d_dunst:
+    dst: ~/.config/dunst
+    src: config/dunst
   f_git:
     dst: ~/.gitconfig
     src: gitconfig
@@ -111,6 +114,7 @@ profiles:
     dotfiles:
     - d_bin
     - d_desktop
+    - d_dunst
     - d_git
     - d_i3
     - d_i3_status
@@ -145,6 +149,7 @@ profiles:
     dotfiles:
     - d_bin
     - d_desktop
+    - d_dunst
     - d_git
     - d_i3
     - d_i3_status
@@ -178,6 +183,7 @@ profiles:
     - d_beet
     - d_bin
     - d_desktop
+    - d_dunst
     - d_git
     - d_i3
     - d_i3_status
