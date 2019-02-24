@@ -7,7 +7,7 @@ Host storage
 	Hostname storage.misterbanal.net
 	Port 2225
 	User eddie
-	IdentityFile ~/Crypt/RSA/eddie_storage_id_rsa
+	IdentityFile ~/key/.ssh/storage_eddie_id_rsa.pub
 Host proda
 	Hostname proda.misterbanal.net
 	Port 22
