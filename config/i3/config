@@ -4,6 +4,7 @@ set $term xterm
 # Your preferred application launcher
 set $menu dmenu_run
 #set $menu synapse
+set $passmenu passmenu
 
 # Home row direction keys, like vim
 set $left h
@@ -51,6 +52,8 @@ bindsym $mod+Shift+Z exec systemctl hibernate
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec $menu
+
+bindsym $mod+Shift+d exec $passmenu
 
 # change focus
 bindsym $mod+$left focus left
