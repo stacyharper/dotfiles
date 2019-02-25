@@ -4,7 +4,7 @@ set $term xterm
 # Your preferred application launcher
 set $menu dmenu_run
 #set $menu synapse
-set $passmenu passmenu
+set $passmenu ~/bin/passmenu
 
 # Home row direction keys, like vim
 set $left h
