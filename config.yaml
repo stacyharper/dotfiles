@@ -45,7 +45,7 @@ dotfiles:
     src: config/dunst
   d_docker:
     dst: ~/.docker
-    src: config/docker
+    src: docker
   f_git:
     dst: ~/.gitconfig
     src: gitconfig
