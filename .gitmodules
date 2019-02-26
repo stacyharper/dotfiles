@@ -73,3 +73,6 @@
 	path = programs/dotdrop
 	url = https://github.com/deadc0de6/dotdrop.git
 	branch = master
+[submodule "vim/pack/other/start/dbext.vim"]
+	path = vim/pack/other/start/dbext.vim
+	url = https://github.com/vim-scripts/dbext.vim.git
