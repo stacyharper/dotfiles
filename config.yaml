@@ -43,6 +43,9 @@ dotfiles:
   d_dunst:
     dst: ~/.config/dunst
     src: config/dunst
+  d_docker:
+    dst: ~/.docker
+    src: config/docker
   f_git:
     dst: ~/.gitconfig
     src: gitconfig
@@ -115,6 +118,7 @@ profiles:
     - d_bin
     - d_desktop
     - d_dunst
+    - d_docker
     - d_git
     - d_i3
     - d_i3_status
@@ -150,6 +154,7 @@ profiles:
     - d_bin
     - d_desktop
     - d_dunst
+    - d_docker
     - d_git
     - d_i3
     - d_i3_status
@@ -184,6 +189,7 @@ profiles:
     - d_bin
     - d_desktop
     - d_dunst
+    - d_docker
     - d_git
     - d_i3
     - d_i3_status
@@ -214,6 +220,7 @@ profiles:
     - f_yaml_linter
   prodb:
     dotfiles:
+    - d_docker
     - d_vim
     - d_neovim
     - f_bash
