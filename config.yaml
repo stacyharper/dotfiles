@@ -91,6 +91,12 @@ dotfiles:
   f_msmtprc:
     dst: ~/.msmtprc
     src: msmtprc
+  f_offlineimap.py:
+    dst: ~/.offlineimap.py
+    src: offlineimap.py
+  f_offlineimaprc:
+    dst: ~/.offlineimaprc
+    src: offlineimaprc
   f_profile:
     dst: ~/.profile
     src: profile
@@ -163,6 +169,8 @@ profiles:
     - f_xresources
     - f_yaml_linter
     - f_msmtprc
+    - f_offlineimaprc
+    - f_offlineimap.py
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
@@ -206,6 +214,8 @@ profiles:
     - f_xresources
     - f_yaml_linter
     - f_msmtprc
+    - f_offlineimaprc
+    - f_offlineimap.py
   flying-jesusraptor:
     dotfiles:
     - d_bin
@@ -241,6 +251,8 @@ profiles:
     - f_xresources
     - f_yaml_linter
     - f_msmtprc
+    - f_offlineimaprc
+    - f_offlineimap.py
   prodb:
     dotfiles:
     - d_docker

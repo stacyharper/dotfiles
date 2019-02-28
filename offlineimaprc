@@ -1,0 +1,20 @@
+[general]
+pythonfile = ~/.offlineimap.py
+
+[general]
+accounts = personal
+
+[Account personal]
+localrepository = personal-local
+remoterepository = personal-remote
+
+[Repository personal-local]
+type = Maildir
+localfolders = ~/Mails/personal
+
+[Repository personal-remote]
+type = IMAP
+remotehost = mail.misterbanal.net
+remoteuser = contact@eddiebarraco.fr
+remotepasseval = get_pass("db/Email/Contact/contact@eddiebarraco.fr")
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
