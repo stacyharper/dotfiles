@@ -1,5 +1,5 @@
 [general]
-accounts = personal
+accounts = contact_personal
 pythonfile = ~/.offlineimap.py
 maxsyncaccounts = 1
 
@@ -11,17 +11,17 @@ peritem = "+%(accountname)s/%(foldername)s"
 sep = " "
 footer = "\n"
 
-[Account personal]
-localrepository = personal-local
-remoterepository = personal-remote
+[Account contact_personal]
+localrepository = contact_personal-local
+remoterepository = contact_personal-remote
 autorefresh = 0.5
 quick = 10
 
-[Repository personal-local]
+[Repository contact_personal-local]
 type = Maildir
-localfolders = ~/Mail/personal
+localfolders = ~/Mail/contact_personal
 
-[Repository personal-remote]
+[Repository contact_personal-remote]
 type = IMAP
 remotehost = mail.misterbanal.net
 remoteuser = contact@eddiebarraco.fr
@@ -29,3 +29,64 @@ remotepasseval = get_pass("db/Email/Contact/contact@eddiebarraco.fr")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 keepalive = 60
 holdconnectionopen = yes
+
+[Account contact_stacyharper]
+localrepository = contact_stacyharper-local
+remoterepository = contact_stacyharper-remote
+autorefresh = 0.5
+quick = 10
+
+[Repository contact_stacyharper-local]
+type = Maildir
+localfolders = ~/Mail/contact_stacyharper
+
+[Repository contact_stacyharper-remote]
+type = IMAP
+remotehost = mail.misterbanal.net
+remoteuser = contact@eddiebarraco.fr
+remotepasseval = get_pass("db/Email/Contact/contact@eddiebarraco.fr")
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+keepalive = 60
+holdconnectionopen = yes
+
+[Account contact_misterbanal]
+localrepository = contact_misterbanal-local
+remoterepository = contact_misterbanal-remote
+autorefresh = 0.5
+quick = 10
+
+[Repository contact_misterbanal-local]
+type = Maildir
+localfolders = ~/Mail/contact_misterbanal
+
+[Repository contact_misterbanal-remote]
+type = IMAP
+remotehost = mail.misterbanal.net
+remoteuser = contact@eddiebarraco.fr
+remotepasseval = get_pass("db/Email/Contact/contact@eddiebarraco.fr")
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+keepalive = 60
+holdconnectionopen = yes
+
+[Account ubitransport]
+localrepository = ubitransport-local
+remoterepository = ubitransport-remote
+autorefresh = 0.5
+quick = 10
+
+[Repository ubitransport-local]
+type = Maildir
+localfolders = ~/Mail/ubitransport
+
+[Repository ubitransport-remote]
+type = IMAP
+remotehost = imap.gmail.com
+remoteuser = e.barraco@ubitransport.com
+remotepasseval = get_pass("db/Ubitransport/Google")
+nametrans = lambda foldername: re.sub ('^\[gmail\].', '',
+                               re.sub (' ', '_', foldername.lower()))
+folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages']
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+keepalive = 60
+holdconnectionopen = yes
+ssl_version = tls1_2

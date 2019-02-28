@@ -2,4 +2,4 @@
 from subprocess import check_output
 
 def get_pass(key):
-    return check_output('pass ' + key, shell=True).splitlines()[0]
+    return check_output('pass ' + key + "|head -1", shell=True).splitlines()[0]
