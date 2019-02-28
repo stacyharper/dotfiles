@@ -6,3 +6,9 @@ source ~/.mutt/mailboxes
 set spoolfile = "+personal/INBOX"
 set record = "+personal/Sent\ Items"
 set postponed = "+personal/Drafts"
+
+set sendmail="/usr/bin/msmtp"
+set use_from=yes
+set realname="Eddie Barraco"
+set from=contact@eddiebarraco.fr
+set envelope_from=yes
