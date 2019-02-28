@@ -149,6 +149,10 @@ profiles:
     - f_yaml_linter
     variables:
       git_email: e.barraco@ubitransport.com
+      git_smtp_encryption: tls
+      git_smtp_server: smtp.gmail.com
+      git_smtp_port: 587
+      git_smtp_user: e.barraco@ubitransport.com
   flying-jesusraptor:
     dotfiles:
     - d_bin
@@ -229,6 +233,10 @@ profiles:
     - f_tmux
 variables:
   git_email: contact@eddiebarraco.fr
+  git_smtp_encryption: tls
+  git_smtp_server: mail.misterbanal.net
+  git_smtp_port: 587
+  git_smtp_user: contact@eddiebarraco.fr
 dynvariables:
   spotify_username: "pass db/Loisir/Spotify | grep '^login' | tr ': ' '\n' | tail -1"
   spotify_password: "pass db/Loisir/Spotify | head -1"

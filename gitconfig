@@ -26,3 +26,8 @@
 	cmd = nvim -d $LOCAL $REMOTE
 [mergetool "vimdiff"]
 	cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+[sendemail]
+	smtpencryption = {{@@ git_smtp_encryption @@}}
+	smtpserver = {{@@ git_smtp_server @@}}
+	smtpserverport = {{@@ git_smtp_port @@}}
+	smtpuser = {{@@ git_smtp_user @@}}
