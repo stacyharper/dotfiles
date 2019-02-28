@@ -1,0 +1,4 @@
+set from=contact@eddiebarraco.fr
+set spoolfile = "+contact_personal/INBOX"
+set record = "+contact_personal/Sent"
+set postponed = "+contact_personal/Drafts"

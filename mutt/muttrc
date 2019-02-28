@@ -3,12 +3,15 @@ source "~/.mutt/vim-keys.rc"
 # IMAP: offlineimap
 set folder = "~/Mail"
 source ~/.mutt/mailboxes
-set spoolfile = "+contact_personal/INBOX"
-set record = "+contact_personal/Sent\ Items"
-set postponed = "+contact_personal/Drafts"
 
 set sendmail="/usr/bin/msmtp"
 set use_from=yes
 set realname="Eddie Barraco"
-set from=contact@eddiebarraco.fr
 set envelope_from=yes
+
+source ~/.mutt/accounts/contact_personal
+
+folder-hook contact_personal/* source ~/.mutt/accounts/contact_personal
+folder-hook contact_stacyharper/* source ~/.mutt/accounts/contact_stacyharper
+folder-hook contact_misterbanal/* source ~/.mutt/accounts/contact_misterbanal
+folder-hook ubitransport/* source ~/.mutt/accounts/ubitransport

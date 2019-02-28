@@ -1,0 +1,4 @@
+set from=contact@stacyharper.net
+set spoolfile = "+contact_stacyharper/INBOX"
+set record = "+contact_stacyharper/Sent"
+set postponed = "+contact_stacyharper/Drafts"

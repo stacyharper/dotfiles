@@ -1,0 +1,4 @@
+set from=e.barraco@ubitransport.com
+set spoolfile = "+contact_misterbanal/inbox"
+set record = "+contact_misterbanal/messages_envoy&aok-s"
+set postponed = "+contact_misterbanal/brouillons"

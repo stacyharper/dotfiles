@@ -1,0 +1,4 @@
+set from=contact@misterbanal.net
+set spoolfile = "+contact_misterbanal/INBOX"
+set record = "+contact_misterbanal/Sent"
+set postponed = "+contact_misterbanal/Drafts"

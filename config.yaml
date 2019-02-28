@@ -274,4 +274,4 @@ variables:
   git_smtp_port: 587
   git_smtp_server: mail.misterbanal.net
   git_smtp_user: contact@eddiebarraco.fr
-  msmtp_default_profile: personal
+  msmtp_default_profile: contact_personal
