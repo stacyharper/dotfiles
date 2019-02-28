@@ -34,6 +34,9 @@ dotfiles:
   d_i3_status:
     dst: ~/.config/i3status
     src: config/i3status
+  d_mutt:
+    dst: ~/.mutt
+    src: mutt
   d_mopidy:
     dst: ~/.config/mopidy
     src: config/mopidy
@@ -144,6 +147,7 @@ profiles:
     - d_i3
     - d_i3_status
     - d_mopidy
+    - d_mutt
     - d_neovim
     - d_ranger
     - d_ssh
@@ -189,6 +193,7 @@ profiles:
     - d_i3
     - d_i3_status
     - d_mopidy
+    - d_mutt
     - d_neovim
     - d_ranger
     - d_ssh
@@ -226,6 +231,7 @@ profiles:
     - d_i3
     - d_i3_status
     - d_mopidy
+    - d_mutt
     - d_neovim
     - d_ranger
     - d_ssh

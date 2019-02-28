@@ -1,16 +1,25 @@
 [general]
-pythonfile = ~/.offlineimap.py
-
-[general]
 accounts = personal
+pythonfile = ~/.offlineimap.py
+maxsyncaccounts = 1
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"
 
 [Account personal]
 localrepository = personal-local
 remoterepository = personal-remote
+autorefresh = 0.5
+quick = 10
 
 [Repository personal-local]
 type = Maildir
-localfolders = ~/Mails/personal
+localfolders = ~/Mail/personal
 
 [Repository personal-remote]
 type = IMAP
@@ -18,3 +27,5 @@ remotehost = mail.misterbanal.net
 remoteuser = contact@eddiebarraco.fr
 remotepasseval = get_pass("db/Email/Contact/contact@eddiebarraco.fr")
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+keepalive = 60
+holdconnectionopen = yes

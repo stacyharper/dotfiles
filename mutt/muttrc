@@ -1,0 +1,8 @@
+source "~/.mutt/vim-keys.rc"
+
+# IMAP: offlineimap
+set folder = "~/Mail"
+source ~/.mutt/mailboxes
+set spoolfile = "+personal/INBOX"
+set record = "+personal/Sent\ Items"
+set postponed = "+personal/Drafts"
