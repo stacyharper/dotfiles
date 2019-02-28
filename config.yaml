@@ -34,12 +34,12 @@ dotfiles:
   d_i3_status:
     dst: ~/.config/i3status
     src: config/i3status
-  d_mutt:
-    dst: ~/.mutt
-    src: mutt
   d_mopidy:
     dst: ~/.config/mopidy
     src: config/mopidy
+  d_mutt:
+    dst: ~/.mutt
+    src: mutt
   d_neovim:
     dst: ~/.config/nvim
     link_children: true
@@ -94,6 +94,9 @@ dotfiles:
   f_msmtprc:
     dst: ~/.msmtprc
     src: msmtprc
+  f_notmuch-config:
+    dst: ~/.notmuch-config
+    src: notmuch-config
   f_offlineimap.py:
     dst: ~/.offlineimap.py
     src: offlineimap.py
@@ -175,6 +178,7 @@ profiles:
     - f_msmtprc
     - f_offlineimaprc
     - f_offlineimap.py
+    - f_notmuch-config
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
@@ -221,6 +225,7 @@ profiles:
     - f_msmtprc
     - f_offlineimaprc
     - f_offlineimap.py
+    - f_notmuch-config
   flying-jesusraptor:
     dotfiles:
     - d_bin
@@ -259,6 +264,7 @@ profiles:
     - f_msmtprc
     - f_offlineimaprc
     - f_offlineimap.py
+    - f_notmuch-config
   prodb:
     dotfiles:
     - d_docker
