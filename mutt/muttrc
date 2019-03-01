@@ -9,6 +9,8 @@ set use_from=yes
 set realname="Eddie Barraco"
 set envelope_from=yes
 
+auto_view text/html
+
 source ~/.mutt/accounts/contact_personal
 
 folder-hook contact_personal/* source ~/.mutt/accounts/contact_personal

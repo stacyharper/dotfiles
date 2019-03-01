@@ -88,6 +88,9 @@ dotfiles:
   f_ledger:
     dst: ~/.ledgerrc
     src: ledgerrc
+  f_mailcap:
+    dst: ~/.mailcap
+    src: mailcap
   f_mopidy_service:
     dst: ~/.config/systemd/user/mopidy.service
     src: config/systemd/user/mopidy.service
@@ -131,7 +134,7 @@ dotfiles:
     dst: ~/.yamllintrc
     src: yamllintrc
 dynvariables:
-  home_dir_path: 'echo $HOME'
+  home_dir_path: echo $HOME
   spotify_client_id: 'pass db/Loisir/Spotify | grep ''^client_id'' | tr '': '' ''
 
     '' | tail -1'
@@ -184,6 +187,7 @@ profiles:
     - f_offlineimapservice
     - f_offlineimap.py
     - f_notmuch-config
+    - f_mailcap
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
@@ -231,6 +235,7 @@ profiles:
     - f_offlineimaprc
     - f_offlineimap.py
     - f_notmuch-config
+    - f_mailcap
   flying-jesusraptor:
     dotfiles:
     - d_bin
@@ -270,6 +275,7 @@ profiles:
     - f_offlineimaprc
     - f_offlineimap.py
     - f_notmuch-config
+    - f_mailcap
   prodb:
     dotfiles:
     - d_docker
