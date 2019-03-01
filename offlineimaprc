@@ -83,9 +83,6 @@ type = IMAP
 remotehost = imap.gmail.com
 remoteuser = e.barraco@ubitransport.com
 remotepasseval = get_pass("db/Ubitransport/Google")
-nametrans = lambda foldername: re.sub ('^\[gmail\].', '',
-                               re.sub (' ', '_', foldername.lower()))
-folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages']
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 keepalive = 60
 holdconnectionopen = yes
