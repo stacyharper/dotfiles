@@ -1,7 +1,7 @@
 source "~/.mutt/vim-keys.rc"
 
 # IMAP: offlineimap
-set folder = "~/Mail"
+set folder = "~/.mails"
 source ~/.mutt/mailboxes
 
 set sendmail="/usr/bin/msmtp"

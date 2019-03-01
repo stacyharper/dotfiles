@@ -19,7 +19,7 @@ quick = 10
 
 [Repository contact_personal-local]
 type = Maildir
-localfolders = ~/Mail/contact_personal
+localfolders = ~/.mails/contact_personal
 
 [Repository contact_personal-remote]
 type = IMAP
@@ -38,7 +38,7 @@ quick = 10
 
 [Repository contact_stacyharper-local]
 type = Maildir
-localfolders = ~/Mail/contact_stacyharper
+localfolders = ~/.mails/contact_stacyharper
 
 [Repository contact_stacyharper-remote]
 type = IMAP
@@ -57,7 +57,7 @@ quick = 10
 
 [Repository contact_misterbanal-local]
 type = Maildir
-localfolders = ~/Mail/contact_misterbanal
+localfolders = ~/.mails/contact_misterbanal
 
 [Repository contact_misterbanal-remote]
 type = IMAP
@@ -76,7 +76,7 @@ quick = 10
 
 [Repository ubitransport-local]
 type = Maildir
-localfolders = ~/Mail/ubitransport
+localfolders = ~/.mails/ubitransport
 
 [Repository ubitransport-remote]
 type = IMAP
