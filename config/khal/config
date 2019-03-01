@@ -1,0 +1,9 @@
+[calendars]
+
+  [[personal]]
+    path = ~/.calendars/personal-calendar/
+    color = dark green
+
+  [[birthday]]
+    path = ~/.calendars/contact_birthdays/
+    readonly = True
