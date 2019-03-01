@@ -103,6 +103,9 @@ dotfiles:
   f_offlineimaprc:
     dst: ~/.offlineimaprc
     src: offlineimaprc
+  f_offlineimapservice:
+    dst: ~/.config/systemd/user/offlineimap@.service
+    src: config/systemd/user/offlineimap@.service
   f_profile:
     dst: ~/.profile
     src: profile
@@ -177,6 +180,7 @@ profiles:
     - f_yaml_linter
     - f_msmtprc
     - f_offlineimaprc
+    - f_offlineimapservice
     - f_offlineimap.py
     - f_notmuch-config
     variables:
