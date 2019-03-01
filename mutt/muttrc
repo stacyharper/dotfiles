@@ -10,6 +10,8 @@ set realname="Eddie Barraco"
 set envelope_from=yes
 
 auto_view text/html
+macro index \cb |urlview\n
+macro pager \cb |urlview\n
 
 source ~/.mutt/accounts/contact_personal
 
