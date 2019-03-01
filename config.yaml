@@ -34,6 +34,9 @@ dotfiles:
   d_i3_status:
     dst: ~/.config/i3status
     src: config/i3status
+  d_khal:
+    dst: ~/.config/khal
+    src: config/khal
   d_mopidy:
     dst: ~/.config/mopidy
     src: config/mopidy
@@ -60,6 +63,9 @@ dotfiles:
   d_tmux:
     dst: ~/.tmux.d
     src: tmux.d
+  d_vdirsyncer:
+    dst: ~/.config/vdirsyncer
+    src: config/vdirsyncer
   d_vim:
     dst: ~/.vim
     link_children: true
@@ -188,6 +194,8 @@ profiles:
     - f_offlineimap.py
     - f_notmuch-config
     - f_mailcap
+    - d_vdirsyncer
+    - d_khal
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
@@ -236,6 +244,8 @@ profiles:
     - f_offlineimap.py
     - f_notmuch-config
     - f_mailcap
+    - d_vdirsyncer
+    - d_khal
   flying-jesusraptor:
     dotfiles:
     - d_bin
@@ -276,6 +286,8 @@ profiles:
     - f_offlineimap.py
     - f_notmuch-config
     - f_mailcap
+    - d_vdirsyncer
+    - d_khal
   prodb:
     dotfiles:
     - d_docker
