@@ -131,6 +131,7 @@ dotfiles:
     dst: ~/.yamllintrc
     src: yamllintrc
 dynvariables:
+  home_dir_path: 'echo $HOME'
   spotify_client_id: 'pass db/Loisir/Spotify | grep ''^client_id'' | tr '': '' ''
 
     '' | tail -1'
