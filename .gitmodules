@@ -76,3 +76,6 @@
 [submodule "vim/pack/other/start/dbext.vim"]
 	path = vim/pack/other/start/dbext.vim
 	url = https://github.com/vim-scripts/dbext.vim.git
+[submodule "vim/pack/other/start/emmet-vim"]
+	path = vim/pack/other/start/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
