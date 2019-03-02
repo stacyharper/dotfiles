@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo $1 | qrencode --size 10 -o - | feh  -x -g +200+200 -
