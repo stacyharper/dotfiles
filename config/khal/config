@@ -7,3 +7,10 @@
   [[birthday]]
     path = ~/.calendars/contact_birthdays/
     readonly = True
+
+[locale]
+timeformat= %H:%M
+dateformat= %m.%d
+longdateformat= %Y.%m.%d
+datetimeformat= %m.%d %H:%M
+longdatetimeformat= %Y.%m.%d %H:%M
