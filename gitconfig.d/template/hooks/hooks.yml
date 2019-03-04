@@ -8,6 +8,13 @@ config:
             - "ctags"
             - "--options=$HOME/.ctags"
             - "--recurse"
+        lint_php:
+            - "bash"
+            - "$GIT_DIR/bin/lint.sh"
+            - "-ephp"
+            - "-lphp-cs-fixer"
+            - "-o--rules=@Symfony fix"
+            - "-r--dry-run"
     events:
         post-checkout:
             - "welcome_message"
