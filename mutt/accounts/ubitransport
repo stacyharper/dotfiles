@@ -1,4 +1,4 @@
 set from=e.barraco@ubitransport.com
-set spoolfile = "+contact_misterbanal/inbox"
-set record = "+contact_misterbanal/messages_envoy&aok-s"
-set postponed = "+contact_misterbanal/brouillons"
+set spoolfile = "+ubitransport/INBOX"
+set record = "+ubitransport/Messages_envoyés"
+set postponed = "+ubitransport/Brouillons"

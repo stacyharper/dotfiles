@@ -203,6 +203,7 @@ profiles:
       git_smtp_server: smtp.gmail.com
       git_smtp_user: e.barraco@ubitransport.com
       msmtp_default_profile: ubitransport
+      mutt_default_context: ubitransport
   Terminator:
     dotfiles:
     - d_beet
@@ -304,3 +305,4 @@ variables:
   git_smtp_server: mail.misterbanal.net
   git_smtp_user: contact@eddiebarraco.fr
   msmtp_default_profile: contact_personal
+  mutt_default_context: contact_personal

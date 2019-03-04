@@ -13,7 +13,7 @@ auto_view text/html
 macro index \co |urlview\n
 macro pager \co |urlview\n
 
-source ~/.mutt/accounts/contact_personal
+source ~/.mutt/accounts/{{@@ mutt_default_context @@}}
 
 folder-hook contact_personal/* source ~/.mutt/accounts/contact_personal
 folder-hook contact_stacyharper/* source ~/.mutt/accounts/contact_stacyharper

@@ -1,3 +1,5 @@
+[default]
+default_calendar = personal
 [calendars]
 
   [[personal]]
