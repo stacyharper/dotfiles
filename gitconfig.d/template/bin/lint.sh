@@ -1,7 +1,7 @@
 #!/bin/sh
 
 usage() {
-	echo "Usage: $0 [ -o OUTPUT ] -p PERSON -a ACTION -f FEELINGS -n NEEDS" 1>&2
+	echo "Usage: $0 -e EXTENSION LINTER" 1>&2
 }
 
 exit_abnormal() {
@@ -9,37 +9,26 @@ exit_abnormal() {
 	exit 1
 }
 
-while getopts "e:l:r:o:" options; do
-	case "${options}" in
-		e)
-			extension=${OPTARG}
+options=$(getopt -l "extension:" -o "+e:" -a -- "$@")
+eval set -- "$options"
+while true
+do
+	case $1 in
+		-e|--extension)
+			shift
+			export extension=$1
 			;;
-		l)
-			linter=${OPTARG}
-			;;
-		o)
-			linter_options=${OPTARG}
-			;;
-		r)
-			linter_dry_run=${OPTARG}
-			;;
-		:)
-			echo "Error: -${OPTARG} requires an argument."
-			exit_abnormal
-			;;
-		*)
-			exit_abnormal
-			;;
+		--)
+			shift
+			break;;
 	esac
+	shift
 done
 
-
-if [ -z "$extension" ] || [ -z "$linter" ]
+if [ -z "$extension" ]
 then
 	exit_abnormal
 fi
-
-[ -z "$linter_dry_run" ] && linter_dry_run=$linter
 
 git diff --cached --name-status | grep ".$extension$" | sed 's/^\w\s//' | while read -r file
 do
@@ -48,13 +37,17 @@ do
 	tmp_file=$(mktemp --suffix=-FIXED)
 	cat "$staged_file" > "$tmp_file"
 
-	$linter $linter_options $linter_dry_run "$tmp_file" >> /dev/null
-
+	$@ "$tmp_file" >> /dev/null
 	if [ $? -ne 0 ]
 	then
-		$linter $linter_options "$tmp_file" >> /dev/null 2>&1
-		diff -u "$staged_file" "$tmp_file"
-		echo "Correct this:"
+		echo "A problem occured"
+		exit 1
+	fi
+
+	diff -u "$tmp_file" "$staged_file"
+	if [ $? -eq 1 ]
+	then
+		echo "Correct this with:"
 		echo "diff -u \"$staged_file\" \"$tmp_file\" | patch \"$file\""
 		exit 1
 	fi
