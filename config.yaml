@@ -204,6 +204,7 @@ profiles:
       git_smtp_user: e.barraco@ubitransport.com
       msmtp_default_profile: ubitransport
       mutt_default_context: ubitransport
+      khal_default_calendar: ubitransport
   Terminator:
     dotfiles:
     - d_beet
@@ -306,3 +307,4 @@ variables:
   git_smtp_user: contact@eddiebarraco.fr
   msmtp_default_profile: contact_personal
   mutt_default_context: contact_personal
+  khal_default_calendar: personal

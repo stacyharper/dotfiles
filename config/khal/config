@@ -1,5 +1,5 @@
 [default]
-default_calendar = personal
+default_calendar = {{@@ khal_default_calendar @@}}
 [calendars]
 
   [[personal]]
@@ -9,6 +9,10 @@ default_calendar = personal
   [[birthday]]
     path = ~/.calendars/personal/contact_birthdays/
     readonly = True
+
+  [[ubitransport]]
+    path = ~/.calendars/ubitransport/e.barraco@ubitransport.com/
+    color = yellow
 
 [locale]
 timeformat= %H:%M
