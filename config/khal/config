@@ -3,11 +3,11 @@ default_calendar = personal
 [calendars]
 
   [[personal]]
-    path = ~/.calendars/personal-calendar/
+    path = ~/.calendars/personal/personal-calendar/
     color = dark green
 
   [[birthday]]
-    path = ~/.calendars/contact_birthdays/
+    path = ~/.calendars/personal/contact_birthdays/
     readonly = True
 
 [locale]

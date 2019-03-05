@@ -23,7 +23,6 @@ metadata = ["displayname"]
 #   `"b wins"` - assume b's items to be more up-to-date
 #conflict_resolution = null
 
-# CARDDAV
 [storage personal_contacts_local]
 type = "filesystem"
 path = "~/.contacts/"
@@ -33,7 +32,7 @@ fileext = ".vcf"
 type = "carddav"
 url = "https://nextcloud.misterbanal.net/remote.php/dav"
 username = "ReedWade"
-password.fetch = ["command", "{{@@ home_dir_path @@}}/bin/passfirst", "db/Internet/Nextcloud", "|head -1"]
+password.fetch = ["command", "{{@@ home_dir_path @@}}/bin/passfirst", "db/Internet/Nextcloud"]
 
 # CALDAV
 [pair personal_calendar]
@@ -44,11 +43,28 @@ metadata = ["displayname", "color"]
 
 [storage personal_calendar_local]
 type = "filesystem"
-path = "~/.calendars/"
+path = "~/.calendars/personal"
 fileext = ".ics"
 
 [storage personal_calendar_remote]
 type = "caldav"
 url = "https://nextcloud.misterbanal.net/remote.php/dav"
 username = "ReedWade"
-password.fetch = ["command", "{{@@ home_dir_path @@}}/bin/passfirst", "db/Internet/Nextcloud", "|head -1"]
+password.fetch = ["command", "{{@@ home_dir_path @@}}/bin/passfirst", "db/Internet/Nextcloud"]
+
+[pair ubitransport_calendar]
+a = "ubitransport_calendar_local"
+b = "ubitransport_calendar_remote"
+collections = ["from a", "from b"]
+metadata = ["displayname", "color"]
+
+[storage ubitransport_calendar_local]
+type = "filesystem"
+path = "~/.calendars/ubitransport"
+fileext = ".ics"
+
+[storage ubitransport_calendar_remote]
+type = "google_calendar"
+token_file = "~/.vdirsyncer/ubitransport_token"
+client_id = "783826650092-h3hnd8fnbm0sr5nv4vo3h82ika97b8i9.apps.googleusercontent.com"
+client_secret = "E0EdRmsD_WpO7FKoL-xUvK82"
