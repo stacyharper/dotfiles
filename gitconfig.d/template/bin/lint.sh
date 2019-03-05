@@ -44,7 +44,7 @@ do
 		exit 1
 	fi
 
-	diff -u "$tmp_file" "$staged_file"
+	diff -u "$staged_file" "$tmp_file"
 	if [ $? -eq 1 ]
 	then
 		echo "Correct this with:"
