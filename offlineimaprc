@@ -88,6 +88,5 @@ keepalive = 60
 holdconnectionopen = yes
 ssl_version = tls1_2
 nametrans = lambda foldername: re.sub ('^\[Gmail\].', '',
-                               re.sub ('Messages_envoy&AOk-s', 'Messages_envoyés',
-                               re.sub (' ', '_', foldername)))
+                               re.sub (' ', '_', foldername))
 folderfilter = lambda foldername: foldername not in ['[Gmail]/Tous les messages', '[Gmail]/Important']
