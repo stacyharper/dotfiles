@@ -1,7 +1,7 @@
 general {
-	color_good = "#006CA5"
-	color_bad = "#913E88"
-	color_degraded = "#A43261"
+	color_good = "#006ca5"
+	color_bad = "#913e88"
+	color_degraded = "#a43261"
 }
 
 
