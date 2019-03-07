@@ -44,32 +44,31 @@ scrollback_lines = 10000
 #cursor = #dcdccc
 #cursor_foreground = #dcdccc
 
-foreground = #919191
-#foreground_bold = #ffffff
-background = #1D1F21
-
 # 20% background transparency (requires a compositor)
 #background = rgba(63, 63, 63, 0.8)
 
 # If unset, will reverse foreground and background
 highlight = #2f2f2f
 
-color0 = #303030
-color8 = #5e5e5e
-color1 = #a43261
-color9 = #ff9fc9
-color2 = #006ca5
-color10 = #3bd6ff
-color3 = #007086
-color11 = #00ddf4
-color4 = #6751a6
-color12 = #d5b8ff
-color5 = #913e88
-color13 = #ffa7f6
-color6 = #0061b1
-color14 = #93c9ff
-color7 = #c6c6c6
-color15 = #ffffff
+foreground = {{@@ colors.foreground @@}}
+background = {{@@ colors.background @@}}
+cursor = {{@@ colors.cursor @@}}
+color0 = {{@@ colors.color0 @@}}
+color1 = {{@@ colors.color1 @@}}
+color2 = {{@@ colors.color2 @@}}
+color3 = {{@@ colors.color3 @@}}
+color4 = {{@@ colors.color4 @@}}
+color5 = {{@@ colors.color5 @@}}
+color6 = {{@@ colors.color6 @@}}
+color7 = {{@@ colors.color7 @@}}
+color8 = {{@@ colors.color8 @@}}
+color9 = {{@@ colors.color9 @@}}
+color10 = {{@@ colors.color10 @@}}
+color11 = {{@@ colors.color11 @@}}
+color12 = {{@@ colors.color12 @@}}
+color13 = {{@@ colors.color13 @@}}
+color14 = {{@@ colors.color14 @@}}
+color15 = {{@@ colors.color15 @@}}
 
 [hints]
 #font = Monospace 12

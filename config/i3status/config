@@ -1,7 +1,7 @@
 general {
-	color_good = "#006ca5"
-	color_bad = "#913e88"
-	color_degraded = "#a43261"
+	color_good = "{{@@ colors.color2 @@}}"
+	color_bad = "{{@@ colors.color5 @@}}"
+	color_degraded = "{{@@ colors.color1 @@}}"
 }
 
 

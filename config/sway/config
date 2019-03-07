@@ -4,7 +4,7 @@ set $mod Mod4
 # Your preferred terminal emulator
 set $term termite
 # Your preferred application launcher
-set $menu dmenu_run -nf '#888888' -nb '#222222' -sb '#913e88' -sf '#ecf0f1'
+set $menu dmenu_run -nf '#888888' -nb '#222222' -sb '{{@@ colors.color5 @@}}' -sf '#ecf0f1'
 #set $menu synapse
 set $passmenu ~/bin/passmenu
 
@@ -188,16 +188,16 @@ bar {
 	position bottom
 	#mode hide # dock|invisible|hide
 	colors {
-		background #1D1F21
+		background {{@@ colors.background @@}}
 		statusline #dcdde1
 		separator #f5f6fa
 
 		# <colorclass>     <border> <background> <text>
-		focused_workspace  #a43261  #913e88      #ffffff
-		active_workspace   #333333  #5f676a      #ffffff
+		focused_workspace  {{@@ colors.color1 @@}}  {{@@ colors.color5 @@}}      {{@@ colors.color15 @@}}
+		active_workspace   #333333  #5f676a      {{@@ colors.color15 @@}}
 		inactive_workspace #333333  #222222      #888888
-		urgent_workspace   #2f343a  #ffa7f6      #ffffff
-		binding_mode       #2f343a  #ffa7f6      #ffffff
+		urgent_workspace   #2f343a  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
+		binding_mode       #2f343a  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
     }
 }
 
@@ -224,12 +224,12 @@ bindsym $mod+t border toggle
 hide_edge_borders smart
 
 # class                 border  backgr. text    indicator child_border
-client.focused          #a43261 #913e88 #ecf0f1 #93c9ff   #a43261
-client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+client.focused          {{@@ colors.color1 @@}} {{@@ colors.color5 @@}} #ecf0f1 {{@@ colors.color14 @@}}   {{@@ colors.color1 @@}}
+client.focused_inactive #333333 #5f676a {{@@ colors.color15 @@}} #484e50   #5f676a
 client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a #ffa7f6 #ffffff #ffa7f6   #ffa7f6
-client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+client.urgent           #2f343a {{@@ colors.color13 @@}} {{@@ colors.color15 @@}} {{@@ colors.color13 @@}}   {{@@ colors.color13 @@}}
+client.placeholder      #000000 #0c0c0c {{@@ colors.color15 @@}} #000000   #0c0c0c
 
-client.background       #ffffff
+client.background       {{@@ colors.color15 @@}}
 
 exec --no-startup-id nextcloud

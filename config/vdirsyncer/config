@@ -32,7 +32,7 @@ fileext = ".vcf"
 type = "carddav"
 url = "https://nextcloud.misterbanal.net/remote.php/dav"
 username = "ReedWade"
-password.fetch = ["command", "{{@@ home_dir_path @@}}/bin/passfirst", "db/Internet/Nextcloud"]
+password.fetch = ["command", "{{@@ env['HOME'] @@}}/bin/passfirst", "db/Internet/Nextcloud"]
 
 # CALDAV
 [pair personal_calendar]
@@ -50,7 +50,7 @@ fileext = ".ics"
 type = "caldav"
 url = "https://nextcloud.misterbanal.net/remote.php/dav"
 username = "ReedWade"
-password.fetch = ["command", "{{@@ home_dir_path @@}}/bin/passfirst", "db/Internet/Nextcloud"]
+password.fetch = ["command", "{{@@ env['HOME'] @@}}/bin/passfirst", "db/Internet/Nextcloud"]
 
 [pair ubitransport_calendar]
 a = "ubitransport_calendar_local"

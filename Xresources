@@ -8,39 +8,22 @@ xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*termName: xterm-256color
 xterm*eightBitInput: false
 
-! special
-*.foreground:   #919191
-*.background:   #1D1F21
-*.cursorColor:  #919191
-
-! black
-*.color0:       #303030
-*.color8:       #5e5e5e
-
-! red
-*.color1:       #a43261
-*.color9:       #ff9fc9
-
-! green
-*.color2:       #006ca5
-*.color10:      #3bd6ff
-
-! yellow
-*.color3:       #007086
-*.color11:      #00ddf4
-
-! blue
-*.color4:       #6751a6
-*.color12:      #d5b8ff
-
-! magenta
-*.color5:       #913e88
-*.color13:      #ffa7f6
-
-! cyan
-*.color6:       #0061b1
-*.color14:      #93c9ff
-
-! white
-*.color7:       #c6c6c6
-*.color15:      #ffffff
+*.foreground: {{@@ colors.foreground @@}}
+*.background: {{@@ colors.background @@}}
+*.cursorColor: {{@@ colors.cursor @@}}
+*.color0: {{@@ colors.color0 @@}}
+*.color1: {{@@ colors.color1 @@}}
+*.color2: {{@@ colors.color2 @@}}
+*.color3: {{@@ colors.color3 @@}}
+*.color4: {{@@ colors.color4 @@}}
+*.color5: {{@@ colors.color5 @@}}
+*.color6: {{@@ colors.color6 @@}}
+*.color7: {{@@ colors.color7 @@}}
+*.color8: {{@@ colors.color8 @@}}
+*.color9: {{@@ colors.color9 @@}}
+*.color10: {{@@ colors.color10 @@}}
+*.color11: {{@@ colors.color11 @@}}
+*.color12: {{@@ colors.color12 @@}}
+*.color13: {{@@ colors.color13 @@}}
+*.color14: {{@@ colors.color14 @@}}
+*.color15: {{@@ colors.color15 @@}}

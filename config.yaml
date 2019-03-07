@@ -1,3 +1,4 @@
+---
 config:
   backup: true
   banner: true
@@ -9,6 +10,8 @@ config:
   longkey: false
   showdiff: false
   workdir: ~/.config/dotdrop
+  import_variables:
+    - colors/hybrid.yaml
 dotfiles:
   d_bash:
     dst: ~/.bash.d
@@ -143,7 +146,6 @@ dotfiles:
     dst: ~/.yamllintrc
     src: yamllintrc
 dynvariables:
-  home_dir_path: echo $HOME
   spotify_client_id: 'pass db/Loisir/Spotify | grep ''^client_id'' | tr '': '' ''
 
     '' | tail -1'
@@ -158,48 +160,48 @@ dynvariables:
 profiles:
   LAPTOP-EBARRACO:
     dotfiles:
-    - d_bin
-    - d_desktop
-    - d_dunst
-    - d_docker
-    - d_git
-    - d_i3
-    - d_i3_status
-    - d_mopidy
-    - d_mutt
-    - d_neovim
-    - d_ranger
-    - d_ssh
-    - d_sway
-    - d_termite
-    - d_tmux
-    - d_vim
-    - f_abcde
-    - f_bash
-    - f_bash_aliases
-    - f_bash_profile
-    - f_ctags
-    - f_git
-    - f_git_ignore
-    - f_ledger
-    - f_mopidy_service
-    - f_profile
-    - f_silver_search_ag
-    - f_tmux
-    - f_xdg_dirs
-    - f_xinit
-    - f_xprofile
-    - f_xresources
-    - f_yaml_linter
-    - f_msmtprc
-    - f_offlineimaprc
-    - f_offlineimapservice
-    - f_offlineimap.py
-    - f_notmuch-config
-    - f_mailcap
-    - d_vdirsyncer
-    - d_khal
-    - d_bash
+      - d_bin
+      - d_desktop
+      - d_dunst
+      - d_docker
+      - d_git
+      - d_i3
+      - d_i3_status
+      - d_mopidy
+      - d_mutt
+      - d_neovim
+      - d_ranger
+      - d_ssh
+      - d_sway
+      - d_termite
+      - d_tmux
+      - d_vim
+      - f_abcde
+      - f_bash
+      - f_bash_aliases
+      - f_bash_profile
+      - f_ctags
+      - f_git
+      - f_git_ignore
+      - f_ledger
+      - f_mopidy_service
+      - f_profile
+      - f_silver_search_ag
+      - f_tmux
+      - f_xdg_dirs
+      - f_xinit
+      - f_xprofile
+      - f_xresources
+      - f_yaml_linter
+      - f_msmtprc
+      - f_offlineimaprc
+      - f_offlineimapservice
+      - f_offlineimap.py
+      - f_notmuch-config
+      - f_mailcap
+      - d_vdirsyncer
+      - d_khal
+      - d_bash
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
@@ -211,100 +213,100 @@ profiles:
       mutt_default_context: ubitransport
   Terminator:
     dotfiles:
-    - d_beet
-    - d_bin
-    - d_desktop
-    - d_dunst
-    - d_docker
-    - d_git
-    - d_i3
-    - d_i3_status
-    - d_mopidy
-    - d_mutt
-    - d_neovim
-    - d_ranger
-    - d_ssh
-    - d_sway
-    - d_termite
-    - d_tmux
-    - d_vim
-    - f_abcde
-    - f_bash
-    - f_bash_aliases
-    - f_bash_profile
-    - f_ctags
-    - f_git
-    - f_git_ignore
-    - f_ledger
-    - f_mopidy_service
-    - f_profile
-    - f_silver_search_ag
-    - f_tmux
-    - f_xdg_dirs
-    - f_xinit
-    - f_xprofile
-    - f_xresources
-    - f_yaml_linter
-    - f_msmtprc
-    - f_offlineimaprc
-    - f_offlineimap.py
-    - f_notmuch-config
-    - f_mailcap
-    - d_vdirsyncer
-    - d_khal
-    - d_bash
+      - d_beet
+      - d_bin
+      - d_desktop
+      - d_dunst
+      - d_docker
+      - d_git
+      - d_i3
+      - d_i3_status
+      - d_mopidy
+      - d_mutt
+      - d_neovim
+      - d_ranger
+      - d_ssh
+      - d_sway
+      - d_termite
+      - d_tmux
+      - d_vim
+      - f_abcde
+      - f_bash
+      - f_bash_aliases
+      - f_bash_profile
+      - f_ctags
+      - f_git
+      - f_git_ignore
+      - f_ledger
+      - f_mopidy_service
+      - f_profile
+      - f_silver_search_ag
+      - f_tmux
+      - f_xdg_dirs
+      - f_xinit
+      - f_xprofile
+      - f_xresources
+      - f_yaml_linter
+      - f_msmtprc
+      - f_offlineimaprc
+      - f_offlineimap.py
+      - f_notmuch-config
+      - f_mailcap
+      - d_vdirsyncer
+      - d_khal
+      - d_bash
   flying-jesusraptor:
     dotfiles:
-    - d_bin
-    - d_desktop
-    - d_dunst
-    - d_docker
-    - d_git
-    - d_i3
-    - d_i3_status
-    - d_mopidy
-    - d_mutt
-    - d_neovim
-    - d_ranger
-    - d_ssh
-    - d_sway
-    - d_termite
-    - d_tmux
-    - d_vim
-    - f_abcde
-    - f_bash
-    - f_bash_aliases
-    - f_bash_profile
-    - f_ctags
-    - f_git
-    - f_git_ignore
-    - f_ledger
-    - f_mopidy_service
-    - f_profile
-    - f_silver_search_ag
-    - f_tmux
-    - f_xdg_dirs
-    - f_xinit
-    - f_xprofile
-    - f_xresources
-    - f_yaml_linter
-    - f_msmtprc
-    - f_offlineimaprc
-    - f_offlineimap.py
-    - f_notmuch-config
-    - f_mailcap
-    - d_vdirsyncer
-    - d_khal
-    - d_bash
+      - d_bin
+      - d_desktop
+      - d_dunst
+      - d_docker
+      - d_git
+      - d_i3
+      - d_i3_status
+      - d_mopidy
+      - d_mutt
+      - d_neovim
+      - d_ranger
+      - d_ssh
+      - d_sway
+      - d_termite
+      - d_tmux
+      - d_vim
+      - f_abcde
+      - f_bash
+      - f_bash_aliases
+      - f_bash_profile
+      - f_ctags
+      - f_git
+      - f_git_ignore
+      - f_ledger
+      - f_mopidy_service
+      - f_profile
+      - f_silver_search_ag
+      - f_tmux
+      - f_xdg_dirs
+      - f_xinit
+      - f_xprofile
+      - f_xresources
+      - f_yaml_linter
+      - f_msmtprc
+      - f_offlineimaprc
+      - f_offlineimap.py
+      - f_notmuch-config
+      - f_mailcap
+      - d_vdirsyncer
+      - d_khal
+      - d_bash
   prodb:
     dotfiles:
-    - d_docker
-    - d_vim
-    - d_neovim
-    - f_bash
-    - f_bash_aliases
-    - f_bash_profile
-    - f_tmux
+      - d_docker
+      - d_vim
+      - d_neovim
+      - f_bash
+      - f_bash_aliases
+      - f_bash_profile
+      - f_tmux
 variables:
   git_email: contact@eddiebarraco.fr
   git_smtp_encryption: tls
@@ -314,3 +316,23 @@ variables:
   khal_default_calendar: personal
   msmtp_default_profile: contact_personal
   mutt_default_context: contact_personal
+  colors:
+    foreground: "#919191"
+    background: "#1D1F21"
+    cursor: "#919191"
+    color0: "#303030"
+    color1: "#a43261"
+    color2: "#006ca5"
+    color3: "#007086"
+    color4: "#6751a6"
+    color5: "#913e88"
+    color6: "#0061b1"
+    color7: "#c6c6c6"
+    color8: "#5e5e5e"
+    color9: "#ff9fc9"
+    color10: "#3bd6ff"
+    color11: "#00ddf4"
+    color12: "#d5b8ff"
+    color13: "#ffa7f6"
+    color14: "#93c9ff"
+    color15: "#ffffff"
