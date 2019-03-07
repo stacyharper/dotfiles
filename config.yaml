@@ -10,6 +10,9 @@ config:
   showdiff: false
   workdir: ~/.config/dotdrop
 dotfiles:
+  d_bash:
+    dst: ~/.bash.d
+    src: bash.d
   d_beet:
     dst: ~/.config/beets
     src: config/beets
@@ -196,15 +199,16 @@ profiles:
     - f_mailcap
     - d_vdirsyncer
     - d_khal
+    - d_bash
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
       git_smtp_port: 587
       git_smtp_server: smtp.gmail.com
       git_smtp_user: e.barraco@ubitransport.com
+      khal_default_calendar: ubitransport
       msmtp_default_profile: ubitransport
       mutt_default_context: ubitransport
-      khal_default_calendar: ubitransport
   Terminator:
     dotfiles:
     - d_beet
@@ -248,6 +252,7 @@ profiles:
     - f_mailcap
     - d_vdirsyncer
     - d_khal
+    - d_bash
   flying-jesusraptor:
     dotfiles:
     - d_bin
@@ -290,6 +295,7 @@ profiles:
     - f_mailcap
     - d_vdirsyncer
     - d_khal
+    - d_bash
   prodb:
     dotfiles:
     - d_docker
@@ -305,6 +311,6 @@ variables:
   git_smtp_port: 587
   git_smtp_server: mail.misterbanal.net
   git_smtp_user: contact@eddiebarraco.fr
+  khal_default_calendar: personal
   msmtp_default_profile: contact_personal
   mutt_default_context: contact_personal
-  khal_default_calendar: personal

@@ -29,3 +29,11 @@ stty -ixon  # Disable the CTRL+s freeze to allow backward search
 export EDITOR=/usr/bin/vim
 
 source ~/.bash_aliases
+
+if [ -d ~/.bash.d ]
+then
+	for file in ~/.bash.d/*
+	do
+		source "$file"
+	done
+fi
