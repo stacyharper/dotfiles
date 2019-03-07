@@ -158,7 +158,11 @@ bar {
 	#mode hide # dock|invisible|hide
 	colors {
 		background {{@@ colors.background @@}}
-		statusline #dcdde1
+		{%@@ if colors.theme == 'light' @@%}
+		statusline {{@@ colors.color7 @@}}
+		{% else %}
+		statusline {{@@ colors.color8 @@}}
+		{%@@ endif @@%}
 		separator #f5f6fa
 
 		# <colorclass>     <border> <background> <text>

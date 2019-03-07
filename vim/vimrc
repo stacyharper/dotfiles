@@ -3,7 +3,7 @@ filetype indent on
 syntax on
 
 colorscheme dim
-set background=dark
+set background={{@@ colors.theme @@}}
 "set cindent
 set cpoptions+=d
 set cursorline
