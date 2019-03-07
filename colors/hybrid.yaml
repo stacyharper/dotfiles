@@ -1,6 +1,7 @@
 ---
 variables:
   colors:
+    theme: dark
     foreground: "#919191"
     background: "#1D1F21"
     cursor: "#919191"
