@@ -2,7 +2,7 @@ filetype plugin on
 filetype indent on
 syntax on
 
-colorscheme hybrid
+colorscheme dim
 set background=dark
 "set cindent
 set cpoptions+=d
