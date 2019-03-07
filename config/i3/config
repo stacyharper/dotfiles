@@ -160,7 +160,7 @@ bar {
 		background {{@@ colors.background @@}}
 		{%@@ if colors.theme == 'light' @@%}
 		statusline {{@@ colors.color7 @@}}
-		{% else %}
+		{%@@ else @@%}
 		statusline {{@@ colors.color8 @@}}
 		{%@@ endif @@%}
 		separator #f5f6fa
