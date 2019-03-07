@@ -1,4 +1,5 @@
 source "~/.mutt/vim-keys.rc"
+source "~/.mutt/colors.rc"
 
 # IMAP: offlineimap
 set folder = "~/.mails"
