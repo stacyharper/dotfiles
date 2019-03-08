@@ -11,7 +11,7 @@ config:
   showdiff: false
   workdir: ~/.config/dotdrop
   import_variables:
-    - colors/hybrid.yaml
+    - colors/solarized-dark.yaml
 dotfiles:
   d_bash:
     dst: ~/.bash.d
