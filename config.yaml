@@ -316,3 +316,6 @@ variables:
   khal_default_calendar: personal
   msmtp_default_profile: contact_personal
   mutt_default_context: contact_personal
+  font_lib: pango
+  font_name: Hack
+  font_size: 11

@@ -1,7 +1,7 @@
 XTerm*selectToClipboard:true
 
-XTerm*faceName: Hack
-xterm*faceSize: 11
+XTerm*faceName: {{@@ font_name @@}}
+xterm*faceSize: {{@@ font_size @@}}
 xterm*vt100*geometry: 80x60
 xterm*saveLines: 16384
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
