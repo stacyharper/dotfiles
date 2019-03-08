@@ -2,7 +2,7 @@ set $mod Mod4
 # Your preferred terminal emulator
 set $term xterm
 # Your preferred application launcher
-set $menu dmenu_run -nf '#888888' -nb '#222222' -sb '{{@@ colors.color5 @@}}' -sf '#ecf0f1'
+set $menu dmenu_run -nf '{{@@ colors.foreground @@}}' -nb '{{@@ colors.background @@}}' -sb '{{@@ colors.color5 @@}}' -sf '{{@@ colors.color15 @@}}'
 #set $menu synapse
 set $passmenu ~/bin/passmenu
 
@@ -158,19 +158,15 @@ bar {
 	#mode hide # dock|invisible|hide
 	colors {
 		background {{@@ colors.background @@}}
-		{%@@ if colors.theme == 'light' @@%}
-		statusline {{@@ colors.color7 @@}}
-		{%@@ else @@%}
-		statusline {{@@ colors.color8 @@}}
-		{%@@ endif @@%}
+		statusline {{@@ colors.foreground @@}}
 		separator #f5f6fa
 
 		# <colorclass>     <border> <background> <text>
 		focused_workspace  {{@@ colors.color1 @@}}  {{@@ colors.color5 @@}}      {{@@ colors.color15 @@}}
-		active_workspace   #333333  #5f676a      {{@@ colors.color15 @@}}
-		inactive_workspace #333333  #222222      #888888
-		urgent_workspace   #2f343a  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
-		binding_mode       #2f343a  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
+		active_workspace   {{@@ colors.foreground @@}}  #5f676a      {{@@ colors.color15 @@}}
+		inactive_workspace {{@@ colors.foreground @@}}  {{@@ colors.background @@}}      #888888
+		urgent_workspace   {{@@ colors.foreground @@}}  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
+		binding_mode       {{@@ colors.foreground @@}}  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
     }
 }
 
@@ -202,10 +198,10 @@ hide_edge_borders smart
 
 # class                 border  backgr. text    indicator child_border
 client.focused          {{@@ colors.color1 @@}} {{@@ colors.color5 @@}} #ecf0f1 {{@@ colors.color14 @@}}   {{@@ colors.color1 @@}}
-client.focused_inactive #333333 #5f676a {{@@ colors.color15 @@}} #484e50   #5f676a
-client.unfocused        #333333 #222222 #888888 #292d2e   #222222
-client.urgent           #2f343a {{@@ colors.color13 @@}} {{@@ colors.color15 @@}} {{@@ colors.color13 @@}}   {{@@ colors.color13 @@}}
-client.placeholder      #000000 #0c0c0c {{@@ colors.color15 @@}} #000000   #0c0c0c
+client.focused_inactive {{@@ colors.foreground @@}} #5f676a {{@@ colors.color15 @@}} #484e50   #5f676a
+client.unfocused        {{@@ colors.foreground @@}} {{@@ colors.background @@}} #888888 #292d2e   {{@@ colors.background @@}}
+client.urgent           {{@@ colors.foreground @@}} {{@@ colors.color13 @@}} {{@@ colors.color15 @@}} {{@@ colors.color13 @@}}   {{@@ colors.color13 @@}}
+client.placeholder      #000000 {{@@ colors.foreground @@}} {{@@ colors.color15 @@}} #000000   {{@@ colors.foreground @@}}
 
 client.background       {{@@ colors.color15 @@}}
 

@@ -2,8 +2,8 @@
 variables:
   colors:
     theme: dark
-    foreground: "#919191"
     background: "#1D1F21"
+    foreground: "#919191"
     cursor: "#919191"
     color0: "#303030"
     color1: "#a43261"
