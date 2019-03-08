@@ -76,6 +76,9 @@ dotfiles:
     dst: ~/.vim
     link_children: true
     src: vim
+  d_firefox_profile:
+    dst: "{{@@ firefox_profile_path @@}}"
+    src: mozilla/firefox/default
   f_abcde:
     dst: ~/.abcde.conf
     src: abcde.conf
@@ -146,6 +149,7 @@ dotfiles:
     dst: ~/.yamllintrc
     src: yamllintrc
 dynvariables:
+  firefox_profile_path: 'find ~/.mozilla/firefox/ -name "*.default"'
   spotify_client_id: 'pass db/Loisir/Spotify | grep ''^client_id'' | tr '': '' ''
 
     '' | tail -1'
@@ -202,6 +206,7 @@ profiles:
       - d_vdirsyncer
       - d_khal
       - d_bash
+      - d_firefox_profile
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
@@ -255,6 +260,7 @@ profiles:
       - d_vdirsyncer
       - d_khal
       - d_bash
+      - d_firefox_profile
   flying-jesusraptor:
     dotfiles:
       - d_bin
@@ -298,6 +304,7 @@ profiles:
       - d_vdirsyncer
       - d_khal
       - d_bash
+      - d_firefox_profile
     variables:
       font_size: 14
   prodb:

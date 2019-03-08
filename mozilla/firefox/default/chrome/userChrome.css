@@ -1,0 +1,14 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+* {
+    font-size: {{@@ font_size @@}}pt !important;
+    font-family: {{@@ font_name @@}} !important;
+}
+
+toolbarbutton > .toolbarbutton-icon,
+toolbarbutton > .toolbarbutton-badge-stack,
+.urlbar-icon
+{
+    width: calc({{@@ font_size @@}}pt * 2) !important;
+    height: calc({{@@ font_size @@}}pt * 2) !important;
+}
