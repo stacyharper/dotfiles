@@ -298,6 +298,8 @@ profiles:
       - d_vdirsyncer
       - d_khal
       - d_bash
+    variables:
+      font_size: 14
   prodb:
     dotfiles:
       - d_docker
