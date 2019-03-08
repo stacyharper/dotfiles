@@ -26,7 +26,7 @@ set $tag8 8
 set $tag9 9
 set $tag10 10
 
-output * bg ~/wallpaper fill
+output * bg {{@@ background @@}} solid_color
 
 #output eDP-1 scale 1.3
 output 'Samsung Electric Company S24D300 0x00003738' resolution 1920x1080 position 0,0
