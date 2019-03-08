@@ -10,6 +10,7 @@ xterm*eightBitInput: false
 
 *.foreground: {{@@ foreground @@}}
 *.background: {{@@ background @@}}
+*.borderColor: {{@@ background @@}}
 *.cursorColor: {{@@ foreground @@}}
 *.color0: {{@@ color0 @@}}
 *.color1: {{@@ color1 @@}}
