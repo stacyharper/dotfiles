@@ -13,6 +13,7 @@ var/
 *.cache
 *.swp
 *.orig
+*.rej
 *.swo
 *.lock
 *.temp

@@ -223,11 +223,11 @@ default_border pixel 1
 bindsym $mod+t border toggle
 hide_edge_borders smart
 
-# class                 border backgr. text indicator child_border
-client.focused          {{@@ focused_bd @@}} {{@@ focused_bg @@}} {{@@ focused_fg @@}} {{@@ color14 @@}} {{@@ color1 @@}}
-client.focused_inactive {{@@ focused_inactive_bd @@}} {{@@ focused_inactive_bg @@}} {{@@ focused_fg @@}} #484e50 #5f676a
-client.unfocused        {{@@ unfocused_bd @@}} {{@@ unfocused_bg @@}} {{@@ unfocused_fg @@}} #292d2e {{@@ background @@}}
-client.urgent           {{@@ urgent_bd @@}} {{@@ urgent_bg @@}} {{@@ urgent_fg @@}} {{@@ color13 @@}} {{@@ color13 @@}}
+# class                 border  backgr. text    indicator child_border
+client.focused          {{@@ focused_bd @@}} {{@@ focused_bg @@}} {{@@ focused_fg @@}} {{@@ focused_i @@}} {{@@ focused_bd @@}}
+client.focused_inactive {{@@ focused_inactive_bd @@}} {{@@ focused_inactive_bg @@}} {{@@ focused_fg @@}} {{@@ focused_inactive_i @@}} {{@@ focused_inactive_bd @@}}
+client.unfocused        {{@@ unfocused_bd @@}} {{@@ unfocused_bg @@}} {{@@ unfocused_fg @@}} {{@@ unfocused_i @@}} {{@@ unfocused_bd @@}}
+client.urgent           {{@@ urgent_bd @@}} {{@@ urgent_bg @@}} {{@@ urgent_fg @@}} {{@@ urgent_i @@}} {{@@ urgent_bd @@}}
 client.placeholder      #000000 {{@@ foreground @@}} {{@@ color15 @@}} #000000 {{@@ foreground @@}}
 
 client.background {{@@ color15 @@}}
