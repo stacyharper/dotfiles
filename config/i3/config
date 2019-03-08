@@ -2,7 +2,7 @@ set $mod Mod4
 # Your preferred terminal emulator
 set $term xterm
 # Your preferred application launcher
-set $menu dmenu_run -nf '{{@@ colors.foreground @@}}' -nb '{{@@ colors.background @@}}' -sb '{{@@ colors.color5 @@}}' -sf '{{@@ colors.color15 @@}}'
+set $menu dmenu_run -nf '{{@@ foreground @@}}' -nb '{{@@ background @@}}' -sb '{{@@ focused_bg @@}}' -sf '{{@@ focused_fg @@}}'
 #set $menu synapse
 set $passmenu ~/bin/passmenu
 
@@ -155,19 +155,19 @@ bindsym $mod+r mode "resize"
 bar {
 	status_command i3status
 	position bottom
-	#mode hide # dock|invisible|hide
+	#mode hik|invisible|hide
 	colors {
-		background {{@@ colors.background @@}}
-		statusline {{@@ colors.foreground @@}}
-		separator #f5f6fa
+		background {{@@ bar_bg @@}}
+		statusline {{@@ bar_fg @@}}
+		separator {{@@ bar_bd @@}}
 
-		# <colorclass>     <border> <background> <text>
-		focused_workspace  {{@@ colors.color1 @@}}  {{@@ colors.color5 @@}}      {{@@ colors.color15 @@}}
-		active_workspace   {{@@ colors.foreground @@}}  #5f676a      {{@@ colors.color15 @@}}
-		inactive_workspace {{@@ colors.foreground @@}}  {{@@ colors.background @@}}      #888888
-		urgent_workspace   {{@@ colors.foreground @@}}  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
-		binding_mode       {{@@ colors.foreground @@}}  {{@@ colors.color13 @@}}      {{@@ colors.color15 @@}}
-    }
+		# <colorclass>     <colorborder> <background> <text>
+		focused_workspace  {{@@ focused_bd @@}} {{@@ focused_bg @@}} {{@@ focused_fg @@}}
+		active_workspace   {{@@ focused_inactive_bd @@}} {{@@ focused_inactive_bg @@}} {{@@ focused_inactive_fg @@}}
+		inactive_workspace {{@@ unfocused_bd @@}} {{@@ unfocused_bg @@}} {{@@ unfocused_fg @@}}
+		urgent_workspace   {{@@ urgent_bd @@}} {{@@ urgent_bg @@}} {{@@ urgent_fg @@}}
+		binding_mode       {{@@ foreground @@}} {{@@ color13 @@}} {{@@ color15 @@}}
+	}
 }
 
 workspace $tag1 output HDMI1
@@ -196,13 +196,13 @@ default_border pixel 1
 bindsym $mod+t border toggle
 hide_edge_borders smart
 
-# class                 border  backgr. text    indicator child_border
-client.focused          {{@@ colors.color1 @@}} {{@@ colors.color5 @@}} #ecf0f1 {{@@ colors.color14 @@}}   {{@@ colors.color1 @@}}
-client.focused_inactive {{@@ colors.foreground @@}} #5f676a {{@@ colors.color15 @@}} #484e50   #5f676a
-client.unfocused        {{@@ colors.foreground @@}} {{@@ colors.background @@}} #888888 #292d2e   {{@@ colors.background @@}}
-client.urgent           {{@@ colors.foreground @@}} {{@@ colors.color13 @@}} {{@@ colors.color15 @@}} {{@@ colors.color13 @@}}   {{@@ colors.color13 @@}}
-client.placeholder      #000000 {{@@ colors.foreground @@}} {{@@ colors.color15 @@}} #000000   {{@@ colors.foreground @@}}
+# class                 border backgr. text indicator child_border
+client.focused          {{@@ focused_bd @@}} {{@@ focused_bg @@}} {{@@ focused_fg @@}} {{@@ color14 @@}} {{@@ color1 @@}}
+client.focused_inactive {{@@ focused_inactive_bd @@}} {{@@ focused_inactive_bg @@}} {{@@ focused_fg @@}} #484e50 #5f676a
+client.unfocused        {{@@ unfocused_bd @@}} {{@@ unfocused_bg @@}} {{@@ unfocused_fg @@}} #292d2e {{@@ background @@}}
+client.urgent           {{@@ urgent_bd @@}} {{@@ urgent_bg @@}} {{@@ urgent_fg @@}} {{@@ color13 @@}} {{@@ color13 @@}}
+client.placeholder      #000000 {{@@ foreground @@}} {{@@ color15 @@}} #000000 {{@@ foreground @@}}
 
-client.background       {{@@ colors.color15 @@}}
+client.background {{@@ color15 @@}}
 
 exec --no-startup-id nextcloud
