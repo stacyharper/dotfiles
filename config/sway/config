@@ -166,7 +166,7 @@ bindsym $mod+Shift+c reload
 # restart sway inplace (preserves your layout/session, can be used to upgrade sway)
 bindsym $mod+Shift+r restart
 # exit sway
-bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+Shift+e exec ~/bin/dmenu_runner.sh 'No' '' 'Yes' 'swaymsg exit' 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.'
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
