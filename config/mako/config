@@ -1,0 +1,18 @@
+font={{@@ font_name @@}} {{@@ font_size @@}}
+border-color=#aaaaaa
+
+[urgency=low]
+background-color={{@@ background @@}}
+text-color={{@@ foreground @@}}
+default-timeout=10000
+
+[urgency=normal]
+background-color={{@@ color2 @@}}
+text-color={{@@ color15 @@}}
+default-timeout=10000
+
+[urgency=high]
+background-color={{@@ urgent_bg @@}}
+text-color={{@@ urgent_fg @@}}
+border-color={{@@ urgent_bd @@}}
+default-timeout=0
