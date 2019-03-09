@@ -1,14 +1,13 @@
 font={{@@ font_name @@}} {{@@ font_size @@}}
 border-color=#aaaaaa
 
+background-color={{@@ color2 @@}}
+text-color={{@@ color15 @@}}
+default-timeout=10000
+
 [urgency=low]
 background-color={{@@ background @@}}
 text-color={{@@ foreground @@}}
-default-timeout=10000
-
-[urgency=normal]
-background-color={{@@ color2 @@}}
-text-color={{@@ color15 @@}}
 default-timeout=10000
 
 [urgency=high]
