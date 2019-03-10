@@ -69,6 +69,12 @@ dotfiles:
   d_mako:
     dst: ~/.config/mako
     src: config/mako
+  d_gtk2:
+    dst: ~/.config/gtk-2.0
+    src: config/gtk-2.0
+  d_gtk3:
+    dst: ~/.config/gtk-3.0
+    src: config/gtk-3.0
   d_termite:
     dst: ~/.config/termite
     src: config/termite
@@ -185,6 +191,8 @@ profiles:
       - d_sway
       - d_swaynag
       - d_mako
+      - d_gtk2
+      - d_gtk3
       - d_termite
       - d_tmux
       - d_vim
@@ -242,6 +250,8 @@ profiles:
       - d_sway
       - d_swaynag
       - d_mako
+      - d_gtk2
+      - d_gtk3
       - d_termite
       - d_tmux
       - d_vim
@@ -288,6 +298,8 @@ profiles:
       - d_sway
       - d_swaynag
       - d_mako
+      - d_gtk2
+      - d_gtk3
       - d_termite
       - d_tmux
       - d_vim
