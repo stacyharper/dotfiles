@@ -170,12 +170,6 @@ bar {
 	}
 }
 
-workspace $tag1 output HDMI1
-workspace $tag2 output HDMI1
-workspace $tag3 output HDMI1
-workspace $tag4 output eDP1
-workspace $tag5 output eDP1
-
 bindsym $mod+Shift+m exec --no-startup-id xrandr --output eDP1 --off
 bindsym $mod+m exec --no-startup-id xrandr --output eDP1 --auto
 
