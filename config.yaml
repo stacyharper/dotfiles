@@ -11,7 +11,7 @@ config:
   showdiff: false
   workdir: ~/.config/dotdrop
   import_variables:
-    - colors/solarized-dark.yaml
+    - colors/{{@@ color_theme @@}}.yaml
 dotfiles:
   d_bash:
     dst: ~/.bash.d
@@ -232,6 +232,7 @@ profiles:
       khal_default_calendar: ubitransport
       msmtp_default_profile: ubitransport
       mutt_default_context: ubitransport
+      color_theme: solarized-dark
   Terminator:
     dotfiles:
       - d_beet
@@ -331,6 +332,7 @@ profiles:
       - d_firefox_profile
     variables:
       font_size: 14
+      color_theme: solarized-dark
   prodb:
     dotfiles:
       - d_docker
@@ -352,3 +354,4 @@ variables:
   font_lib: pango
   font_name: Hack
   font_size: 11
+  color_theme: hybrid
