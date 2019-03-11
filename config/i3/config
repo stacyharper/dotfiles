@@ -202,4 +202,4 @@ client.placeholder      #000000 {{@@ foreground @@}} {{@@ color15 @@}} #000000 {
 client.background {{@@ color15 @@}}
 
 exec --no-startup-id nextcloud
-exec --no-startup-id listen-emails.sh
+exec --no-startup-id ~/bin/listen-emails.sh
