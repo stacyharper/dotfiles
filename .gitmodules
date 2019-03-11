@@ -79,3 +79,7 @@
 [submodule "vim/pack/other/start/emmet-vim"]
 	path = vim/pack/other/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "vim/pack/other/start/vim-easy-align"]
+	path = vim/pack/other/start/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align
+	branch = master
