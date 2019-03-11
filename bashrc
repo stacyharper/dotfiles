@@ -6,7 +6,7 @@ GREEN="\[$(tput setaf 2)\]"
 MAGENTA="\[$(tput setaf 5)\]"
 CYAN="\[$(tput setaf 6)\]"
 RESET="\[$(tput sgr0)\]"
-HOST_COLOR="\[$(tput setaf $(expr $(hostname | cksum | cut -f 1 -d ' ') % 256))\]"
+HOST_COLOR="\[$(tput setaf $(expr $(hostname | cksum | cut -f 1 -d ' ') % 16))\]"
 
 parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/\* \(.*\)/\1/'
