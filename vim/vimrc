@@ -2,7 +2,7 @@ filetype plugin on
 filetype indent on
 syntax on
 
-colorscheme default
+colorscheme desert
 set background={{@@ theme @@}}
 "set cindent
 set cpoptions+=d
