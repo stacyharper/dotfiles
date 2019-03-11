@@ -17,13 +17,11 @@ function notify {
 	/usr/bin/notify-send -u normal "$from" "$sub"
 }
 
-/usr/bin/notify-send -u low "System" "Listening for emails"
+trap '/usr/bin/notify-send -u low "System" "Stopped emails listener"' EXIT
+/usr/bin/notify-send -u low "System" "Starting emails listener"
 
-for mail_dir in $HOME/.mails/*/INBOX/new/
+while email_file=$(/usr/bin/inotifywait -q -e create -e moved_to --format '%w/%f' "$HOME/.mails/"*"/INBOX/new/")
 do
-	echo "Watching $mail_dir"
-	while mail_name=$(/usr/bin/inotifywait -q -e create -e moved_to --format '%f' "$mail_dir")
-	do
-		notify "$mail_dir/$mail_name"
-	done&
+	notify "$email_file"
 done
+
