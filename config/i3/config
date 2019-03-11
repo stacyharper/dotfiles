@@ -1,4 +1,4 @@
-exec xrdb -merge ~/.Xresources
+exec xrdb ~/.Xresources
 
 set $mod Mod4
 # Your preferred terminal emulator
