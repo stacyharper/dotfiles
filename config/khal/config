@@ -12,7 +12,7 @@ default_calendar = {{@@ khal_default_calendar @@}}
 
   [[ubitransport]]
     path = ~/.calendars/ubitransport/e.barraco@ubitransport.com/
-    color = yellow
+    color = dark magenta
 
 [locale]
 timeformat= %H:%M
