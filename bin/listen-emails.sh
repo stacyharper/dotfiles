@@ -1,5 +1,12 @@
 #!/bin/sh
 
+/usr/bin/lockfile -r 0 /tmp/email-listener.lock  || exit 1
+
+function leave {
+	/usr/bin/notify-send -u low "System" "Stopped emails listener"
+	rm -f /tmp/email-listener.lock
+}
+
 function notify {
 	from=`formail -X From: < $1`
 	sub=`formail -X Subject: < $1`
@@ -17,7 +24,7 @@ function notify {
 	/usr/bin/notify-send -u normal "$from" "$sub"
 }
 
-trap '/usr/bin/notify-send -u low "System" "Stopped emails listener"' EXIT
+trap leave EXIT
 /usr/bin/notify-send -u low "System" "Starting emails listener"
 
 while email_file=$(/usr/bin/inotifywait -q -e create -e moved_to --format '%w/%f' "$HOME/.mails/"*"/INBOX/new/")
