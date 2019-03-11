@@ -1,6 +1,7 @@
 #!/bin/sh
 
-/usr/bin/lockfile -r 0 /tmp/email-listener.lock  || exit 1
+[ -f /tmp/email-listener.lock ] && exit 1
+touch /tmp/email-listener.lock
 
 function leave {
 	/usr/bin/notify-send -u low "System" "Stopped emails listener"
