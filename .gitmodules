@@ -77,9 +77,13 @@
 	path = vim/pack/other/start/dbext.vim
 	url = https://github.com/vim-scripts/dbext.vim.git
 [submodule "vim/pack/other/start/emmet-vim"]
-	path = vim/pack/other/start/emmet-vim
+	path = vim/pack/other/opt/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
 [submodule "vim/pack/other/start/vim-easy-align"]
 	path = vim/pack/other/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
+	branch = master
+[submodule "vim/pack/other/opt/emmet-vim"]
+	path = vim/pack/other/opt/emmet-vim
+	url = https://github.com/mattn/emmet-vim.git
 	branch = master
