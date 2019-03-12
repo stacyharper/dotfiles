@@ -2,8 +2,3 @@
 # Instead, create a config.py - see :help for details.
 
 config_version: 1
-global:
-  bindings.commands:
-    normal:
-      <ctrl+e>: scroll down
-      <ctrl+y>: scroll up
