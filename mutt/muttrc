@@ -12,6 +12,7 @@ set envelope_from=yes
 set sort=threads
 
 auto_view text/html
+alternative_order text/plain text/enriched text/html
 macro index \co |urlscan\n
 macro pager \co |urlscan\n
 
