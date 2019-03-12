@@ -91,6 +91,9 @@ dotfiles:
   d_firefox_profile:
     dst: "{{@@ firefox_profile_path @@}}"
     src: mozilla/firefox/default
+  d_qutebrowser:
+    dst: ~/.config/qutebrowser
+    src: config/qutebrowser
   f_abcde:
     dst: ~/.abcde.conf
     src: abcde.conf
@@ -223,6 +226,7 @@ profiles:
       - d_khal
       - d_bash
       - d_firefox_profile
+      - d_qutebrowser
     variables:
       git_email: e.barraco@ubitransport.com
       git_smtp_encryption: tls
@@ -282,6 +286,7 @@ profiles:
       - d_khal
       - d_bash
       - d_firefox_profile
+      - d_qutebrowser
   flying-jesusraptor:
     dotfiles:
       - d_bin
@@ -330,6 +335,7 @@ profiles:
       - d_khal
       - d_bash
       - d_firefox_profile
+      - d_qutebrowser
     variables:
       font_size: 14
       color_theme: solarized-dark
