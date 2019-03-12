@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 [ -f /tmp/email-listener.lock ] && exit 1
 touch /tmp/email-listener.lock
