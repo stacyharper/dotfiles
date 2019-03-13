@@ -12,6 +12,7 @@ ncmpcpp
 mpd
 mopidy
 vdirsyncer
+python-requests-oauthlib
 xterm
 termite
 ranger
