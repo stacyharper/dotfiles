@@ -480,7 +480,7 @@ c.content.cookies.store = True
 ## Default encoding to use for websites. The encoding must be a string
 ## describing an encoding such as _utf-8_, _iso-8859-1_, etc.
 ## Type: String
-c.content.default_encoding = 'iso-8859-1'
+c.content.default_encoding = '_utf-8_'
 
 ## Enable extra tools for Web developers. This needs to be enabled for
 ## `:inspector` to work and also adds an _Inspect_ entry to the context
@@ -1363,15 +1363,15 @@ c.zoom.text_only = False
 # config.bind(';r', 'hint --rapid links tab-bg')
 # config.bind(';t', 'hint inputs')
 # config.bind(';y', 'hint links yank')
-config.bind('<Alt-1>', 'tab-focus 1')
-config.bind('<Alt-2>', 'tab-focus 2')
-config.bind('<Alt-3>', 'tab-focus 3')
-config.bind('<Alt-4>', 'tab-focus 4')
-config.bind('<Alt-5>', 'tab-focus 5')
-config.bind('<Alt-6>', 'tab-focus 6')
-config.bind('<Alt-7>', 'tab-focus 7')
-config.bind('<Alt-8>', 'tab-focus 8')
-config.bind('<Alt-9>', 'tab-focus -1')
+config.bind('<Alt-&>', 'tab-focus 1')
+config.bind('<Alt-é>', 'tab-focus 2')
+config.bind('<Alt-">', 'tab-focus 3')
+config.bind('<Alt-\'>', 'tab-focus 4')
+config.bind('<Alt-(>', 'tab-focus 5')
+config.bind('<Alt-->', 'tab-focus 6')
+config.bind('<Alt-è>', 'tab-focus 7')
+config.bind('<Alt-_>', 'tab-focus 8')
+config.bind('<Alt-ç>', 'tab-focus -1')
 # config.bind('<Ctrl-A>', 'navigate increment')
 # config.bind('<Ctrl-Alt-p>', 'print')
 # config.bind('<Ctrl-B>', 'scroll-page 0 -1')
