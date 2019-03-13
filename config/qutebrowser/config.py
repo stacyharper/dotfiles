@@ -783,7 +783,7 @@ c.fonts.monospace = '"xos4 Terminus", Terminus, Monospace, "DejaVu Sans Mono", M
 
 ## Font used for prompts.
 ## Type: Font
-c.fonts.prompts = '10pt sans-serif'
+c.fonts.prompts = '{{@@ font_size @@}}pt {{@@ font_name @@}}'
 
 ## Font used in the statusbar.
 ## Type: Font
