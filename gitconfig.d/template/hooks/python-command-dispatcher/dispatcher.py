@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 from sys import exit, argv
-from yaml import load
+import yaml
 from subprocess import check_call, CalledProcessError
 from os.path import expandvars
 
@@ -39,7 +39,7 @@ class Printer:
 
 class Dispatcher:
     def __init__(self, command_file_path):
-        content = load(open(command_file_path))['config']
+        content = yaml.load(open(command_file_path), Loader=yaml.FullLoader)['config']
         self.commands = self.expand_command(content['commands'])
         self.events = content['events']
 
