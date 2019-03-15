@@ -27,3 +27,4 @@ wl-clipboard
 dunst
 mako
 ledger
+libnotify

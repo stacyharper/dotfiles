@@ -1,6 +1,9 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+GPG_TTY=$(tty)
+export GPG_TTY
+
 RED="\[$(tput setaf 1)\]"
 GREEN="\[$(tput setaf 2)\]"
 MAGENTA="\[$(tput setaf 5)\]"
