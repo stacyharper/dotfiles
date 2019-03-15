@@ -1,12 +1,13 @@
-inotify-tool
+inotify-tools
 procmail
 offlineimap
 msmtp
 notmuch
 khal
 mutt
+urlscan
 tmux
-nvim
+neovim
 mpc
 ncmpcpp
 mpd
@@ -19,7 +20,7 @@ ranger
 i3-wm
 i3status
 sway
-sway-lock
+swaylock
 grim
 xclip
 wl-clipboard

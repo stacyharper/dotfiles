@@ -180,7 +180,7 @@ dynvariables:
 
     '' | tail -1'
 profiles:
-  LAPTOP-EBARRACO:
+  laptop-ebarraco:
     dotfiles:
       - d_bin
       - d_desktop
