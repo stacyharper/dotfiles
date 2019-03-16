@@ -43,6 +43,9 @@ dotfiles:
   d_khal:
     dst: ~/.config/khal
     src: config/khal
+  d_mpd:
+    dst: ~/.config/mpd
+    src: config/mpd
   d_mopidy:
     dst: ~/.config/mopidy
     src: config/mopidy
@@ -189,6 +192,7 @@ profiles:
       - d_git
       - d_i3
       - d_i3_status
+      - d_mpd
       - d_mopidy
       - d_mutt
       - d_neovim
@@ -251,6 +255,7 @@ profiles:
       - d_git
       - d_i3
       - d_i3_status
+      - d_mpd
       - d_mopidy
       - d_mutt
       - d_neovim
@@ -301,6 +306,7 @@ profiles:
       - d_git
       - d_i3
       - d_i3_status
+      - d_mpd
       - d_mopidy
       - d_mutt
       - d_neovim
