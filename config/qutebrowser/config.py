@@ -430,7 +430,7 @@ c.completion.use_best_match = False
 ## Number of URLs to show in the web history. 0: no history / -1:
 ## unlimited
 ## Type: Int
-c.completion.web_history.max_items = -1
+c.completion.web_history.max_items = 0
 
 ## Require a confirmation before quitting the application.
 ## Type: ConfirmQuit
