@@ -1,4 +1,4 @@
 set from=e.barraco@ubitransport.com
 set spoolfile = "+ubitransport/INBOX"
-set record = "+ubitransport/Messages_envoyés"
-set postponed = "+ubitransport/Brouillons"
+set record = "+ubitransport/[Gmail].Messages envoy&AOk-s"
+set postponed = "+ubitransport/[Gmail].Brouillons"
