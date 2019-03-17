@@ -1,5 +1,5 @@
 notify-program "/usr/bin/notify-send"
 refresh-on-startup yes
-browser firefox
+browser "firefox --private-window"
 auto-reload yes
 reload-time 5
