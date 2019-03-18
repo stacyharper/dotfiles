@@ -20,6 +20,7 @@ xterm
 termite
 ranger
 i3-wm
+xorg-xsetroot
 i3status
 sway
 swaylock
