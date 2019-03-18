@@ -87,6 +87,9 @@ dotfiles:
   d_tmux:
     dst: ~/.tmux.d
     src: tmux.d
+  d_rofi:
+    dst: ~/.config/rofi
+    src: config/rofi
   d_vdirsyncer:
     dst: ~/.config/vdirsyncer
     src: config/vdirsyncer
@@ -209,6 +212,7 @@ profiles:
       - d_gtk3
       - d_termite
       - d_tmux
+      - d_rofi
       - d_vim
       - f_abcde
       - f_bash
@@ -273,6 +277,7 @@ profiles:
       - d_gtk3
       - d_termite
       - d_tmux
+      - d_rofi
       - d_vim
       - f_abcde
       - f_bash
@@ -325,6 +330,7 @@ profiles:
       - d_gtk3
       - d_termite
       - d_tmux
+      - d_rofi
       - d_vim
       - f_abcde
       - f_bash
