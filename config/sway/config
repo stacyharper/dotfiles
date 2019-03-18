@@ -4,9 +4,8 @@ set $mod Mod4
 # Your preferred terminal emulator
 set $term termite
 # Your preferred application launcher
-set $menu dmenu_run -nf '{{@@ foreground @@}}' -nb '{{@@ background @@}}' -sb '{{@@ focused_bg @@}}' -sf '{{@@ focused_fg @@}}' -fn '{{@@ font_name @@}}-{{@@ font_size @@}}'
-#set $menu synapse
-set $passmenu ~/bin/passmenu
+set $menu rofi -show run
+set $passmenu ~/bin/passrofi
 
 # Home row direction keys, like vim
 set $left h
@@ -178,7 +177,7 @@ bindsym $mod+Shift+c reload
 # restart sway inplace (preserves your layout/session, can be used to upgrade sway)
 bindsym $mod+Shift+r restart
 # exit sway
-bindsym $mod+Shift+e exec ~/bin/dmenu_runner.sh 'No' '' 'Yes' 'swaymsg exit' 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.'
+bindsym $mod+Shift+e exec [ $(echo -e 'No\nYes' | rofi -dmenu -p 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.') == "Yes" ] && swaymsg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

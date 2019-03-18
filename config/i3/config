@@ -4,8 +4,8 @@ set $mod Mod4
 # Your preferred terminal emulator
 set $term xterm
 # Your preferred application launcher
-set $menu dmenu_run -nf '{{@@ foreground @@}}' -nb '{{@@ background @@}}' -sb '{{@@ focused_bg @@}}' -sf '{{@@ focused_fg @@}}' -fn '{{@@ font_name @@}}-{{@@ font_size @@}}'
-set $passmenu ~/bin/passmenu
+set $menu rofi -show run
+set $passmenu ~/bin/passrofi
 
 # Home row direction keys, like vim
 set $left h
@@ -137,7 +137,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec ~/bin/dmenu_runner.sh 'No' '' 'Yes' 'i3-msg exit' 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X11 session.'
+bindsym $mod+Shift+e exec [ $(echo -e 'No\nYes' | rofi -dmenu -p 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X11 session.') == "Yes" ] && i3-msg exit
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
