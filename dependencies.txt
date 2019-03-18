@@ -5,6 +5,7 @@ msmtp
 notmuch
 khal
 mutt
+links
 urlscan
 tmux
 neovim
@@ -14,6 +15,7 @@ mpd
 mopidy
 vdirsyncer
 python-requests-oauthlib
+newsboat
 xterm
 termite
 ranger
