@@ -5,3 +5,6 @@ text/html=qutebrowser.desktop
 x-scheme-handler/about=qutebrowser.desktop
 x-scheme-handler/unknown=qutebrowser.desktop
 text/plain=vim.desktop
+inode/directory=ranger.desktop
+inode/mount-point=ranger.desktop
+
