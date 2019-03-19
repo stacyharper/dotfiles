@@ -29,6 +29,8 @@ PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 #complete -c sudo  # Allow default completion on sudo command for weird os (debian)
 stty -ixon  # Disable the CTRL+s freeze to allow backward search
 
+shopt -s globstar
+
 export EDITOR=/usr/bin/vim
 
 source ~/.bash_aliases
