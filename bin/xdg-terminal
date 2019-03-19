@@ -306,6 +306,7 @@ detectDE()
     elif [ x"$MATE_DESKTOP_SESSION_ID" != x"" ]; then DE=mate;
     elif `dbus-send --print-reply --dest=org.freedesktop.DBus /org/freedesktop/DBus org.freedesktop.DBus.GetNameOwner string:org.mate.SessionManager > /dev/null 2>&1` ; then DE=mate;
     elif case $DESKTOP_STARTUP_ID in i3/*) true;; *) false;; esac then DE=i3;
+    elif [ x"$DESKTOP_SESSION" = x"sway" ]; then DE=sway;
     else DE=""
     fi
 }
@@ -401,13 +402,13 @@ terminal_generic()
     # if $TERM is not set, try xterm
     if [ -z "$TERM" ] || [ `echo $TERM | cut -c 1-4` == "tmux" ] || [ `echo $TERM | cut -c 1-6` == "screen" ]; then
         terminal_exec=`which xterm`
-    
+
     elif [ `echo $TERM | cut -c 1-6` == "rxvt-u" ]; then
 	terminal_exec=`which urxvt`
     else
 	terminal_exec=`which $TERM 2>/dev/null`
     fi
-    
+
     if [ -x "$terminal_exec" ]; then
         if [ -z "$1" ]; then
 	    nohup $terminal_exec > /dev/null &
@@ -466,6 +467,11 @@ terminal_i3()
     nohup i3-sensible-terminal -e "$1" > /dev/null &
 }
 
+terminal_sway()
+{
+    nohup termite -e "$1" > /dev/null &
+}
+
 command=
 while [ $# -gt 0 ] ; do
     parm="$1"
@@ -518,6 +524,10 @@ case "$DE" in
 
     i3)
     terminal_i3 "$command"
+    ;;
+
+    sway)
+    terminal_sway "$command"
     ;;
 
     generic)
