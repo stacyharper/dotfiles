@@ -4,4 +4,4 @@ x-scheme-handler/https=qutebrowser.desktop
 text/html=qutebrowser.desktop
 x-scheme-handler/about=qutebrowser.desktop
 x-scheme-handler/unknown=qutebrowser.desktop
-text/plain=neovim.desktop
+text/plain=vim.desktop
