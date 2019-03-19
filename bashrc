@@ -32,6 +32,7 @@ stty -ixon  # Disable the CTRL+s freeze to allow backward search
 shopt -s globstar
 
 export EDITOR=/usr/bin/vim
+export PAGER=/usr/bin/less
 
 source ~/.bash_aliases
 
