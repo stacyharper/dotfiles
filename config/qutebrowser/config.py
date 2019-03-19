@@ -67,4 +67,5 @@ config.bind('<z><p><l>', 'spawn --userscript qute-pass --password-only')
 config.bind('<z><u><l>', 'spawn --userscript qute-pass --username-only')
 config.bind('gT', 'tab-prev')
 config.bind('gt', 'tab-next')
-c.editor.command = ['xterm', '-e', 'vim', '{file}', '-c', 'normal {line}G{column0}l']
+config.bind('<Ctrl-l>', 'edit-url')
+c.editor.command = ['nvim-qt', '--nofork', '{file}', '--', '-c', 'normal {line}G{column0}l']
