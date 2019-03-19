@@ -52,6 +52,5 @@ let g:netrw_list_hide= '.*\.swp$,.*\.swo$,.*\.retry$'
 
 if has('nvim')
     set rtp^=/usr/share/vim/vimfiles/
-    set inccommand=nosplit
 else
 endif
