@@ -109,6 +109,9 @@ dotfiles:
   f_abcde:
     dst: ~/.abcde.conf
     src: abcde.conf
+  f_mimeapps:
+    dst: ~/.config/mimeapps.list
+    src: config/mimeapps.list
   f_bash:
     dst: ~/.bashrc
     src: bashrc
@@ -216,6 +219,7 @@ profiles:
       - d_vim
       - f_abcde
       - f_bash
+      - f_mimeapps
       - f_bash_aliases
       - f_bash_profile
       - f_ctags
@@ -281,6 +285,7 @@ profiles:
       - d_vim
       - f_abcde
       - f_bash
+      - f_mimeapps
       - f_bash_aliases
       - f_bash_profile
       - f_ctags
@@ -334,6 +339,7 @@ profiles:
       - d_vim
       - f_abcde
       - f_bash
+      - f_mimeapps
       - f_bash_aliases
       - f_bash_profile
       - f_ctags
