@@ -4,7 +4,7 @@ syntax on
 
 colorscheme desert
 set background={{@@ theme @@}}
-set guifont={{@@ font_name @@}}:{{@@ font_size @@}}
+set guifont={{@@ font_name @@}}:h{{@@ font_size @@}}
 "set cindent
 set cpoptions+=d
 set cursorline
