@@ -5,7 +5,7 @@ color attachment red default
 color prompt brightmagenta default
 color message brightred default
 color error brightred default
-color indicator white red
+color indicator white blue
 color status white blue
 color tree default default
 color normal default default
