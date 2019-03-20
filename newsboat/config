@@ -8,15 +8,10 @@ color info white green
 color listfocus white green
 color listfocus_unread white green
 
-# unbind keys
-unbind-key o
-
 # bind keys - vim style
-bind-key ^O open-in-browser
 bind-key z random-unread
 bind-key j down
 bind-key k up
-bind-key - quit
 bind-key ^F pagedown
 bind-key ^B pageup
 bind-key g home
