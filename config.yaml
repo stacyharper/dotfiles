@@ -81,6 +81,9 @@ dotfiles:
   d_gtk3:
     dst: ~/.config/gtk-3.0
     src: config/gtk-3.0
+  f_qt:
+    dst: ~/.config/Trolltech.conf
+    src: config/Trolltech.conf
   d_termite:
     dst: ~/.config/termite
     src: config/termite
@@ -213,6 +216,7 @@ profiles:
       - d_mako
       - d_gtk2
       - d_gtk3
+      - f_qt
       - d_termite
       - d_tmux
       - d_rofi
@@ -279,6 +283,7 @@ profiles:
       - d_mako
       - d_gtk2
       - d_gtk3
+      - f_qt
       - d_termite
       - d_tmux
       - d_rofi
@@ -333,6 +338,7 @@ profiles:
       - d_mako
       - d_gtk2
       - d_gtk3
+      - f_qt
       - d_termite
       - d_tmux
       - d_rofi
