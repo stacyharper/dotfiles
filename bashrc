@@ -44,7 +44,6 @@ then
 	done
 fi
 
-BASE16_SHELL="{{@@ base16_root_location @@}}/shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+if [ -f ~/.base16_theme ]; then
+  . ~/.base16_theme
+fi

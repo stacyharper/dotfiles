@@ -232,7 +232,6 @@ profiles:
       - f_git
       - f_git_ignore
       - f_ledger
-      - f_base16_theme
       - f_mopidy_service
       - f_profile
       - f_silver_search_ag
