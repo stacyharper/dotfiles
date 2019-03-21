@@ -2,8 +2,6 @@ filetype plugin on
 filetype indent on
 syntax on
 
-colorscheme dim
-set background={{@@ theme @@}}
 set guifont={{@@ font_name @@}}:h{{@@ font_size @@}}
 "set cindent
 set cpoptions+=d
