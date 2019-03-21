@@ -99,3 +99,7 @@
 	path = base16/qutebrowser
 	url = https://github.com/theova/base16-qutebrowser.git
 	branch = master
+[submodule "base16/i3"]
+	path = base16/i3
+	url = https://github.com/khamer/base16-i3.git
+	branch = master

@@ -157,7 +157,8 @@ bar {
 	position bottom
 	#mode hik|invisible|hide
 }
-}
+
+{%@@ include base16_root_location + '/i3/themes/' + color_scheme + '.config' @@%}
 
 bindsym $mod+Shift+m exec --no-startup-id xrandr --output eDP1 --off
 bindsym $mod+m exec --no-startup-id xrandr --output eDP1 --auto
