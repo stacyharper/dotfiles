@@ -88,6 +88,10 @@ dotfiles:
   d_tmux:
     dst: ~/.tmux.d
     src: tmux.d
+  d_rofi_base16:
+    dst: ~/.local/share/rofi/themes
+    src: base16/rofi/themes
+    link: true
   d_rofi:
     dst: ~/.config/rofi
     src: config/rofi
@@ -222,6 +226,7 @@ profiles:
       - d_termite
       - d_tmux
       - d_rofi
+      - d_rofi_base16
       - d_vim
       - f_abcde
       - f_bash
@@ -289,6 +294,7 @@ profiles:
       - d_termite
       - d_tmux
       - d_rofi
+      - d_rofi_base16
       - d_vim
       - f_abcde
       - f_bash
@@ -345,6 +351,7 @@ profiles:
       - d_termite
       - d_tmux
       - d_rofi
+      - d_rofi_base16
       - d_vim
       - f_abcde
       - f_bash

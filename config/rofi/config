@@ -1,3 +1,4 @@
 configuration {
+	rofi.theme: {{@@ color_scheme @@}}
 	rofi.font: {{@@ font_name @@}} {{@@ font_size @@}}
 }

@@ -109,3 +109,6 @@
 [submodule "base16/gtk2"]
 	path = base16/gtk2
 	url = https://github.com/dawikur/base16-gtk2.git
+[submodule "base16/rofi"]
+	path = base16/rofi
+	url = https://gitlab.com/0xdec/base16-rofi.git
