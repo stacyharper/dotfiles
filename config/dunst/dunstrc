@@ -318,4 +318,4 @@
 #
 # vim: ft=cfg
 
-{%@@ include base16_root_location + '/dunst/themes/' + color_scheme + '.dunstrc' @@%}
+{%@@ include 'base16/dunst/themes/' + color_scheme + '.dunstrc' @@%}
