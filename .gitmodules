@@ -87,3 +87,7 @@
 	path = vim/pack/other/opt/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
 	branch = master
+[submodule "vim/pack/other/start/base16-vim"]
+	path = vim/pack/other/start/base16-vim
+	url = https://github.com/chriskempson/base16-vim.git
+	branch = master
