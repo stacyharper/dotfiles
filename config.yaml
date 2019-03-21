@@ -10,8 +10,6 @@ config:
   longkey: false
   showdiff: false
   workdir: ~/.config/dotdrop
-  import_variables:
-    - colors/{{@@ color_theme @@}}.yaml
 dotfiles:
   d_bash:
     dst: ~/.bash.d
@@ -96,10 +94,6 @@ dotfiles:
   d_vdirsyncer:
     dst: ~/.config/vdirsyncer
     src: config/vdirsyncer
-  d_base16_shell:
-    dst: ~/.config/base16-shell
-    link_children: true
-    src: config/base16-shell
   d_vim:
     dst: ~/.vim
     link_children: true
@@ -250,7 +244,6 @@ profiles:
       - f_notmuch-config
       - f_mailcap
       - d_vdirsyncer
-      - d_base16_shell
       - d_khal
       - d_bash
       - d_firefox_profile
@@ -265,7 +258,7 @@ profiles:
       khal_default_calendar: ubitransport
       msmtp_default_profile: ubitransport
       mutt_default_context: ubitransport
-      color_theme: dracula
+      color_scheme: base16-default-dark
   Terminator:
     dotfiles:
       - d_beet
@@ -317,7 +310,6 @@ profiles:
       - f_notmuch-config
       - f_mailcap
       - d_vdirsyncer
-      - d_base16_shell
       - d_khal
       - d_bash
       - d_firefox_profile
@@ -373,7 +365,6 @@ profiles:
       - f_notmuch-config
       - f_mailcap
       - d_vdirsyncer
-      - d_base16_shell
       - d_khal
       - d_bash
       - d_firefox_profile
@@ -381,7 +372,7 @@ profiles:
       - d_qutebrowser_userscripts
     variables:
       font_size: 14
-      color_theme: solarized-dark
+      color_scheme: base16-default-dark
   prodb:
     dotfiles:
       - d_docker
@@ -403,4 +394,4 @@ variables:
   font_lib: pango
   font_name: Hack
   font_size: 11
-  color_theme: hybrid
+  color_scheme: base16-default-dark
