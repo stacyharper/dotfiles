@@ -136,7 +136,7 @@ dotfiles:
     src: ledgerrc
   f_base16_theme:
     dst: ~/.base16_theme
-    src: programs/base16-shell/scripts/{{@@ color_scheme @@}}.sh
+    src: base16/shell/scripts/{{@@ color_scheme @@}}.sh
     link: true
   f_mailcap:
     dst: ~/.mailcap
