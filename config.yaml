@@ -96,6 +96,10 @@ dotfiles:
   d_vdirsyncer:
     dst: ~/.config/vdirsyncer
     src: config/vdirsyncer
+  d_base16_shell:
+    dst: ~/.config/base16-shell
+    link_children: true
+    src: config/base16-shell
   d_vim:
     dst: ~/.vim
     link_children: true
@@ -246,6 +250,7 @@ profiles:
       - f_notmuch-config
       - f_mailcap
       - d_vdirsyncer
+      - d_base16_shell
       - d_khal
       - d_bash
       - d_firefox_profile
@@ -312,6 +317,7 @@ profiles:
       - f_notmuch-config
       - f_mailcap
       - d_vdirsyncer
+      - d_base16_shell
       - d_khal
       - d_bash
       - d_firefox_profile
@@ -367,6 +373,7 @@ profiles:
       - f_notmuch-config
       - f_mailcap
       - d_vdirsyncer
+      - d_base16_shell
       - d_khal
       - d_bash
       - d_firefox_profile
