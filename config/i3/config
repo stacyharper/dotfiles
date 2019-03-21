@@ -152,12 +152,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-bar {
-	status_command i3status
-	position bottom
-	#mode hik|invisible|hide
-}
-
 {%@@ include 'base16/i3/themes/' + color_scheme + '.config' @@%}
 
 bindsym $mod+Shift+m exec --no-startup-id xrandr --output eDP1 --off
