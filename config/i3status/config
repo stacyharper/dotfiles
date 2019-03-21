@@ -1,3 +1,5 @@
+{%@@ include 'base16/i3status/colors/' + color_scheme + '.config' @@%}
+
 order += "path_exists VPN"
 order += "wireless _first_"
 order += "ethernet _first_"
