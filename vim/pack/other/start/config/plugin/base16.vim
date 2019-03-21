@@ -1,4 +1,4 @@
-if filereadable(expand("~/.vimrc_background"))
+if filereadable(expand("~/.vim/vimrc_background"))
   let base16colorspace=256
-  source ~/.vimrc_background
+  source ~/.vim/vimrc_background
 endif
