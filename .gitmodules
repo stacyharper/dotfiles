@@ -106,3 +106,6 @@
 [submodule "base16/dunst"]
 	path = base16/dunst
 	url = https://github.com/khamer/base16-dunst.git
+[submodule "base16/gtk2"]
+	path = base16/gtk2
+	url = https://github.com/dawikur/base16-gtk2.git
