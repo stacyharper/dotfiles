@@ -401,5 +401,4 @@ variables:
   font_lib: pango
   font_name: Hack
   font_size: 11
-  base16_root_location: "{{@@ env['HOME'] @@}}/Dotfiles/base16"
   color_scheme: base16-default-dark
