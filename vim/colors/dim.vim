@@ -23,7 +23,7 @@ highlight Search         ctermfg=0    ctermbg=11
 
 " Dim line numbers, comments, color columns, the status line, splits and sign
 " columns.
-if &background == "light"
+if &background == "dark"
   highlight LineNr       ctermfg=7
   highlight Comment      ctermfg=7
   highlight ColorColumn  ctermfg=8    ctermbg=7
