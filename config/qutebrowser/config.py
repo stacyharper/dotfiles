@@ -35,3 +35,4 @@ config.bind('gT', 'tab-prev')
 config.bind('gt', 'tab-next')
 config.bind('<Ctrl-l>', 'edit-url')
 c.editor.command = ['nvim-qt', '--nofork', '{file}', '--', '-c', 'normal {line}G{column0}l']
+{%@@ include base16_root_location + '/qutebrowser/themes/' + color_scheme + '.config.py' @@%}
