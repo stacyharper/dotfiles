@@ -260,7 +260,7 @@ profiles:
       khal_default_calendar: ubitransport
       msmtp_default_profile: ubitransport
       mutt_default_context: ubitransport
-      color_theme: solarized-dark
+      color_theme: dracula
   Terminator:
     dotfiles:
       - d_beet
