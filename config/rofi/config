@@ -1,4 +1,3 @@
 configuration {
-	rofi.theme: Reed
 	rofi.font: {{@@ font_name @@}} {{@@ font_size @@}}
 }

@@ -1,15 +1,1 @@
 font={{@@ font_name @@}} {{@@ font_size @@}}
-
-[warning]
-background={{@@ focused_bg @@}}
-border={{@@ focused_bd @@}}
-border-bottom={{@@ focused_bd @@}}
-text={{@@ focused_fg @@}}
-button-background={{@@ focused_i @@}}
-
-[error]
-background={{@@ urgent_bg @@}}
-border={{@@ urgent_bd @@}}
-border-bottom={{@@ urgent_bd @@}}
-text={{@@ urgent_fg @@}}
-button-background={{@@ urgent_i @@}}

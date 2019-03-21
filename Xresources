@@ -7,24 +7,3 @@ xterm*saveLines: 16384
 xterm*charClass: 33:48,35:48,37:48,43:48,45-47:48,64:48,95:48,126:48
 xterm*termName: xterm-256color
 xterm*eightBitInput: false
-
-*.foreground: {{@@ foreground @@}}
-*.background: {{@@ background @@}}
-*.borderColor: {{@@ background @@}}
-*.cursorColor: {{@@ foreground @@}}
-*.color0: {{@@ color0 @@}}
-*.color1: {{@@ color1 @@}}
-*.color2: {{@@ color2 @@}}
-*.color3: {{@@ color3 @@}}
-*.color4: {{@@ color4 @@}}
-*.color5: {{@@ color5 @@}}
-*.color6: {{@@ color6 @@}}
-*.color7: {{@@ color7 @@}}
-*.color8: {{@@ color8 @@}}
-*.color9: {{@@ color9 @@}}
-*.color10: {{@@ color10 @@}}
-*.color11: {{@@ color11 @@}}
-*.color12: {{@@ color12 @@}}
-*.color13: {{@@ color13 @@}}
-*.color14: {{@@ color14 @@}}
-*.color15: {{@@ color15 @@}}

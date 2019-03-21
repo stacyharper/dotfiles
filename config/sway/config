@@ -25,8 +25,6 @@ set $tag8 8
 set $tag9 9
 set $tag10 10
 
-output * bg {{@@ background @@}} solid_color
-
 #output eDP-1 scale 1.3
 output 'Samsung Electric Company S24D300 0x00003738' resolution 1920x1080 position 0,0
 output 'Acer Technologies Acer AL1916W L52091266341' resolution 1440x900 position 1920,56
@@ -198,18 +196,6 @@ bar {
 	status_command i3status
 	position bottom
 	#mode hik|invisible|hide
-	colors {
-		background {{@@ bar_bg @@}}
-		statusline {{@@ bar_fg @@}}
-		separator {{@@ bar_bd @@}}
-
-		# <colorclass>     <colorborder> <background> <text>
-		focused_workspace  {{@@ focused_bd @@}} {{@@ focused_bg @@}} {{@@ focused_fg @@}}
-		active_workspace   {{@@ focused_inactive_bd @@}} {{@@ focused_inactive_bg @@}} {{@@ focused_inactive_fg @@}}
-		inactive_workspace {{@@ unfocused_bd @@}} {{@@ unfocused_bg @@}} {{@@ unfocused_fg @@}}
-		urgent_workspace   {{@@ urgent_bd @@}} {{@@ urgent_bg @@}} {{@@ urgent_fg @@}}
-		binding_mode       {{@@ foreground @@}} {{@@ color13 @@}} {{@@ color15 @@}}
-	}
 }
 
 # Pulse Audio controls
@@ -227,15 +213,6 @@ bindsym Print exec --no-startup-id grim "$HOME/Pictures/Screenshots/$(date +\"%Y
 default_border pixel 1
 bindsym $mod+t border toggle
 hide_edge_borders smart
-
-# class                 border  backgr. text    indicator child_border
-client.focused          {{@@ focused_bd @@}} {{@@ focused_bg @@}} {{@@ focused_fg @@}} {{@@ focused_i @@}} {{@@ focused_bd @@}}
-client.focused_inactive {{@@ focused_inactive_bd @@}} {{@@ focused_inactive_bg @@}} {{@@ focused_inactive_fg @@}} {{@@ focused_inactive_i @@}} {{@@ focused_inactive_bd @@}}
-client.unfocused        {{@@ unfocused_bd @@}} {{@@ unfocused_bg @@}} {{@@ unfocused_fg @@}} {{@@ unfocused_i @@}} {{@@ unfocused_bd @@}}
-client.urgent           {{@@ urgent_bd @@}} {{@@ urgent_bg @@}} {{@@ urgent_fg @@}} {{@@ urgent_i @@}} {{@@ urgent_bd @@}}
-client.placeholder      #000000 {{@@ foreground @@}} {{@@ color15 @@}} #000000 {{@@ foreground @@}}
-
-client.background {{@@ color15 @@}}
 
 exec --no-startup-id nextcloud
 exec --no-startup-id mako
