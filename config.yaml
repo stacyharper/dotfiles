@@ -134,6 +134,10 @@ dotfiles:
   f_ledger:
     dst: ~/.ledgerrc
     src: ledgerrc
+  f_base16_theme:
+    dst: ~/.base16_theme
+    src: programs/base16-shell/scripts/{{@@ color_scheme @@}}.sh
+    link: true
   f_mailcap:
     dst: ~/.mailcap
     src: mailcap
@@ -228,6 +232,7 @@ profiles:
       - f_git
       - f_git_ignore
       - f_ledger
+      - f_base16_theme
       - f_mopidy_service
       - f_profile
       - f_silver_search_ag
@@ -295,6 +300,7 @@ profiles:
       - f_git
       - f_git_ignore
       - f_ledger
+      - f_base16_theme
       - f_mopidy_service
       - f_profile
       - f_silver_search_ag
@@ -350,6 +356,7 @@ profiles:
       - f_git
       - f_git_ignore
       - f_ledger
+      - f_base16_theme
       - f_mopidy_service
       - f_profile
       - f_silver_search_ag
