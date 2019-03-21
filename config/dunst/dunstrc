@@ -317,3 +317,5 @@
 #    urgency = normal
 #
 # vim: ft=cfg
+
+{%@@ include base16_root_location + '/dunst/themes/' + color_scheme + '.dunstrc' @@%}
