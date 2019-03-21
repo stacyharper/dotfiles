@@ -321,6 +321,8 @@ profiles:
       - d_firefox_profile
       - d_qutebrowser
       - d_qutebrowser_userscripts
+    variables:
+      color_scheme: base16-dracula
   flying-jesusraptor:
     dotfiles:
       - d_bin
