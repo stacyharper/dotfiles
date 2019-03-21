@@ -43,7 +43,3 @@ then
 		source "$file"
 	done
 fi
-
-if [ -f ~/.base16_theme ]; then
-  . ~/.base16_theme
-fi
