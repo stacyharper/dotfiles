@@ -2,3 +2,4 @@
 #allow_bold = true
 font = {{@@ font_name @@}} {{@@ font_size @@}}
 scrollback_lines = 10000
+{%@@ include base16_root_location + '/termite/themes/' + color_scheme + '.config' @@%}

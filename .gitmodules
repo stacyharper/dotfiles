@@ -112,3 +112,7 @@
 [submodule "base16/rofi"]
 	path = base16/rofi
 	url = https://gitlab.com/0xdec/base16-rofi.git
+[submodule "base16/base16-termite"]
+	path = base16/termite
+	url = https://github.com/khamer/base16-termite.git
+	branch = master
