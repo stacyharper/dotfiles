@@ -19,7 +19,7 @@ variables:
   bar_bd: "{{@@ foreground @@}}"
   bar_bg: "{{@@ background @@}}"
   bar_fg: "{{@@ foreground @@}}"
-  theme: dark
+  theme: light
   background: "#002b36"
   foreground: "#839496"
   cursor: "#93a1a1"
