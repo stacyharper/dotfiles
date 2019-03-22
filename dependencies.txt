@@ -21,9 +21,11 @@ termite
 ranger
 i3-wm
 xorg-xsetroot
+scrot
 i3status
 sway
 swaylock
+slurp
 grim
 xclip
 wl-clipboard
