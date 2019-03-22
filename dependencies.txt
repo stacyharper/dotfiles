@@ -21,6 +21,7 @@ termite
 ranger
 i3-wm
 xorg-xsetroot
+xdg-user-dir
 scrot
 i3status
 sway
