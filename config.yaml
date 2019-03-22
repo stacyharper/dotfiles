@@ -197,6 +197,7 @@ dynvariables:
 
     '' | tail -1'
   spotify_password: pass Web/accounts.spotify.com/n0k3 | head -1
+  mpd_password: pass General/mpd | head -1
 profiles:
   laptop-ebarraco:
     dotfiles:
