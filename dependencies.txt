@@ -25,6 +25,7 @@ scrot
 i3status
 sway
 swaylock
+light
 slurp
 grim
 xclip
