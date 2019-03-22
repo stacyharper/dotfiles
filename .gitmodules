@@ -1,6 +1,3 @@
-[submodule "vim/pack/other/start/-b"]
-	path = vim/pack/other/start/-b
-	url = https://github.com/tpope/vim-abolish.git
 [submodule "vim/pack/other/start/vim-abolish"]
 	path = vim/pack/other/start/vim-abolish
 	url = https://github.com/tpope/vim-abolish.git
@@ -76,9 +73,11 @@
 [submodule "vim/pack/other/start/dbext.vim"]
 	path = vim/pack/other/start/dbext.vim
 	url = https://github.com/vim-scripts/dbext.vim.git
+	branch = master
 [submodule "vim/pack/other/start/emmet-vim"]
 	path = vim/pack/other/opt/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+	branch = master
 [submodule "vim/pack/other/start/vim-easy-align"]
 	path = vim/pack/other/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align
@@ -106,12 +105,15 @@
 [submodule "base16/dunst"]
 	path = base16/dunst
 	url = https://github.com/khamer/base16-dunst.git
+	branch = master
 [submodule "base16/gtk2"]
 	path = base16/gtk2
 	url = https://github.com/dawikur/base16-gtk2.git
+	branch = master
 [submodule "base16/rofi"]
 	path = base16/rofi
 	url = https://gitlab.com/0xdec/base16-rofi.git
+	branch = master
 [submodule "base16/base16-termite"]
 	path = base16/termite
 	url = https://github.com/khamer/base16-termite.git
