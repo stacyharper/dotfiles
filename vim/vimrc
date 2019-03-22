@@ -2,8 +2,6 @@ filetype plugin on
 filetype indent on
 syntax on
 
-let base16colorspace=256
-colorscheme {{@@ color_scheme @@}}
 set guifont={{@@ font_name @@}}:h{{@@ font_size @@}}
 "set cindent
 set cpoptions+=d
