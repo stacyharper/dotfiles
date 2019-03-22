@@ -1,8 +1,3 @@
-def_key "+"
-    show_clock
-def_key "="
-    volume_up
-
 def_key "j"
     scroll_down
 def_key "k"
@@ -12,25 +7,15 @@ def_key "h"
 def_key "l"
     next_column
 
-def_key "ctrl-u"
+def_key "ctrl-f"
     page_up
 
-def_key "ctrl-d"
+def_key "ctrl-b"
     page_down
 
 
 def_key "."
     show_lyrics
-
-def_key "n"
-    next_found_item
-def_key "N"
-    previous_found_item
-
-def_key "J"
-    move_sort_order_down
-def_key "K"
-    move_sort_order_up
 
 def_key "d"
   delete_playlist_items
