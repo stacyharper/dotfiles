@@ -1,6 +1,5 @@
 c.backend = 'webengine'
 c.completion.cmd_history_max_items = -1
-c.content.private_browsing = True
 c.fonts.completion.category = 'bold {{@@ font_size @@}}pt {{@@ font_name @@}}'
 c.fonts.completion.entry = '{{@@ font_size @@}}pt {{@@ font_name @@}}'
 c.fonts.debug_console = '{{@@ font_size @@}}pt {{@@ font_name @@}}'
