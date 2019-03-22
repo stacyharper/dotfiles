@@ -189,17 +189,14 @@ dotfiles:
     src: yamllintrc
 dynvariables:
   firefox_profile_path: 'find ~/.mozilla/firefox/ -name "*.default"'
-  spotify_client_id: 'pass db/Loisir/Spotify | grep ''^client_id'' | tr '': '' ''
+  spotify_client_id: 'pass Web/accounts.spotify.com/n0k3 | grep ''^client_id'' | tr '': '' ''
 
     '' | tail -1'
-  spotify_client_secret: 'pass db/Loisir/Spotify | grep ''^client_secret'' | tr '':
+  spotify_client_secret: 'pass Web/accounts.spotify.com/n0k3 | grep ''^client_secret'' | tr '':
     '' ''
 
     '' | tail -1'
-  spotify_password: pass db/Loisir/Spotify | head -1
-  spotify_username: 'pass db/Loisir/Spotify | grep ''^login'' | tr '': '' ''
-
-    '' | tail -1'
+  spotify_password: pass Web/accounts.spotify.com/n0k3 | head -1
 profiles:
   laptop-ebarraco:
     dotfiles:
