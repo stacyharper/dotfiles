@@ -172,7 +172,7 @@ bindsym XF86MonBrightnessDown exec light -U 1
 bindsym Shift+XF86MonBrightnessUp exec light -A 10
 bindsym Shift+XF86MonBrightnessDown exec light -U 10
 
-bindsym Print exec --no-startup-id scrot -s "$(xdg-user-dir PICTURES)/Screenshots/$(date +\"%Y-%m-%d-%k-%M-%S\").png"
+bindsym Print exec --no-startup-id ~/bin/screenshooter.sh
 
 default_border pixel 1
 bindsym $mod+t border toggle
