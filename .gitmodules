@@ -124,3 +124,7 @@
 	path = base16/i3status
 	url = https://github.com/Eluminae/base16-i3status.git
 	branch = master
+[submodule "base16/mako"]
+	path = base16/mako
+	url = https://github.com/Eluminae/base16-mako
+	branch = master
