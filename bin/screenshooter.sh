@@ -13,7 +13,7 @@ program_installed xdg-user-dir
 filename="$(xdg-user-dir PICTURES)/Screenshots/$(date '+%Y-%m-%d-%H-%M-%S').png"
 mkdir -p $(dirname "$filename")
 
-if [ "$DESKTOP_SESSION" == "sway" ]
+if [ "$XDG_SESSION_TYPE" == "wayland" ]
 then
 	program_installed grim
 	program_installed slurp

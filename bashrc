@@ -15,6 +15,21 @@ parse_git_branch() {
 	git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/\* \(.*\)/\1/'
 }
 
+reset_tmux_env() {
+	[ -z "$TMUX" ] && return
+
+	export IFS=",";
+	for line in $(tmux showenv -t $(tmux display -p "#S") | tr "\n" ",");
+	do
+		if [[ $line == -* ]]; then
+			unset $(echo $line | cut -c2-);
+		else
+			export $line;
+		fi;
+	done;
+	unset IFS;
+}
+
 export PS1="${GREEN}\u${RESET}@${HOST_COLOR}\h${RESET}:${CYAN}\w${RESET} ${MAGENTA}\A${RESET} ${RED}\$(parse_git_branch)${RESET}\n$ "
 export PS2='$ '
 
@@ -25,7 +40,7 @@ export HISTSIZE=
 export HISTFILESIZE=
 export HISTCONTROL=ignoreboth:erasedups
 shopt -s histappend
-PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
+PROMPT_COMMAND="history -a;reset_tmux_env;$PROMPT_COMMAND"
 #complete -c sudo  # Allow default completion on sudo command for weird os (debian)
 stty -ixon  # Disable the CTRL+s freeze to allow backward search
 
