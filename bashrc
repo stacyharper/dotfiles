@@ -59,6 +59,6 @@ then
 	done
 fi
 
-if [ -f "{{@@ _dotdrop_dotpath @@}}/base16/shell/scripts/{{@@ color_scheme @@}}.sh" ]; then
+if [ -z "$SSH_CONNECTION" ] && [ -f "{{@@ _dotdrop_dotpath @@}}/base16/shell/scripts/{{@@ color_scheme @@}}.sh" ]; then
 	. "{{@@ _dotdrop_dotpath @@}}/base16/shell/scripts/{{@@ color_scheme @@}}.sh"
 fi
