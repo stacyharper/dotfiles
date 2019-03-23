@@ -1,3 +1,4 @@
+SendEnv BASE16_THEME
 Host server
 	Hostname misterbanal.net
 	Port 22
