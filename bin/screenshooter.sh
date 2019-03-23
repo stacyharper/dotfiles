@@ -1,12 +1,34 @@
 #!/bin/sh
 
-filename="$(xdg-user-dir PICTURES)/Screenshots/$(date +%Y-%m-%d-%k-%M-%S).png"
+program_installed() {
+	type "$1" > /dev/null
+	if [ $? -ne 0 ]
+	then
+		notify-send -u critical "$1 is not installed"
+		exit 1
+	fi
+}
+
+program_installed xdg-user-dir
+filename="$(xdg-user-dir PICTURES)/Screenshots/$(date '+%Y-%m-%d-%H-%M-%S').png"
+mkdir -p $(dirname "$filename")
 
 if [ "$DESKTOP_SESSION" == "sway" ]
 then
+	program_installed grim
+	program_installed slurp
+	program_installed wl-copy
+
 	grim -g "$(slurp)" "$filename" && wl-copy < "$filename"
-	exit $?
+	returned=$?
+	[ $returned -eq 0 ] && echo "$filename"
+	exit $returned
 fi
 
+program_installed scrot
+program_installed xclip
+
 scrot -s "$filename" && xclip "$filename"
-exit $?
+returned=$?
+[ $returned -eq 0 ] && echo "$filename"
+exit $returned
