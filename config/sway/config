@@ -32,6 +32,8 @@ output 'Unknown 0x0742 0x00000000' resolution 1920x1080 position 0,1080
 output 'Unknown 2470W GGJHBHA067342' resolution 1920x1080 position 0,0
 output 'Unknown 0x21ED 0x00000000' resolution 1920x1080 position 0,1080
 
+output * bg "#808080" solid_color
+
 input "2:7:SynPS/2_Synaptics_TouchPad" {
 	   dwt disable
 	   tap enabled
