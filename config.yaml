@@ -395,6 +395,7 @@ profiles:
       - f_bash_aliases
       - f_bash_profile
       - f_tmux
+      - d_tmux
 variables:
   git_email: contact@eddiebarraco.fr
   git_smtp_encryption: tls
