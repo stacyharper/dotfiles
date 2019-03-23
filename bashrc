@@ -61,6 +61,9 @@ fi
 
 export BASE16_THEME=${BASE16_THEME:-{{@@ color_scheme @@}}}
 base16_theme_file_path="{{@@ _dotdrop_dotpath @@}}/base16/shell/scripts/$BASE16_THEME.sh"
-if [ -f "$base16_theme_file_path" ]; then
-  . "$base16_theme_file_path"
+if [ -z "$BASE16_SETTED" ]; then
+	if [ -f "$base16_theme_file_path" ]; then
+		. "$base16_theme_file_path"
+		export BASE16_SETTED="yes"
+	fi
 fi
