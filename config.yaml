@@ -50,6 +50,9 @@ dotfiles:
   d_mopidy:
     dst: ~/.config/mopidy
     src: config/mopidy
+  d_khard:
+    dst: ~/.config/khard
+    src: config/khard
   d_mutt:
     dst: ~/.mutt
     src: mutt
@@ -211,6 +214,7 @@ profiles:
       - d_ncmpcpp
       - d_mopidy
       - d_mutt
+      - d_khard
       - d_neovim
       - d_newsboat
       - d_ranger
@@ -280,6 +284,7 @@ profiles:
       - d_ncmpcpp
       - d_mopidy
       - d_mutt
+      - d_khard
       - d_neovim
       - d_newsboat
       - d_ranger
@@ -339,6 +344,7 @@ profiles:
       - d_ncmpcpp
       - d_mopidy
       - d_mutt
+      - d_khard
       - d_neovim
       - d_newsboat
       - d_ranger

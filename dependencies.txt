@@ -5,6 +5,7 @@ msmtp
 notmuch
 khal
 mutt
+khard
 links
 urlscan
 tmux
