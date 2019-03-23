@@ -61,4 +61,5 @@ fi
 
 if [ -z "$SSH_CONNECTION" ] && [ -f "{{@@ _dotdrop_dotpath @@}}/base16/shell/scripts/{{@@ color_scheme @@}}.sh" ]; then
 	. "{{@@ _dotdrop_dotpath @@}}/base16/shell/scripts/{{@@ color_scheme @@}}.sh"
+	export BASE16_THEME="{{@@ color_scheme @@}}"
 fi
