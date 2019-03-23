@@ -26,9 +26,8 @@ then
 fi
 
 program_installed scrot
-program_installed xclip
 
-scrot -s "$filename" && xclip "$filename"
+scrot -s "$filename"
 returned=$?
 [ $returned -eq 0 ] && echo "$filename"
 exit $returned
