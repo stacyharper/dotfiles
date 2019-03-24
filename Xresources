@@ -14,4 +14,4 @@ XTerm*VT100*translations: #override\n\
 
 *borderWidth: 0
 
-{%@@ include 'base16/xresources/xresources/' + color_scheme + '-256.Xresources' @@%}
+{%@@ include 'base16/xresources/xresources/' + color_scheme + '.Xresources' @@%}

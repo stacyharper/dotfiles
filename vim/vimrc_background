@@ -1,4 +1,6 @@
-if !exists('g:colors_name') || g:colors_name != "{{@@ color_scheme @@}}"
-  let base16colorspace=256
-  colorscheme {{@@ color_scheme @@}}
+if !exists('g:colors_name') || g:colors_name != "base16-dracula"
+    if !($TERM == "xterm" || $TERM == "xterm-256color" || $TERM == "linux")
+        let base16colorspace=256
+    endif
+    colorscheme base16-dracula
 endif
