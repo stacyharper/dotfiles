@@ -35,10 +35,11 @@ config.bind('gT', 'tab-prev')
 config.bind('gt', 'tab-next')
 config.bind('<Ctrl-l>', 'edit-url')
 c.editor.command = ['nvim-qt', '--nofork', '{file}', '--', '-c', 'normal {line}G{column0}l']
+c.content.cookies.store = False
+c.content.cookies.accept = 'no-unknown-3rdparty'
 c.content.host_blocking.lists = [
-    "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-    "https://easylist.to/easylist/easylist.txt",
-    "https://easylist.to/easylist/easyprivacy.txt",
+    'https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts',
+    'https://easylist.to/easylist/easyprivacy.txt',
 ]
 #with config.pattern('*://www.netflix.com/') as p:
 #    p.content.private_browsing = False
