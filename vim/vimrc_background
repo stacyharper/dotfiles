@@ -1,9 +1,4 @@
-if empty ($BASE16_THEME)
-    let s:color_scheme = "{{@@ color_scheme @@}}"
-else
-    let s:color_scheme = $BASE16_THEME
-endif
-
-if !exists('g:colors_name') || g:colors_name != s:color_scheme
-  exe 'colorscheme ' . s:color_scheme
+if !exists('g:colors_name') || g:colors_name != "{{@@ color_scheme @@}}"
+  let base16colorspace=256
+  colorscheme {{@@ color_scheme @@}}
 endif
