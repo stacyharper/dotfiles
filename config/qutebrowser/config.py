@@ -1,4 +1,5 @@
 c.backend = 'webengine'
+#c.content.private_browsing = True
 c.completion.cmd_history_max_items = -1
 c.fonts.completion.category = 'bold {{@@ font_size @@}}pt {{@@ font_name @@}}'
 c.fonts.completion.entry = '{{@@ font_size @@}}pt {{@@ font_name @@}}'
@@ -34,4 +35,11 @@ config.bind('gT', 'tab-prev')
 config.bind('gt', 'tab-next')
 config.bind('<Ctrl-l>', 'edit-url')
 c.editor.command = ['nvim-qt', '--nofork', '{file}', '--', '-c', 'normal {line}G{column0}l']
+c.content.host_blocking.lists = [
+    "https://easylist.to/easylist/easylist.txt",
+    "https://easylist.to/easylist/easyprivacy.txt",
+    "https://easylist.to/easylist/fanboy-annoyance.txt",
+]
+#with config.pattern('*://www.netflix.com/') as p:
+#    p.content.private_browsing = False
 {%@@ include 'base16/qutebrowser/themes/' + color_scheme + '.config.py' @@%}
