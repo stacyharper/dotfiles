@@ -6,9 +6,9 @@ reload-time 5
 
 color background        white   black
 color listnormal        color20 black
-color listnormal_unread color15 black bold
+color listnormal_unread color15 black
 color listfocus         black   white
-color listfocus_unread  black   white bold
+color listfocus_unread  black   white
 color info              magenta black bold
 color article           blue    black
 
