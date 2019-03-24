@@ -61,8 +61,8 @@ dotfiles:
     link_children: true
     src: config/nvim
   d_newsboat:
-    dst: ~/.newsboat
-    src: newsboat
+    dst: ~/.config/newsboat
+    src: config/newsboat
   d_ranger:
     dst: ~/.config/ranger
     src: config/ranger
