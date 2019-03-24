@@ -17,7 +17,6 @@ mopidy
 vdirsyncer
 python-requests-oauthlib
 newsboat
-xterm
 termite
 ranger
 i3-wm
