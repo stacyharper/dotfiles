@@ -35,6 +35,8 @@ export PS2='$ '
 
 export PATH=$PATH:~/bin
 
+trap 'printf "\033]0;%s\007" "${BASH_COMMAND//[^[:print:]]/}" >&2' DEBUG
+
 # Immediate bash history
 export HISTSIZE=
 export HISTFILESIZE=
