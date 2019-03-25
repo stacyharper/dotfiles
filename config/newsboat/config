@@ -10,7 +10,7 @@ color listnormal_unread color15 black
 color listfocus         black   white
 color listfocus_unread  black   white
 color info              magenta black bold
-color article           blue    black
+color article           white   black
 
 # bind keys - vim style
 bind-key z random-unread
