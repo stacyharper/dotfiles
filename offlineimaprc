@@ -16,6 +16,7 @@ localrepository = contact_personal-local
 remoterepository = contact_personal-remote
 autorefresh = 0.5
 quick = 10
+postsynchook = {{@@ env['HOME'] @@}}/bin/offlineimap-postsync
 
 [Repository contact_personal-local]
 type = Maildir
@@ -35,6 +36,7 @@ localrepository = contact_stacyharper-local
 remoterepository = contact_stacyharper-remote
 autorefresh = 0.5
 quick = 10
+postsynchook = {{@@ env['HOME'] @@}}/bin/offlineimap-postsync
 
 [Repository contact_stacyharper-local]
 type = Maildir
@@ -54,6 +56,7 @@ localrepository = contact_misterbanal-local
 remoterepository = contact_misterbanal-remote
 autorefresh = 0.5
 quick = 10
+postsynchook = {{@@ env['HOME'] @@}}/bin/offlineimap-postsync
 
 [Repository contact_misterbanal-local]
 type = Maildir
@@ -73,6 +76,7 @@ localrepository = ubitransport-local
 remoterepository = ubitransport-remote
 autorefresh = 0.5
 quick = 10
+postsynchook = {{@@ env['HOME'] @@}}/bin/offlineimap-postsync
 
 [Repository ubitransport-local]
 type = Maildir

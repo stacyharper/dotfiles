@@ -3,6 +3,7 @@ procmail
 offlineimap
 msmtp
 notmuch
+notifymuch-git
 khal
 mutt
 khard

@@ -156,6 +156,12 @@ dotfiles:
   f_notmuch-config:
     dst: ~/.notmuch-config
     src: notmuch-config
+  d_notmuch:
+    dst: ~/.mails/.notmuch
+    src: mails/notmuch
+  d_notifymuch:
+    dst: ~/.config/notifymuch
+    src: config/notifymuch
   f_offlineimap.py:
     dst: ~/.offlineimap.py
     src: offlineimap.py
@@ -253,6 +259,8 @@ profiles:
       - f_offlineimapservice
       - f_offlineimap.py
       - f_notmuch-config
+      - d_notmuch
+      - d_notifymuch
       - f_mailcap
       - d_vdirsyncer
       - d_khal
@@ -322,6 +330,8 @@ profiles:
       - f_offlineimaprc
       - f_offlineimap.py
       - f_notmuch-config
+      - d_notmuch
+      - d_notifymuch
       - f_mailcap
       - d_vdirsyncer
       - d_khal
@@ -382,6 +392,8 @@ profiles:
       - f_offlineimaprc
       - f_offlineimap.py
       - f_notmuch-config
+      - d_notmuch
+      - d_notifymuch
       - f_mailcap
       - d_vdirsyncer
       - d_khal

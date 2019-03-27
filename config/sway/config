@@ -219,4 +219,3 @@ hide_edge_borders smart
 
 exec --no-startup-id nextcloud
 exec --no-startup-id mako
-exec --no-startup-id ~/bin/listen-emails.sh
