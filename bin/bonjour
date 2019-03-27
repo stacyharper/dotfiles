@@ -4,7 +4,7 @@ back=$(pwd)
 
 cd ~/Dotfiles
 git pull --rebase
-~/Dotfiles/programs/dotdrop/dotdrop.sh -c ../../config.yaml install -f
+~/Dotfiles/programs/dotdrop/dotdrop.sh -c ../../config.yaml -b install -f
 sudo pacman -Syu
 
 cd "$back"
