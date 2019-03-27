@@ -10,6 +10,16 @@ set use_from=yes
 set realname="Eddie Barraco"
 set envelope_from=yes
 set sort=threads
+set edit_headers=yes
+
+# Khard integration
+set query_command= "khard email --parsable %s"
+bind editor <Tab> complete-query
+bind editor ^T    complete
+set query_command = "echo %s | xargs khard email --parsable --"
+macro index,pager A \
+    "<pipe-message>khard add-email<return>" \
+    "add the sender email address to khard"
 
 auto_view text/html
 alternative_order text/plain text/enriched text/html
