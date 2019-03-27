@@ -48,7 +48,7 @@ other_email=contact@stacyharper.net;contact@misterbanal.net;e.barraco@ubitranspo
 #		in the mail store.
 #
 [new]
-tags=unread;inbox;
+tags=uncategorized;
 ignore=
 
 # Search configuration
