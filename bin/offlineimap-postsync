@@ -3,7 +3,7 @@
 mkdir ~/.notmuch-postsync >> /dev/null
 if [ $? -ne 0 ]
 then
-	notify-send -u critical 'Notmuch post sync hook semaphore already taken'
+	notify-send -u low 'Notmuch post sync hook semaphore already taken'
 	exit 1
 fi
 
