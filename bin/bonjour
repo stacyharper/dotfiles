@@ -1,0 +1,7 @@
+#!/bin/sh
+
+back=$(pwd)
+cd ~/Dotfiles
+git pull --rebase
+~/Dotfiles/programs/dotdrop/dotdrop.sh -c ../../config.yaml install -f
+cd "$back"
