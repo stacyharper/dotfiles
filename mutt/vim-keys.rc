@@ -23,8 +23,6 @@ bind index                      \Cy previous-line
 
 bind index   M  middle-page
 bind index   L  bottom-page
-bind generic k  previous-line
-bind generic j  next-line
 bind generic z  noop
 bind generic zz current-middle
 bind generic zb current-bottom
