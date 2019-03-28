@@ -16,6 +16,7 @@ c.fonts.statusbar = '{{@@ font_size @@}}pt {{@@ font_name @@}}'
 c.fonts.tabs = '{{@@ font_size @@}}pt {{@@ font_name @@}}'
 c.spellcheck.languages = ['en-US', 'fr-FR']
 c.tabs.favicons.show = 'never'
+c.tabs.select_on_remove = 'prev'
 c.zoom.default = '140%'
 config.bind('<Alt-">', 'tab-focus 3')
 config.bind('<Alt-&>', 'tab-focus 1')
