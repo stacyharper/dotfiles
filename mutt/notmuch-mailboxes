@@ -1,4 +1,5 @@
 virtual-mailboxes "inbox" "notmuch://?query=tag:inbox"
+virtual-mailboxes "unread" "notmuch://?query=tag:unread"
 virtual-mailboxes "technique" "notmuch://?query=tag:technique"
 virtual-mailboxes "archive" "notmuch://?query=tag:archive"
 virtual-mailboxes "sent" "notmuch://?query=tag:sent"
