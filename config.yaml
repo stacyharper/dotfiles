@@ -277,7 +277,7 @@ profiles:
       khal_default_calendar: ubitransport
       msmtp_default_profile: ubitransport
       mutt_default_context: ubitransport
-      color_scheme: base16-default-dark
+      color_scheme: base16-twilight
   Terminator:
     dotfiles:
       - d_beet
