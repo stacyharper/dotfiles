@@ -9,3 +9,4 @@ inode/directory=ranger.desktop;thunar.desktop
 inode/mount-point=ranger.desktop;thunar.desktop
 image/jpeg=feh.desktop
 image/png=feh.desktop
+application/pdf=firefox.desktop
