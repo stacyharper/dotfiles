@@ -126,3 +126,6 @@
 	path = base16/mako
 	url = https://github.com/Eluminae/base16-mako
 	branch = master
+[submodule "vim/pack/other/start/vim-ledger_x"]
+	path = vim/pack/other/start/vim-ledger_x
+	url = https://github.com/rcaputo/vim-ledger_x.git
