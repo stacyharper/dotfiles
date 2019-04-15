@@ -1,10 +1,9 @@
 #!/bin/sh
 
-back=$(pwd)
-
 cd ~/Dotfiles
 git pull --rebase
+git push
 ~/Dotfiles/programs/dotdrop/dotdrop.sh -c ../../config.yaml -b install -f
 sudo pacman -Syu
 
-cd "$back"
+shutdown -h now
