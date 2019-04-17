@@ -1,9 +1,0 @@
-#!/bin/sh
-
-cd ~/Dotfiles
-git pull --rebase
-git push
-~/Dotfiles/programs/dotdrop/dotdrop.sh -c ../../config.yaml -b install -f
-sudo pacman -Syu
-
-shutdown -h now
