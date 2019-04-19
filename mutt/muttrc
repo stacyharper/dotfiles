@@ -36,6 +36,6 @@ folder-hook ubitransport/* source ~/.mutt/accounts/ubitransport
 set virtual_spoolfile=yes
 set folder={{@@ env['HOME'] @@}}/.mails
 source ~/.mutt/notmuch-mailboxes
-macro index A "<modify-labels>+archive -unread -inbox\\n" "Archive message"
+#macro index A "<modify-labels>+archive -unread -inbox\\n" "Archive message"
 macro index c "<change-vfolder>?" "Change to vfolder overview"
 macro index \\\\ "<vfolder-from-query>" "Search mailbox"
