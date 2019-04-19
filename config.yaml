@@ -66,10 +66,9 @@ dotfiles:
   d_ranger:
     dst: ~/.config/ranger
     src: config/ranger
-  d_ssh:
-    dst: ~/.ssh
-    link_children: true
-    src: ssh
+  f_ssh_config:
+    dst: ~/.ssh/config
+    src: ssh/config
   d_sway:
     dst: ~/.config/sway
     src: config/sway
@@ -224,7 +223,7 @@ profiles:
       - d_neovim
       - d_newsboat
       - d_ranger
-      - d_ssh
+      - f_ssh_config
       - d_sway
       - d_swaynag
       - d_mako
@@ -296,7 +295,7 @@ profiles:
       - d_neovim
       - d_newsboat
       - d_ranger
-      - d_ssh
+      - f_ssh_config
       - d_sway
       - d_swaynag
       - d_mako
@@ -358,7 +357,7 @@ profiles:
       - d_neovim
       - d_newsboat
       - d_ranger
-      - d_ssh
+      - f_ssh_config
       - d_sway
       - d_swaynag
       - d_mako

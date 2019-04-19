@@ -21,3 +21,5 @@ Host media
 	Hostname media.misterbanal.net
 	Port 22
 	User eddie
+
+{%@@ include 'ssh/ubitransport_config' @@%}
