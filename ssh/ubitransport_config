@@ -12,6 +12,11 @@ Host ubitransports-ca-gw
 	Port 22
 	IdentityFile ubitransport_prod_id_rsa
 
+Host ubitransports-ca-gcp-gw
+        Hostname 35.203.26.7
+        User ubitransports
+        Port 22
+
 # -=== PG-MASTERS ===-
 
 Host ubitransports-pg-master
@@ -122,6 +127,15 @@ Host ubitransports-ca-web-apache-01
 Host ubitransports-ca-staging
 	User www-data
 	ProxyCommand ssh ubitransports-ca-gw nc staging %p
+
+
+Host ubitransports-ca-gcp-pg-master
+        User www-data
+        ProxyCommand ssh ubitransports-ca-gcp-gw -W pg-master:%p
+
+Host ubitransports-ca-gcp-web-apache-01
+        User www-data
+        ProxyCommand ssh ubitransports-ca-gcp-gw -W web-apache-01:%p
 
 # -=== OTHERS ===-
 
