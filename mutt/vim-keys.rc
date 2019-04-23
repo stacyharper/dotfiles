@@ -32,3 +32,5 @@ bind generic zt current-top
 bind browser,pager,index N  search-opposite
 bind index               za collapse-thread
 bind index               zA collapse-all
+
+bind pager,index r  group-reply
