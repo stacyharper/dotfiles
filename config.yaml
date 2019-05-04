@@ -91,8 +91,8 @@ dotfiles:
     dst: ~/.config/termite
     src: config/termite
   d_tmux:
-    dst: ~/.tmux.d
-    src: tmux.d
+    dst: ~/.config/tmux
+    src: config/tmux
   d_rofi_base16:
     dst: ~/.local/share/rofi/themes
     src: base16/rofi/themes
@@ -176,9 +176,6 @@ dotfiles:
   f_silver_search_ag:
     dst: ~/.agignore
     src: agignore
-  f_tmux:
-    dst: ~/.tmux.conf
-    src: tmux.conf
   f_xdg_dirs:
     dst: ~/.config/user-dirs.dirs
     src: config/user-dirs.dirs
@@ -247,7 +244,6 @@ profiles:
       - f_mopidy_service
       - f_profile
       - f_silver_search_ag
-      - f_tmux
       - f_xdg_dirs
       - f_xinit
       - f_xprofile
@@ -319,7 +315,6 @@ profiles:
       - f_mopidy_service
       - f_profile
       - f_silver_search_ag
-      - f_tmux
       - f_xdg_dirs
       - f_xinit
       - f_xprofile
@@ -381,7 +376,6 @@ profiles:
       - f_mopidy_service
       - f_profile
       - f_silver_search_ag
-      - f_tmux
       - f_xdg_dirs
       - f_xinit
       - f_xprofile
@@ -411,7 +405,6 @@ profiles:
       - f_bash
       - f_bash_aliases
       - f_bash_profile
-      - f_tmux
       - d_tmux
 variables:
   git_email: contact@eddiebarraco.fr
