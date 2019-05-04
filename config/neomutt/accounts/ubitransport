@@ -2,3 +2,5 @@ set from=e.barraco@ubitransport.com
 set spoolfile = "+ubitransport/INBOX"
 set record = "+ubitransport/[Gmail].Messages envoy&AOk-s"
 set postponed = "+ubitransport/[Gmail].Brouillons"
+set crypt_autosign = yes
+set pgp_sign_as = "37080D2F6B8B0E8775D10EB76F87995DDBE700ED"
