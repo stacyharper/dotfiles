@@ -10,8 +10,6 @@
 	templatedir = ~/.gitconfig.d/template
 [clone]
 	templatedir = ~/.gitconfig.d/template
-[include]
-	path = ~/.git-gpg-config
 [diff]
 	algorithm = patience
 	tool = vimdiff
