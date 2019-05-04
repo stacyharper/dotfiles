@@ -53,9 +53,9 @@ dotfiles:
   d_khard:
     dst: ~/.config/khard
     src: config/khard
-  d_mutt:
-    dst: ~/.mutt
-    src: mutt
+  d_neomutt:
+    dst: ~/.config/neomutt
+    src: config/neomutt
   d_neovim:
     dst: ~/.config/nvim
     link_children: true
@@ -218,7 +218,7 @@ profiles:
       - d_mpd
       - d_ncmpcpp
       - d_mopidy
-      - d_mutt
+      - d_neomutt
       - d_khard
       - d_neovim
       - d_newsboat
@@ -290,7 +290,7 @@ profiles:
       - d_mpd
       - d_ncmpcpp
       - d_mopidy
-      - d_mutt
+      - d_neomutt
       - d_khard
       - d_neovim
       - d_newsboat
@@ -352,7 +352,7 @@ profiles:
       - d_mpd
       - d_ncmpcpp
       - d_mopidy
-      - d_mutt
+      - d_neomutt
       - d_khard
       - d_neovim
       - d_newsboat
