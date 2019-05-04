@@ -3,4 +3,5 @@ set spoolfile = "+contact_stacyharper/INBOX"
 set record = "+contact_stacyharper/Sent"
 set postponed = "+contact_stacyharper/Drafts"
 set crypt_autosign = yes
-set pgp_sign_as = "A1416EB509859042D9E0F63E26AFDF80B4916C50"
+set pgp_default_key = "A1416EB509859042D9E0F63E26AFDF80B4916C50"
+set postpone_encrypt = yes
