@@ -1,4 +1,5 @@
 source "~/.config/neomutt/vim-keys.rc"
+source "~/.config/neomutt/pgp.rc"
 source "~/.config/neomutt/base16-theme"
 
 # IMAP: offlineimap
