@@ -1,6 +1,7 @@
 [user]
 	email = {{@@ git_email @@}}
 	name = Eddie Barraco
+	signingkey = CAB12F60BD13A21DAB60C5105BAC92328B7C5D65
 [push]
 	default = simple
 [core]
