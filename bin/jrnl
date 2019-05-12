@@ -10,8 +10,9 @@ $EDITOR "$tmp_file_path"
 
 file_path="$journal_folder_path/$(date "+%Y-%m-%d-%H-%M-%S") $(head -1 "$tmp_file_path").txt"
 
-echo "$file_path"
-
 tail -n +2 "$tmp_file_path" >> "$file_path"
-
+echo "$file_path"
 rm "$tmp_file_path"
+
+read -p "tags: " tags
+tmsu tag --tags="$tags" "$file_path"
