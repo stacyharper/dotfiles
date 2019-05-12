@@ -36,3 +36,4 @@ dunst
 mako
 ledger
 libnotify
+tmsu
