@@ -1,0 +1,17 @@
+#!/bin/bash
+
+journal_folder_path="$HOME/Documents/Journal"
+
+tmp_file_path=$(mktemp)
+
+$EDITOR "$tmp_file_path"
+
+[ 0 -ne $? ] && exit 1
+
+file_path="$journal_folder_path/$(date "+%Y-%m-%d-%H-%M-%S") $(head -1 "$tmp_file_path").txt"
+
+echo "$file_path"
+
+tail -n +2 "$tmp_file_path" >> "$file_path"
+
+rm "$tmp_file_path"

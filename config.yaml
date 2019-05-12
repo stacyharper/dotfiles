@@ -140,9 +140,6 @@ dotfiles:
   f_git_ignore:
     dst: ~/.gitignore
     src: gitignore
-  f_jrnl:
-    dst: ~/.jrnl_config
-    src: jrnl_config
   f_ledger:
     dst: ~/.ledgerrc
     src: ledgerrc
