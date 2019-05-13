@@ -10,8 +10,14 @@ $EDITOR "$tmp_file_path"
 
 file_path="$journal_folder_path/$(date "+%Y-%m-%d-%H-%M-%S") $(head -1 "$tmp_file_path").txt"
 
-tail -n +2 "$tmp_file_path" >> "$file_path"
 echo "$file_path"
+tail -n +2 "$tmp_file_path" >> "$file_path"
+if [ $? -ne 0 ]
+then
+	echo "Error: $tmp_file_path"
+	exit 1
+fi
+
 rm "$tmp_file_path"
 
 read -p "tags: " tags
