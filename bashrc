@@ -50,6 +50,7 @@ shopt -s globstar
 
 export EDITOR=/usr/bin/vim
 export PAGER=/usr/bin/less
+export WWW_HOME=duckduckgo.com
 
 source ~/.bash_aliases
 
