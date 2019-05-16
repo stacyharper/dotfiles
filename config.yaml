@@ -66,6 +66,9 @@ dotfiles:
   d_ranger:
     dst: ~/.config/ranger
     src: config/ranger
+  d_elinks:
+    dst: ~/.elinks
+    src: elinks
   f_ssh_config:
     dst: ~/.ssh/config
     src: ssh/config
@@ -220,6 +223,7 @@ profiles:
       - d_neovim
       - d_newsboat
       - d_ranger
+      - d_elinks
       - f_ssh_config
       - d_sway
       - d_swaynag
@@ -291,6 +295,7 @@ profiles:
       - d_neovim
       - d_newsboat
       - d_ranger
+      - d_elinks
       - f_ssh_config
       - d_sway
       - d_swaynag
@@ -352,6 +357,7 @@ profiles:
       - d_neovim
       - d_newsboat
       - d_ranger
+      - d_elinks
       - f_ssh_config
       - d_sway
       - d_swaynag
