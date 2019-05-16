@@ -30,3 +30,5 @@
 	smtpserver = {{@@ git_smtp_server @@}}
 	smtpserverport = {{@@ git_smtp_port @@}}
 	smtpuser = {{@@ git_smtp_user @@}}
+[format]
+	signOff = yes
