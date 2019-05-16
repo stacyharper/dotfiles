@@ -2,19 +2,19 @@
 
 Host ubitransport-gw
 	Hostname 212.129.1.67
-	User ubitransport
+	User ubitransports
 	Port 22
 	IdentityFile ubitransport_prod_id_rsa
 
 Host ubitransport-ca-gw
 	Hostname 158.69.16.129
-	User ubitransport
+	User ubitransports
 	Port 22
 	IdentityFile ubitransport_prod_id_rsa
 
 Host ubitransport-ca-gcp-gw
         Hostname 35.203.26.7
-        User ubitransport
+        User ubitransports
         Port 22
 
 # -=== PG-MASTERS ===-
