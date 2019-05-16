@@ -1,156 +1,156 @@
 # -=== GATEWAYS ===-
 
-Host ubitransports-gw
+Host ubitransport-gw
 	Hostname 212.129.1.67
-	User ubitransports
+	User ubitransport
 	Port 22
 	IdentityFile ubitransport_prod_id_rsa
 
-Host ubitransports-ca-gw
+Host ubitransport-ca-gw
 	Hostname 158.69.16.129
-	User ubitransports
+	User ubitransport
 	Port 22
 	IdentityFile ubitransport_prod_id_rsa
 
-Host ubitransports-ca-gcp-gw
+Host ubitransport-ca-gcp-gw
         Hostname 35.203.26.7
-        User ubitransports
+        User ubitransport
         Port 22
 
 # -=== PG-MASTERS ===-
 
-Host ubitransports-pg-master
+Host ubitransport-pg-master
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-master %p
+	ProxyCommand ssh ubitransport-gw nc pg-master %p
 
-Host ubitransports-pg-master-02
+Host ubitransport-pg-master-02
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-master-02 %p
+	ProxyCommand ssh ubitransport-gw nc pg-master-02 %p
 
-Host ubitransports-pg-master-03
+Host ubitransport-pg-master-03
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-master-03 %p
+	ProxyCommand ssh ubitransport-gw nc pg-master-03 %p
 
-Host ubitransports-pg-master-04
+Host ubitransport-pg-master-04
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-master-04 %p
+	ProxyCommand ssh ubitransport-gw nc pg-master-04 %p
 
-Host ubitransports-pg-master-05
+Host ubitransport-pg-master-05
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-master-05 %p
+	ProxyCommand ssh ubitransport-gw nc pg-master-05 %p
 
-Host ubitransports-pg-master-06
+Host ubitransport-pg-master-06
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-master-06 %p
+	ProxyCommand ssh ubitransport-gw nc pg-master-06 %p
 
-Host ubitransports-pg-master-07
+Host ubitransport-pg-master-07
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-master-07 %p
+	ProxyCommand ssh ubitransport-gw nc pg-master-07 %p
 
-Host ubitransports-pg-private-dev
+Host ubitransport-pg-private-dev
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-private-dev %p
-
-# Canada
-Host ubitransports-ca-pg-master
-	User www-data
-	ProxyCommand ssh ubitransports-ca-gw nc pg-master %p
+	ProxyCommand ssh ubitransport-gw nc pg-private-dev %p
 
 # Canada
-Host ubitransports-ca-pg-slave-01
+Host ubitransport-ca-pg-master
 	User www-data
-	ProxyCommand ssh ubitransports-ca-gw nc pg-slave-01 %p
+	ProxyCommand ssh ubitransport-ca-gw nc pg-master %p
+
+# Canada
+Host ubitransport-ca-pg-slave-01
+	User www-data
+	ProxyCommand ssh ubitransport-ca-gw nc pg-slave-01 %p
 
 # -=== PG PRIVATE (REGIONS) ===-
 
-Host ubitransports-pg-private-cvdl
+Host ubitransport-pg-private-cvdl
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-private-cvdl %p
+	ProxyCommand ssh ubitransport-gw nc pg-private-cvdl %p
 
-Host ubitransports-pg-private-regionsud
+Host ubitransport-pg-private-regionsud
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-private-regionsud %p
+	ProxyCommand ssh ubitransport-gw nc pg-private-regionsud %p
 
-Host ubitransports-pg-private-hdf
+Host ubitransport-pg-private-hdf
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-private-hdf %p
+	ProxyCommand ssh ubitransport-gw nc pg-private-hdf %p
 
-Host ubitransports-pg-private-bfc
+Host ubitransport-pg-private-bfc
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-private-bfc %p
+	ProxyCommand ssh ubitransport-gw nc pg-private-bfc %p
 
-Host ubitransports-pg-private-aleop
+Host ubitransport-pg-private-aleop
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc pg-private-aleop %p
+	ProxyCommand ssh ubitransport-gw nc pg-private-aleop %p
 
 # -=== APACHE ===-
 
-Host ubitransports-web-apache-01
+Host ubitransport-web-apache-01
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc web-apache-01 %p
+	ProxyCommand ssh ubitransport-gw nc web-apache-01 %p
 
-Host ubitransports-m2m-apache-01
+Host ubitransport-m2m-apache-01
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc m2m-apache-01 %p
+	ProxyCommand ssh ubitransport-gw nc m2m-apache-01 %p
 
-Host ubitransports-m2m-apache-02
+Host ubitransport-m2m-apache-02
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc m2m-apache-02 %p
+	ProxyCommand ssh ubitransport-gw nc m2m-apache-02 %p
 
-Host ubitransports-m2m-apache-03
+Host ubitransport-m2m-apache-03
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc m2m-apache-03 %p
+	ProxyCommand ssh ubitransport-gw nc m2m-apache-03 %p
 
-Host ubitransports-m2m-apache-04
+Host ubitransport-m2m-apache-04
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc m2m-apache-04 %p
+	ProxyCommand ssh ubitransport-gw nc m2m-apache-04 %p
 
-Host ubitransports-m2m-apache-05
+Host ubitransport-m2m-apache-05
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc m2m-apache-05 %p
+	ProxyCommand ssh ubitransport-gw nc m2m-apache-05 %p
 
 # Staging
-Host ubitransports-staging
+Host ubitransport-staging
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc staging %p
+	ProxyCommand ssh ubitransport-gw nc staging %p
 
-Host ubitransports-prod-legacy
+Host ubitransport-prod-legacy
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc 10.11.2.1 %p
+	ProxyCommand ssh ubitransport-gw nc 10.11.2.1 %p
 
 # Canada
-Host ubitransports-ca-web-apache-01
+Host ubitransport-ca-web-apache-01
 	User www-data
-	ProxyCommand ssh ubitransports-ca-gw nc web-apache-01 %p
+	ProxyCommand ssh ubitransport-ca-gw nc web-apache-01 %p
 
 # Canada staging (down)
-Host ubitransports-ca-staging
+Host ubitransport-ca-staging
 	User www-data
-	ProxyCommand ssh ubitransports-ca-gw nc staging %p
+	ProxyCommand ssh ubitransport-ca-gw nc staging %p
 
 
-Host ubitransports-ca-gcp-pg-master
+Host ubitransport-ca-gcp-pg-master
         User www-data
-        ProxyCommand ssh ubitransports-ca-gcp-gw -W pg-master:%p
+        ProxyCommand ssh ubitransport-ca-gcp-gw -W pg-master:%p
 
-Host ubitransports-ca-gcp-web-apache-01
+Host ubitransport-ca-gcp-web-apache-01
         User www-data
-        ProxyCommand ssh ubitransports-ca-gcp-gw -W web-apache-01:%p
+        ProxyCommand ssh ubitransport-ca-gcp-gw -W web-apache-01:%p
 
 # -=== OTHERS ===-
 
-Host ubitransports-jenkins
+Host ubitransport-jenkins
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc jenkins %p
+	ProxyCommand ssh ubitransport-gw nc jenkins %p
 
-Host ubitransports-puppet
+Host ubitransport-puppet
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc puppet %p
+	ProxyCommand ssh ubitransport-gw nc puppet %p
 
-Host ubitransports-proxy
+Host ubitransport-proxy
 	User www-data
-	ProxyCommand ssh ubitransports-gw nc proxy %p
+	ProxyCommand ssh ubitransport-gw nc proxy %p
 
-Host ubitransports-omnidb
+Host ubitransport-omnidb
 	User omnidb
-	ProxyCommand ssh ubitransports-gw -W omnidb:%p
+	ProxyCommand ssh ubitransport-gw -W omnidb:%p
