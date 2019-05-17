@@ -13,9 +13,10 @@ Host ubitransport-ca-gw
 	IdentityFile ubitransport_prod_id_rsa
 
 Host ubitransport-ca-gcp-gw
-        Hostname 35.203.26.7
-        User ubitransports
-        Port 22
+	Hostname 35.203.26.7
+	User ubitransports
+	Port 22
+	IdentityFile ubitransport_prod_id_rsa
 
 # -=== PG-MASTERS ===-
 
@@ -128,15 +129,6 @@ Host ubitransport-ca-staging
 	User www-data
 	ProxyCommand ssh ubitransport-ca-gw nc staging %p
 
-
-Host ubitransport-ca-gcp-pg-master
-        User www-data
-        ProxyCommand ssh ubitransport-ca-gcp-gw -W pg-master:%p
-
-Host ubitransport-ca-gcp-web-apache-01
-        User www-data
-        ProxyCommand ssh ubitransport-ca-gcp-gw -W web-apache-01:%p
-
 # -=== OTHERS ===-
 
 Host ubitransport-jenkins
@@ -154,3 +146,17 @@ Host ubitransport-proxy
 Host ubitransport-omnidb
 	User omnidb
 	ProxyCommand ssh ubitransport-gw -W omnidb:%p
+
+### UbiTransport Canada GCP
+
+Host ubitransport-ca-gcp-pg-master
+	User www-data
+	ProxyCommand ssh ubitransport-ca-gcp-gw -W pg-master:%p
+
+Host ubitransport-ca-gcp-pg-master-02
+	User www-data
+	ProxyCommand ssh ubitransport-ca-gcp-gw -W pg-master-02:%p
+
+Host ubitransport-ca-gcp-web-apache-01
+	User www-data
+	ProxyCommand ssh ubitransport-ca-gcp-gw -W web-apache-01:%p
