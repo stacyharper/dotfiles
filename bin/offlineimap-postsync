@@ -11,7 +11,7 @@ notmuch tag +inbox -- tag:uncategorized
 
 notmuch tag -inbox +sent -- "tag:uncategorized and (from:contact@eddiebarraco.fr or from:contact@stacyharper.net or from:contact@misterbanal.net or from:e.barraco@ubitransport.com)"
 notmuch tag +newsletters -- "tag:uncategorized and (from:newsletter@example.org or subject:'newsletter*')"
-notmuch tag -inbox +technique -- "tag:uncategorized and (to:technique@ubitransport.com or to:technique@ubitransports.com)"
+notmuch tag -inbox +technique -- "tag:uncategorized and (to:technique@ubitransport.com or to:technique@ubitransports.com) and not from:support@synalabs.com"
 notmuch tag -inbox +chatons -- "tag:uncategorized and (subject:\[chatons\])"
 
 notmuch tag -uncategorized -- tag:uncategorized
