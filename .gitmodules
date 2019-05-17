@@ -129,3 +129,9 @@
 [submodule "vim/pack/other/start/vim-ledger_x"]
 	path = vim/pack/other/start/vim-ledger_x
 	url = https://github.com/rcaputo/vim-ledger_x.git
+[submodule "vim/pack/other/start/slumllord"]
+	path = vim/pack/other/start/slumllord
+	url = https://github.com/scrooloose/vim-slumlord
+[submodule "vim/pack/other/start/plantuml"]
+	path = vim/pack/other/start/plantuml
+	url = https://github.com/aklt/plantuml-syntax
