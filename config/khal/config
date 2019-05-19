@@ -3,11 +3,11 @@ default_calendar = {{@@ khal_default_calendar @@}}
 [calendars]
 
   [[personal]]
-    path = ~/.calendars/personal/personal-calendar/
+    path = ~/.calendars/personal/default_calendar/
     color = dark green
 
   [[birthday]]
-    path = ~/.calendars/personal/contact_birthdays/
+    path = ~/.calendars/personal/contact_birthdays_calendar/
     readonly = True
 
   [[ubitransport]]
