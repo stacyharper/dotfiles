@@ -30,9 +30,9 @@ fileext = ".vcf"
 
 [storage personal_contacts_remote]
 type = "carddav"
-url = "https://nextcloud.misterbanal.net/remote.php/dav"
-username = "ReedWade"
-password.fetch = ["command", "{{@@ env['HOME'] @@}}/bin/passfirst", "Web/nextcloud.misterbanal.net/ReedWade"]
+url = "https://radicale.misterbanal.net"
+username = "eddie"
+password.fetch = ["command", "{{@@ env['HOME'] @@}}/bin/passfirst", "Web/radicale.misterbanal.net/eddie"]
 
 # CALDAV
 [pair personal_calendar]
@@ -48,9 +48,9 @@ fileext = ".ics"
 
 [storage personal_calendar_remote]
 type = "caldav"
-url = "https://nextcloud.misterbanal.net/remote.php/dav"
-username = "ReedWade"
-password.fetch = ["command", "{{@@ env['HOME'] @@}}/bin/passfirst", "Web/nextcloud.misterbanal.net/ReedWade"]
+url = "https://radicale.misterbanal.net"
+username = "eddie"
+password.fetch = ["command", "{{@@ env['HOME'] @@}}/bin/passfirst", "Web/radicale.misterbanal.net/eddie"]
 
 [pair ubitransport_calendar]
 a = "ubitransport_calendar_local"
