@@ -6,6 +6,11 @@ then
 	exit 1
 fi
 
+function finish {
+	rmdir ~/.notmuch-postsync
+}
+trap finish EXIT
+
 notmuch new
 notmuch tag +inbox -- tag:uncategorized
 
@@ -16,6 +21,5 @@ notmuch tag -inbox +chatons -- "tag:uncategorized and (subject:\[chatons\])"
 
 notmuch tag -uncategorized -- tag:uncategorized
 
-notmuch tag +deleted -- "tag:technique and date:..1weeks"
+notmuch tag -unread -- "tag:technique and date:..7days and tag:unread"
 
-rmdir ~/.notmuch-postsync
