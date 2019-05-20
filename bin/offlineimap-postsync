@@ -16,4 +16,6 @@ notmuch tag -inbox +chatons -- "tag:uncategorized and (subject:\[chatons\])"
 
 notmuch tag -uncategorized -- tag:uncategorized
 
+notmuch tag +deleted -- "tag:technique and date:..1weeks"
+
 rmdir ~/.notmuch-postsync
