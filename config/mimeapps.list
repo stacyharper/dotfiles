@@ -1,9 +1,9 @@
 [Default Applications]
-x-scheme-handler/http=elinks.desktop;qutebrowser.desktop;firefox.desktop
-x-scheme-handler/https=elinks.desktop;qutebrowser.desktop;firefox.desktop
-text/html=elinks.desktop;qutebrowser.desktop;firefox.desktop
-x-scheme-handler/about=elinks.desktop;qutebrowser.desktop;firefox.desktop
-x-scheme-handler/unknown=elinks.desktop;qutebrowser.desktop;firefox.desktop
+x-scheme-handler/http=qutebrowser.desktop;firefox.desktop
+x-scheme-handler/https=qutebrowser.desktop;firefox.desktop
+text/html=qutebrowser.desktop;firefox.desktop
+x-scheme-handler/about=qutebrowser.desktop;firefox.desktop
+x-scheme-handler/unknown=qutebrowser.desktop;firefox.desktop
 text/plain=vim.desktop
 inode/directory=ranger.desktop;thunar.desktop
 inode/mount-point=ranger.desktop;thunar.desktop
