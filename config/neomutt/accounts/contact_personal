@@ -1,7 +1,0 @@
-set from=contact@eddiebarraco.fr
-set spoolfile = "+contact_personal/INBOX"
-set record = "+contact_personal/Sent"
-set postponed = "+contact_personal/Drafts"
-set crypt_autosign = yes
-set pgp_default_key = "CAB12F60BD13A21DAB60C5105BAC92328B7C5D65"
-set postpone_encrypt = yes

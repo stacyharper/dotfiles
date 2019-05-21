@@ -1,5 +1,0 @@
---fields=+imS
---kinds-PHP=-a
---exclude=node_modules
---exclude=vendor
---exclude=*.min.*

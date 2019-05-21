@@ -1,5 +1,0 @@
-#!/bin/sh
-
-$GIT_DIR/hooks/python-command-dispatcher/dispatcher.py sendemail-validate $GIT_DIR/hooks/hooks.yml
-
-exit $?

@@ -1,8 +1,0 @@
-alias ls='ls --color=auto'
-alias dotdrop='{{@@ _dotdrop_dotpath @@}}/programs/dotdrop/dotdrop.sh -c ../../config.yaml -b'
-alias ncmpcpp='ncmpcpp -b ${XDG_CONFIG_HOME:-$HOME/.config}/ncmpcpp/bindings'
-alias tb='taskbook'
-alias tmux='tmux -f ~/.config/tmux/tmux.conf'
-alias trm='tmsu-fs-rm'
-alias tmv='tmsu-fs-mv'
-alias tmerge='tmsu-fs-merge'

@@ -1,5 +1,0 @@
-[options]
-#allow_bold = true
-font = {{@@ font_name @@}} {{@@ font_size @@}}
-scrollback_lines = -1
-{%@@ include 'base16/termite/themes/' + color_scheme + '.config' @@%}

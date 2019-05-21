@@ -1,3 +1,0 @@
-set crypt_use_gpgme=yes
-set crypt_opportunistic_encrypt=yes
-set crypt_autosign=yes
