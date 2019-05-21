@@ -217,5 +217,4 @@ default_border pixel 1
 bindsym $mod+t border toggle
 hide_edge_borders smart
 
-exec --no-startup-id nextcloud
 exec --no-startup-id mako
